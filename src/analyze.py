@@ -73,6 +73,7 @@ def main():
 
         models = sorted({r["model"] for r in summary})
         colours = {m: PALETTE[i % len(PALETTE)] for i, m in enumerate(models)}
+        handles = []
 
         fig, ax = plt.subplots(figsize=(8.5, 5.5))
         for model in models:
@@ -81,18 +82,32 @@ def main():
             xs = [r["median_tokens"] for r in pts]
             ys = [r["pct_executable"] for r in pts]
             ax.plot(xs, ys, color=colours[model], alpha=.35, lw=1.2, zorder=1)
-            ax.scatter(xs, ys, s=[40 + r["n"] * 3 for r in pts], color=colours[model],
-                       label=model, zorder=3, edgecolor="white", linewidth=1.2)
+            sc = ax.scatter(xs, ys, s=[40 + r["n"] * 3 for r in pts],
+                            color=colours[model], zorder=3,
+                            edgecolor="white", linewidth=1.2)
+            handles.append((sc, model))
+            lean = 1 if models.index(model) % 2 == 0 else -1
             for r in pts:
                 dx, dy = OFF.get(r["strategy"], (0, 10))
                 ax.annotate(SHORT.get(r["strategy"], r["strategy"]),
                             (r["median_tokens"], r["pct_executable"]),
-                            textcoords="offset points", xytext=(dx, dy),
-                            fontsize=8.5, ha="center", color="#333")
+                            textcoords="offset points",
+                            xytext=(dx + 26 * lean, dy * (1 if lean > 0 else 1.6)),
+                            fontsize=8.5, ha="center", color=colours[model])
 
         if max(r["median_tokens"] for r in summary) / max(1, min(
                 r["median_tokens"] for r in summary if r["median_tokens"])) > 5:
             ax.set_xscale("log")
+            # Default log ticks label only decades, which hides the range where
+            # the strategies actually differ. Place ticks on the real values.
+            lo = min(r["median_tokens"] for r in summary if r["median_tokens"])
+            hi = max(r["median_tokens"] for r in summary)
+            ticks = [t for t in (400, 600, 800, 1000, 1500, 2000, 3000, 5000,
+                                 8000, 10000, 15000, 20000)
+                     if lo * 0.85 <= t <= hi * 1.2]
+            if ticks:
+                ax.set_xticks(ticks)
+                ax.set_xticks([], minor=True)
             ax.get_xaxis().set_major_formatter(ScalarFormatter())
             ax.set_xlabel("cost: median total tokens per problem (log scale)")
         else:
@@ -100,9 +115,10 @@ def main():
 
         ax.set_ylabel("capability: % of runs producing an executable test suite")
         ax.set_title("Cost against capability in small language models")
-        ax.set_ylim(-6, 106)
+        ax.set_ylim(-12, 108)
         ax.grid(alpha=.25)
-        ax.legend(title="model", loc="center right", frameon=True)
+        ax.legend([h for h, _ in handles], [m for _, m in handles],
+                  title="model", loc="center right", frameon=True)
         fig.text(.5, .005, "Marker size is the number of runs behind each point.",
                  ha="center", fontsize=7.5, color="#666")
         fig.tight_layout(rect=[0, .03, 1, 1])
