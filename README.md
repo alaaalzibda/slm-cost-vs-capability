@@ -87,7 +87,7 @@ pipeline without a model.
 | llama3.2 | chain_of_thought | 50 | 710 | 7.1 | 98.5 | 92.0 | 58.2 |
 | llama3.2 | least_to_most | 7 | 1243 | 12.7 | 90.0 | 71.4 | 43.3 |
 | phi3 | zero_shot | 50 | 445 | 4.1 | 85.7 | 14.0 | 47.1 |
-| phi3 | chain_of_thought | 50 | 460 | 4.1 | 0 | 0.0 | 0 |
+| phi3 | chain_of_thought | 50 | 460 | 4.1 | n/a | 0.0 | n/a |
 | phi3 | least_to_most | 14 | 10511 | 278.0 | 33.3 | 21.4 | 78.3 |
 
 `least_to_most` is incomplete on every model. It was abandoned after runs began
@@ -98,7 +98,8 @@ partial rows are kept because the cost is itself the finding, but they rest on
 Branch coverage is conditional on the suite executing at all, so it should be
 read alongside the executable column rather than on its own. The 100 percent
 coverage on qwen's `least_to_most` is measured over the half of its runs that
-ran.
+ran. Cells are marked `n/a` where nothing executed, because the figure is
+undefined there rather than zero.
 
 See [NOTES.md](NOTES.md) on why phi3 is reported as an anomaly rather than a
 result.
@@ -115,19 +116,28 @@ percent) with higher pass rates (86.7 against 79.6 percent, and 68.0 against
 58.2 percent). I did not find a tradeoff to measure. Asking the model to reason
 before writing cost more and returned less.
 
-This does not match the reference study, which reports reasoning-heavy
-strategies buying better coverage at higher cost. Mine is much smaller, uses my
-own prompt wording rather than theirs, and measures tokens rather than energy,
-so the disagreement may well be mine rather than theirs.
+Where this differs from the reference study is narrower than it first looks.
+That study reports reasoning-heavy strategies buying better coverage at higher
+cost. On branch coverage my two strategies are within about two points of each
+other on both models, and on llama3.2 chain-of-thought is marginally ahead, so
+nothing here contradicts that claim. The difference is in the proportion of
+runs that produced an executable suite at all, and the pass rate of the tests
+that did, neither of which the reference study reports. Chain-of-thought did
+not buy worse coverage here. It more often produced nothing to measure coverage
+on. Mine is also a much smaller study, uses my own prompt wording rather than
+theirs, and measures tokens rather than energy, so the difference may well be
+mine rather than theirs.
 
 The larger effect was the model, not the prompt. qwen2.5-coder produced an
 executable suite 98 percent of the time and llama3.2 96 percent, while phi3
 managed 14 percent under the same harness. Whatever prompting buys here,
 choosing the model bought more.
 
-The two-call strategy is the clearest case against paying for elaboration. It
-cost between two and twenty-four times the tokens of zero-shot and produced the
-least usable output of the three everywhere it ran.
+The two-call strategy cost between two and twenty-four times the tokens of
+zero-shot, and on the runs that finished it produced fewer usable suites than
+either single-call strategy. It is not ranked against them here: the arm was
+abandoned partway and rests on 7 to 15 runs per model rather than 50, which is
+not enough to place it.
 
 ## Limitations
 
