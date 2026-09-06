@@ -63,23 +63,51 @@ def main():
     try:
         import matplotlib; matplotlib.use("Agg")
         import matplotlib.pyplot as plt
-        fig, ax = plt.subplots(figsize=(7, 5))
-        marks = {}
-        for row in summary:
-            marks.setdefault(row["model"], []).append(row)
-        for model, rs in marks.items():
-            ax.scatter([r["median_tokens"] for r in rs],
-                       [r["mean_branch_coverage"] for r in rs], s=90, label=model)
-            for r in rs:
-                ax.annotate(r["strategy"], (r["median_tokens"], r["mean_branch_coverage"]),
-                            textcoords="offset points", xytext=(6, 5), fontsize=9)
-        ax.set_xlabel("cost: median total tokens per problem")
-        ax.set_ylabel("capability: mean branch coverage (%)")
+        from matplotlib.ticker import ScalarFormatter
+
+        SHORT = {"zero_shot": "zero-shot", "chain_of_thought": "chain-of-thought",
+                 "least_to_most": "least-to-most"}
+        OFF = {"zero_shot": (0, 10), "chain_of_thought": (0, -16), "least_to_most": (0, 10)}
+        PALETTE = ["#2E7D32", "#1565C0", "#EF6C00", "#6A1B9A", "#00838F"]
+        ORDER = {"zero_shot": 0, "chain_of_thought": 1, "least_to_most": 2}
+
+        models = sorted({r["model"] for r in summary})
+        colours = {m: PALETTE[i % len(PALETTE)] for i, m in enumerate(models)}
+
+        fig, ax = plt.subplots(figsize=(8.5, 5.5))
+        for model in models:
+            pts = sorted([r for r in summary if r["model"] == model],
+                         key=lambda r: ORDER.get(r["strategy"], 99))
+            xs = [r["median_tokens"] for r in pts]
+            ys = [r["pct_executable"] for r in pts]
+            ax.plot(xs, ys, color=colours[model], alpha=.35, lw=1.2, zorder=1)
+            ax.scatter(xs, ys, s=[40 + r["n"] * 3 for r in pts], color=colours[model],
+                       label=model, zorder=3, edgecolor="white", linewidth=1.2)
+            for r in pts:
+                dx, dy = OFF.get(r["strategy"], (0, 10))
+                ax.annotate(SHORT.get(r["strategy"], r["strategy"]),
+                            (r["median_tokens"], r["pct_executable"]),
+                            textcoords="offset points", xytext=(dx, dy),
+                            fontsize=8.5, ha="center", color="#333")
+
+        if max(r["median_tokens"] for r in summary) / max(1, min(
+                r["median_tokens"] for r in summary if r["median_tokens"])) > 5:
+            ax.set_xscale("log")
+            ax.get_xaxis().set_major_formatter(ScalarFormatter())
+            ax.set_xlabel("cost: median total tokens per problem (log scale)")
+        else:
+            ax.set_xlabel("cost: median total tokens per problem")
+
+        ax.set_ylabel("capability: % of runs producing an executable test suite")
         ax.set_title("Cost against capability in small language models")
-        ax.grid(alpha=.3); ax.legend()
-        fig.tight_layout()
-        fig.savefig(os.path.join(RES, "coverage_vs_tokens.png"), dpi=150)
-        print("\nwrote results/coverage_vs_tokens.png")
+        ax.set_ylim(-6, 106)
+        ax.grid(alpha=.25)
+        ax.legend(title="model", loc="center right", frameon=True)
+        fig.text(.5, .005, "Marker size is the number of runs behind each point.",
+                 ha="center", fontsize=7.5, color="#666")
+        fig.tight_layout(rect=[0, .03, 1, 1])
+        fig.savefig(os.path.join(RES, "cost_vs_capability.png"), dpi=160)
+        print("\nwrote results/cost_vs_capability.png")
     except ImportError:
         print("\n(matplotlib not installed, skipping chart)")
 
