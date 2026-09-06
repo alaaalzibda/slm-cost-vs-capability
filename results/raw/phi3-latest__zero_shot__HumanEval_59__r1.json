@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/59",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 204,
+  "completion_tokens": 1215,
+  "total_tokens": 1419,
+  "duration_s": 23.003,
+  "eval_duration_s": 22.814,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: unexpected indent (test_generated.py, line 3)",
+  "generated_code": "import pytest\n\n  from sympy import lcm\n\n\n  def smallest_common_multiple(n: int) -> int:\n\n      from functools import reduce\n\n      import math\n\n\n      def prime_factors(n):\n\n          i = 2\n\n          factors = []\n\n          while i * i <= n:\n\n              if n % i:\n\n                  i += 1\n\n              else:\n\n                  n //= i\n\n                  factors.append(i)\n\n          if n > 1:\n\n              factors.append(n)\n\n          return factors\n\n\n      def unique_prime_factors(factors):\n\n          return list(set(factors))\n\n\n      def max_exponent(factors, prime):\n\n          return max([factors.count(p) for p in set(factors) if p == prime])\n\n\n      def lcm_of_factors(factors):\n\n          return reduce(lambda x, y: x * y // math.gcd(x, y), factors, 1)\n\n\n      def lcm_of_primes(factors):\n\n          return reduce(lcm_of_factors, factors)\n\n\n      def lcm_of_range(n):\n\n          factors = []\n\n          for i in range(2, n + 1):\n\n              factors.extend(prime_factors(i))\n\n          unique_factors = unique_prime_factors(factors)\n\n          return lcm_of_primes(unique_factors)\n\n\n      return lcm_of_range(n)\n\n\n  def test_smallest_common_multiple():\n\n      assert smallest_common_multiple(5) == 60\n\n  def test_smallest_common_multiple_with_large_number():\n\n      assert smallest_common_multiple(10) == 2520\n\n  def test_smallest_common_multiple_with_prime_number():\n\n      assert smallest_common_multiple(7) == 7\n\n  def test_smallest_common_multiple_with_zero():\n\n      with pytest.raises(ValueError):\n\n          smallest_common_multiple(0)\n\n  def test_smallest_common_multiple_with_negative_number():\n\n      with pytest.raises(ValueError):\n\n          smallest_common_multiple(-1)\n\n  def test_smallest_common_multiple_with_non_integer():\n\n      with pytest.raises(TypeError):\n\n          smallest_common_multiple(\"a string\")",
+  "timestamp": "2026-09-06T19:00:57"
+}

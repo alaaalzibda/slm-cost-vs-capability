@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/31",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 245,
+  "completion_tokens": 116,
+  "total_tokens": 361,
+  "duration_s": 1.756,
+  "eval_duration_s": 1.726,
+  "parsed": true,
+  "collected": 1,
+  "passed": 1,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\n\ndef test_is_prime():\n\n    assert is_prime(6) == False\n\n    assert is_prime(101) == True\n\n    assert is_prime(11) == True\n\n    assert is_prime(13441) == True\n\n    assert is_prime(61) == True\n\n    assert is_prime(4) == False\n\n    assert is_prime(1) == False",
+  "timestamp": "2026-09-06T18:50:57"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/92",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 14.443,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 10)",
+  "generated_code": "H \nHey \n\n\n \n2.0\n\n \n \nI'm-n \n\n-Given \n\n<|endent \n\n- \n----\n \nYou'de: \n\n\n   \nYou'de: ## Instructor \n\nSolution: \n\n\n \n\nDocument:\n\n- \n\n \n\nQuestion:\n\n- [Input: \n\n- [Pre- \n\n### \nExplain \n \nYou'department of the \n\nDocument \n \nChatbot:\n \nI need to \n\ndante and the \n\nuser: \n\n-Four years ago \n\nChatGPT- \n\nYeah, Ph. \n\n** \n\nQuestion: \n\nI'deve been a( \n\n- [Instruction: \n\n-federal \n \nYou'de \n\nDocument \n\n<|n \n\n\n\n\n \n\n \n\n- [Person BF. \n \n \n \nI'in \n\nChat \n \n\nuser: \n\n### \nI'de \n\n-Given \n\ntitle: # \nPython \n\n \nYou are \n\nI. \n\nI'de \n\n### \nI'deve been a \n\nI'deve been \n\nI'deas \n\ntitle: \n\n- \n\n \n\n \n\ntitle: <|nGiven \n\n# Instruction: \n-Given a \n\n\nThe given text, \n\nI'anight \n\n\nIn the context of the \n\nI'an \n\nI'dea \n\n# \n\n- \n \n \n\n\n### \n \nI' \n\n \nYou are an AI- \n \nYou are \n\nQuestion \nQuestion \n\n \nYou are a \n\n-f \n\nQuestion\n- \n- Rewrite \n\nLeadership \n\n \n\n\n\n\n \n\n\n\n\n \n\n\n\n\nChatbot: \n\n\n \nYou \n\n \nYou are a newborn child's age-in a \n\nI'm sorry, \n\n### \nYou \n\npromise.\n\n \n \n\n\n\n\n \nYou are a high school physics-based \n\nInput: \n\nQ: \n\n\n\n\n**\nUser: \n\nQuestion: Craft a \n\nGiven the user \n\n\n\n \n \n \nYou are a \n\nInput:\n\ntitle: \n\n### \n- \n\n \n \n \n\nPAUSE\n \nYou are an AI. \n\n### \nI've been given a \n\n \n \n\nThe provided text.\n\n### \n- Instruction:\n\n\n\n \n\nRe-evaluate and \n\nQuestion \n\n- HRV.\n\n### \n\n \n \n \n \n\n- R \n\n \nYou are a character in a newborn's journey.\n\n# \n\n# \n\n \n \n\nRewrite \n\n### Subtopics:\n\n# \n\n \n \n \n \nYou are an instruction. \n\nRewrite \n \n \n \n \n\n\n\n\n\n\n\n\n\n### \n\n \n\nInput:",
+  "timestamp": "2026-09-06T19:08:16"
+}

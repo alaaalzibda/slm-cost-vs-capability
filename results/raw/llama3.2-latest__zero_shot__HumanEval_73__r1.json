@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/73",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 270,
+  "completion_tokens": 238,
+  "total_tokens": 508,
+  "duration_s": 4.329,
+  "eval_duration_s": 4.291,
+  "parsed": true,
+  "collected": 7,
+  "passed": 5,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import smallest_change\n\ndef test_smallest_change_empty_array():\n    assert smallest_change([]) == 0\n\ndef test_smallest_change_single_element_array():\n    assert smallest_change([1]) == 0\n\ndef test_smallest_change_palindromic_array():\n    assert smallest_change([1, 2, 3, 2, 1]) == 0\n\ndef test_smallest_change_not_palindromic_array():\n    assert smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1\n\ndef test_smallest_change_large_array():\n    assert smallest_change([1, 2, 3, 5, 4, 7, 9, 6]) == 4\n\ndef test_smallest_change_array_with_duplicates():\n    assert smallest_change([1, 2, 2, 3, 3, 3]) == 1\n\ndef test_smallest_change_array_with_negative_numbers():\n    assert smallest_change([-1, 2, 3, -2, 4, -3, 5]) == 4",
+  "timestamp": "2026-09-06T20:34:58"
+}

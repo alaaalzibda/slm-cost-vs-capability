@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/124",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 389,
+  "completion_tokens": 290,
+  "total_tokens": 679,
+  "duration_s": 12.244,
+  "eval_duration_s": 12.184,
+  "parsed": true,
+  "collected": 4,
+  "passed": 2,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 83.33333333333333,
+  "branch_coverage": 75.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import valid_date\n\ndef test_valid_date_format():\n    assert valid_date('03-11-2000') == True\n    assert valid_date('15-01-2012') == False\n    assert valid_date('04-0-2040') == False\n    assert valid_date('06-04-2020') == True\n    assert valid_date('06/04/2020') == False\n\ndef test_valid_date_days():\n    assert valid_date('02-29-2000') == True\n    assert valid_date('02-29-1900') == False\n    assert valid_date('04-31-2020') == False\n    assert valid_date('12-31-2020') == True\n\ndef test_valid_date_months():\n    assert valid_date('13-01-2020') == False\n    assert valid_date('00-01-2020') == False\n    assert valid_date('01-13-2020') == False\n    assert valid_date('01-00-2020') == False\n\ndef test_valid_date_empty():\n    assert valid_date('') == False",
+  "timestamp": "2026-09-06T16:41:25"
+}

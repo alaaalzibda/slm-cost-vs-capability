@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/67",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 381,
+  "completion_tokens": 14,
+  "total_tokens": 395,
+  "duration_s": 1.338,
+  "eval_duration_s": 0.198,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "-/3",
+  "timestamp": "2026-09-06T19:07:16"
+}

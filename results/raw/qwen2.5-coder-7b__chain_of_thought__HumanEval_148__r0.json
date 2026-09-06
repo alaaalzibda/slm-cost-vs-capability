@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/148",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 354,
+  "completion_tokens": 345,
+  "total_tokens": 699,
+  "duration_s": 13.818,
+  "eval_duration_s": 13.461,
+  "parsed": true,
+  "collected": 5,
+  "passed": 4,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import bf\n\n# Test cases for the bf function\n\n# Test with valid planet names\ndef test_bf_valid_planets():\n    assert bf(\"Jupiter\", \"Neptune\") == (\"Saturn\", \"Uranus\")\n    assert bf(\"Earth\", \"Mercury\") == (\"Venus\")\n    assert bf(\"Mercury\", \"Uranus\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")\n\n# Test with invalid planet names\ndef test_bf_invalid_planets():\n    assert bf(\"Pluto\", \"Mars\") == ()\n    assert bf(\"Earth\", \"Pluto\") == ()\n    assert bf(\"Pluto\", \"Pluto\") == ()\n\n# Test with the same planet name for both arguments\ndef test_bf_same_planet():\n    assert bf(\"Earth\", \"Earth\") == ()\n\n# Test with planets in reverse order\ndef test_bf_reverse_order():\n    assert bf(\"Neptune\", \"Jupiter\") == (\"Saturn\", \"Uranus\")\n    assert bf(\"Uranus\", \"Mercury\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")\n\n# Test with the closest and farthest planets\ndef test_bf_closest_and_farthest():\n    assert bf(\"Mercury\", \"Neptune\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\")\n    assert bf(\"Neptune\", \"Mercury\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\")",
+  "timestamp": "2026-09-06T17:19:53"
+}

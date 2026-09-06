@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/32",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 415,
+  "completion_tokens": 495,
+  "total_tokens": 910,
+  "duration_s": 8.172,
+  "eval_duration_s": 8.027,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "import pytest\nfrom solution import find_zero\n\n\ndef test_find_zero_returns_float():\n    result = find_zero([1, 2])\n    assert isinstance(result, float)\n\n\ndef test_find_zero_returns_zero():\n    result = find_zero([1, 2])\n    assert round(result, 2) == 0.0\n\n\ndef test_find_zero_with_negative_coefficients():\n    result = find_zero([-6, 11, -6, 1])\n    assert round(result, 2) == 1.0\n\n\ndef test_find_zero_with_positive_coefficients():\n    result = find_zero([1, 2])\n    assert round(result, 2) == -0.5\n\n\ndef test_find_zero_with_complex_coefficients():\n    result = find_zero([1, 2, 3])\n    assert round(result, 2) == -0.5\n\n\ndef test_find_zero_with_no_solution():\n    result = find_zero([1, 1])\n    assert result is None\n\n\ndef test_find_zero_with_single_coefficient():\n    result = find_zero([1])\n    assert result is None\n\n\ndef test_find_zero_with_incorrect_input():\n    with pytest.raises(TypeError):\n        find_zero(\"not a list\")\n\n\ndef test_find_zero_with_incorrect_input_type():\n    with pytest.raises(TypeError):\n        find_zero(123)\n\n\ndef test_find_zero_with_incorrect_input_length():\n    with pytest.raises(ValueError):\n        find_zero([1, 2, 3, 4])\n\n\ndef test_find_zero_with_incorrect_input_coefficients():\n    with pytest.raises(ValueError):\n        find_zero([1, 2, 3, 4, 5])",
+  "timestamp": "2026-09-06T18:53:14"
+}

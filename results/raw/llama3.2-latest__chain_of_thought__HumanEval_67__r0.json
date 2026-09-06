@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/67",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 367,
+  "completion_tokens": 528,
+  "total_tokens": 895,
+  "duration_s": 9.739,
+  "eval_duration_s": 9.573,
+  "parsed": true,
+  "collected": 7,
+  "passed": 3,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function takes a string describing the number of apples and oranges, and an integer\n# representing the total number of fruits in the basket. It returns the number of mango\n# fruits in the basket. The string can contain \"apples\", \"oranges\", and \"mango\" to describe\n# the fruits. The function should ignore the string description and only consider the\n# numerical values. The function should also handle edge cases such as empty string, string\n# with only one type of fruit, and string with invalid numerical values.\n\nfrom solution import fruit_distribution\n\n# Test the function with valid inputs\ndef test_fruit_distribution_valid_inputs():\n    assert fruit_distribution(\"5 apples and 6 oranges\", 19) == 8\n    assert fruit_distribution(\"0 apples and 1 oranges\", 3) == 2\n    assert fruit_distribution(\"2 apples and 3 oranges\", 100) == 95\n    assert fruit_distribution(\"100 apples and 1 oranges\", 120) == 19\n\n# Test the function with empty string\ndef test_fruit_distribution_empty_string():\n    assert fruit_distribution(\"\", 10) == 10\n\n# Test the function with string containing only one type of fruit\ndef test_fruit_distribution_single_fruit():\n    assert fruit_distribution(\"5 apples\", 10) == 0\n    assert fruit_distribution(\"5 oranges\", 10) == 0\n\n# Test the function with string containing invalid numerical values\ndef test_fruit_distribution_invalid_numerical_values():\n    assert fruit_distribution(\"5 apples and 6 oranges\", \"a\") == 0\n    assert fruit_distribution(\"5 apples and 6 oranges\", 10.5) == 0\n\n# Test the function with string containing non-numeric values\ndef test_fruit_distribution_non_numeric_values():\n    assert fruit_distribution(\"5 apples and 6 oranges\", \"b\") == 0\n    assert fruit_distribution(\"5 apples and 6 oranges\", \"c\") == 0\n\n# Test the function with string containing multiple types of fruits\ndef test_fruit_distribution_multiple_fruits():\n    assert fruit_distribution(\"5 apples and 6 oranges and 2 mangoes\", 19) == 8\n    assert fruit_distribution(\"5 apples and 6 oranges and 2 mangoes and 1 grapes\", 19) == 8\n\n# Test the function with string containing only mangoes\ndef test_fruit_distribution_only_mangoes():\n    assert fruit_distribution(\"2 mangoes\", 4) == 2",
+  "timestamp": "2026-09-06T20:45:04"
+}

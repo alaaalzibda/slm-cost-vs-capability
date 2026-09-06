@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/1",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 265,
+  "completion_tokens": 228,
+  "total_tokens": 493,
+  "duration_s": 9.136,
+  "eval_duration_s": 8.856,
+  "parsed": true,
+  "collected": 6,
+  "passed": 5,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import separate_paren_groups\n\n# Test cases to validate the behavior of the separate_paren_groups function\n# 1. Empty string should return an empty list\n# 2. Single pair of parentheses should be separated\n# 3. Multiple pairs of parentheses should be separated\n# 4. Nested pairs of parentheses should be separated\n# 5. Spaces in the input string should be ignored\n# 6. Unbalanced parentheses should raise a ValueError\n\ndef test_empty_string():\n    assert separate_paren_groups('') == []\n\ndef test_single_pair():\n    assert separate_paren_groups('( )') == ['()']\n\ndef test_multiple_pairs():\n    assert separate_paren_groups('( ) (( ))') == ['()', '(())']\n\ndef test_nested_pairs():\n    assert separate_paren_groups('(( )( ))') == ['(()())']\n\ndef test_ignore_spaces():\n    assert separate_paren_groups('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\ndef test_unbalanced_parentheses():\n    with pytest.raises(ValueError):\n        separate_paren_groups('(()')",
+  "timestamp": "2026-09-06T16:42:41"
+}

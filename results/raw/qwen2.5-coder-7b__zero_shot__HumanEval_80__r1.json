@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/80",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 223,
+  "completion_tokens": 214,
+  "total_tokens": 437,
+  "duration_s": 8.134,
+  "eval_duration_s": 8.081,
+  "parsed": true,
+  "collected": 6,
+  "passed": 6,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_happy\n\ndef test_is_happy_length_less_than_3():\n    assert not is_happy(\"a\")\n    assert not is_happy(\"aa\")\n\ndef test_is_happy_distinct_triplets():\n    assert is_happy(\"abcd\")\n    assert not is_happy(\"aabb\")\n    assert is_happy(\"adb\")\n    assert not is_happy(\"xyy\")\n\ndef test_is_happy_empty_string():\n    assert not is_happy(\"\")\n\ndef test_is_happy_single_character():\n    assert not is_happy(\"a\")\n\ndef test_is_happy_repeating_characters():\n    assert not is_happy(\"aaa\")\n    assert not is_happy(\"bbb\")\n    assert not is_happy(\"ccc\")\n\ndef test_is_happy_mixed_characters():\n    assert is_happy(\"abc\")\n    assert is_happy(\"acb\")\n    assert is_happy(\"bac\")\n    assert is_happy(\"bca\")\n    assert is_happy(\"cab\")\n    assert is_happy(\"cba\")",
+  "timestamp": "2026-09-06T16:39:04"
+}

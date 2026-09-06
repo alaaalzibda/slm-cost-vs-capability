@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/67",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 371,
+  "completion_tokens": 886,
+  "total_tokens": 1257,
+  "duration_s": 34.018,
+  "eval_duration_s": 33.711,
+  "parsed": true,
+  "collected": 9,
+  "passed": 4,
+  "failed": 5,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import fruit_distribution\n\n# Test cases to validate the correctness of the fruit_distribution function\n\n# Test with typical input values\ndef test_fruit_distribution_typical():\n    assert fruit_distribution(\"5 apples and 6 oranges\", 19) == 8\n    assert fruit_distribution(\"0 apples and 1 oranges\", 3) == 2\n    assert fruit_distribution(\"2 apples and 3 oranges\", 100) == 95\n    assert fruit_distribution(\"100 apples and 1 oranges\", 120) == 19\n\n# Test with zero apples and oranges\ndef test_fruit_distribution_zero_apples_oranges():\n    assert fruit_distribution(\"0 apples and 0 oranges\", 10) == 10\n    assert fruit_distribution(\"0 apples and 5 oranges\", 15) == 10\n    assert fruit_distribution(\"5 apples and 0 oranges\", 15) == 10\n\n# Test with negative apples and oranges\ndef test_fruit_distribution_negative_apples_oranges():\n    assert fruit_distribution(\"-1 apples and -1 oranges\", 1) == 1\n    assert fruit_distribution(\"-5 apples and 3 oranges\", 10) == 2\n    assert fruit_distribution(\"3 apples and -5 oranges\", 10) == 2\n\n# Test with non-integer input for apples and oranges\ndef test_fruit_distribution_non_integer_apples_oranges():\n    assert fruit_distribution(\"5.5 apples and 6.5 oranges\", 19) == 7\n    assert fruit_distribution(\"0 apples and 1.5 oranges\", 3) == 1\n    assert fruit_distribution(\"2.5 apples and 3 oranges\", 100) == 94.5\n\n# Test with non-numeric input for apples and oranges\ndef test_fruit_distribution_non_numeric_apples_oranges():\n    assert fruit_distribution(\"5 apples and six oranges\", 19) == 8\n    assert fruit_distribution(\"0 apples and one oranges\", 3) == 2\n    assert fruit_distribution(\"two apples and three oranges\", 100) == 95\n\n# Test with empty string input for apples and oranges\ndef test_fruit_distribution_empty_string_apples_oranges():\n    assert fruit_distribution(\"\", 10) == 10\n    assert fruit_distribution(\" apples and oranges\", 10) == 10\n    assert fruit_distribution(\"apples and oranges \", 10) == 10\n\n# Test with boundary values\ndef test_fruit_distribution_boundary_values():\n    assert fruit_distribution(\"1 apples and 1 oranges\", 3) == 1\n    assert fruit_distribution(\"1 apples and 0 oranges\", 2) == 1\n    assert fruit_distribution(\"0 apples and 1 oranges\", 2) == 1\n\n# Test with large input values\ndef test_fruit_distribution_large_values():\n    assert fruit_distribution(\"1000000 apples and 1000000 oranges\", 2000000) == 1000000\n    assert fruit_distribution(\"1 apples and 1 oranges\", 1000000) == 999998\n    assert fruit_distribution(\"1000000 apples and 0 oranges\", 2000000) == 1000000\n\n# Test with very large input values\ndef test_fruit_distribution_very_large_values():\n    assert fruit_distribution(\"1000000000 apples and 1000000000 oranges\", 2000000000) == 1000000000\n    assert fruit_distribution(\"1 apples and 1 oranges\", 1000000000) == 999999998\n    assert fruit_distribution(\"1000000000 apples and 0 oranges\", 2000000000) == 1000000000",
+  "timestamp": "2026-09-06T16:56:54"
+}

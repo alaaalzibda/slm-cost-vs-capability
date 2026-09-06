@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/110",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 340,
+  "completion_tokens": 480,
+  "total_tokens": 820,
+  "duration_s": 18.722,
+  "eval_duration_s": 18.224,
+  "parsed": true,
+  "collected": 7,
+  "passed": 7,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import exchange\n\n# The function should return \"YES\" if all elements in lst1 can be made even by exchanging elements with lst2.\n# It should return \"NO\" if it is not possible to make all elements in lst1 even.\n\n# Test cases:\n# 1. Both lists are already all even numbers.\n# 2. lst1 has all odd numbers and lst2 has all even numbers.\n# 3. lst1 has all odd numbers and lst2 has a mix of even and odd numbers.\n# 4. lst1 has all odd numbers and lst2 has only odd numbers.\n# 5. lst1 has a mix of even and odd numbers and lst2 has all even numbers.\n# 6. lst1 has a mix of even and odd numbers and lst2 has a mix of even and odd numbers.\n# 7. lst1 has a mix of even and odd numbers and lst2 has only odd numbers.\n\ndef test_exchange_all_even():\n    assert exchange([2, 4, 6, 8], [1, 3, 5, 7]) == \"YES\"\n\ndef test_exchange_all_odd():\n    assert exchange([1, 3, 5, 7], [2, 4, 6, 8]) == \"YES\"\n\ndef test_exchange_mixed_with_all_even():\n    assert exchange([1, 3, 5, 7], [2, 4, 6, 8]) == \"YES\"\n\ndef test_exchange_mixed_with_all_odd():\n    assert exchange([1, 3, 5, 7], [1, 3, 5, 7]) == \"NO\"\n\ndef test_exchange_mixed_with_mixed():\n    assert exchange([1, 3, 5, 7], [2, 4, 6, 8]) == \"YES\"\n\ndef test_exchange_mixed_with_mixed_and_all_odd():\n    assert exchange([1, 3, 5, 7], [1, 3, 5, 7]) == \"NO\"\n\ndef test_exchange_mixed_with_mixed_and_all_even():\n    assert exchange([2, 4, 6, 8], [1, 3, 5, 7]) == \"YES\"",
+  "timestamp": "2026-09-06T17:17:15"
+}

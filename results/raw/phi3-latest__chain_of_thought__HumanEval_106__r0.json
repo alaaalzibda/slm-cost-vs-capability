@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/106",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 303,
+  "completion_tokens": 135,
+  "total_tokens": 438,
+  "duration_s": 2.76,
+  "eval_duration_s": 2.026,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "assistant:\n\n\n \n2019 \n\n<|/endowment\n\n\ncftn.\n\n\n\n\n \nYou'in \n\n\n\n\n\nDr. \n \n\n \n \n \n \nYou \n \n \nYou'de \n\nTitle:\n\n-! \n\nI need to=\nBrowsing:\n\nCertainly \n\nTitle \n\nuser: I'dea",
+  "timestamp": "2026-09-06T19:15:13"
+}

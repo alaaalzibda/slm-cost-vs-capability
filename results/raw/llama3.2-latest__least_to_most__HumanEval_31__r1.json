@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/31",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 589,
+  "completion_tokens": 496,
+  "total_tokens": 1085,
+  "duration_s": 9.642,
+  "eval_duration_s": 8.938,
+  "parsed": true,
+  "collected": 12,
+  "passed": 9,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\ndef test_prime_number():\n    assert is_prime(2)\n    assert is_prime(3)\n    assert is_prime(5)\n    assert is_prime(7)\n    assert is_prime(11)\n    assert is_prime(13)\n\ndef test_non_prime_number():\n    assert not is_prime(4)\n    assert not is_prime(6)\n    assert not is_prime(8)\n    assert not is_prime(9)\n    assert not is_prime(10)\n\ndef test_number_less_than_2():\n    assert not is_prime(1)\n    assert not is_prime(0)\n\ndef test_number_equal_to_2():\n    assert is_prime(2)\n\ndef test_number_equal_to_1():\n    assert not is_prime(1)\n\ndef test_negative_number():\n    assert not is_prime(-1)\n\ndef test_zero():\n    assert not is_prime(0)\n\ndef test_large_prime_number():\n    assert is_prime(13441)\n\ndef test_large_non_prime_number():\n    assert not is_prime(1000000)\n\ndef test_non_integer_input():\n    assert not is_prime(3.14)\n    assert not is_prime(-3.14)\n\ndef test_special_case_power_of_2():\n    assert is_prime(2**10)\n    assert is_prime(2**20)\n\ndef test_special_case_power_of_3():\n    assert is_prime(3**10)\n    assert is_prime(3**20)",
+  "timestamp": "2026-09-06T20:50:03"
+}

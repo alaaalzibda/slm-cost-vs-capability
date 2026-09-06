@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/73",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 20.389,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 6)",
+  "generated_code": "H \n\n \n\n \n- \n \n\nQuestion:\n\n- I'an \n\nuser:**/I \n\n### Instruction: \n\n\n\"The Fibonacci sequence \n\nYou'in \n\n- [ \"$ \n \n-A \n\ncafe, and I \n\nd \n\nAbstained, you'de \n\n--- \n\n\n \n\n--- \n\nCraft a t\n\nQuestion: \n\n- \nHey \n\n-FGD \n\nThe student'de \n\n### \n \nI'deal with a.\n\nRewrite \n\nDocument \n\nDocument \n\n \n\n \nI'an_instruction: \n\n- \n\n-/ \n\nLadies and \n\nTitle \n\n- \n\n\n\nUser:** \nI'an \n\n-Given \n\n### \nI'deve been a \n\n- \n \nYou are a basic \n\ntitle: \n\nTitle \n\n \n\n\n\n\n\n\n### \n- How to \n\n- Howard County \n\n \n\n \n\ntitle: \n\n\nHey, I. \n\n# Question \n\n \n\n- \n\n \n\n- I've been trying to you \n\nInput: \" \n\nInput \n\n\nuser: \n \n \n \n \n\n\n\n#q \n\nQuestion: \n\ntitle:\n\n- i \n\n \nI'm sorry \n\nYou are an \n\nI've been tasked to the following table below is- \n\n\nI.\n\nI'm sorry \n\n\n\n\n\n \n \n \n st\n\n \n \n\n- Hippocraticus\n\n### \n\n \nYou are a \n\nDocument \n\n- \n\n \nYou are a newborn child, socio- \n\n\n\n \n \nYou are an instruction \n\n# \n\n \n\n \n\nInput:\nHow to calculate the following instruction:\n \n\ntitle: \n\nassistant: \n- P\n\n \n \n \n \n \n \n\n \n\n\n\n \n\n \n\n\n### \n\n\n\n dilemmas and \n\nDocument \n\ntitle: I'm sorry, \n\nTitle \n- Input \n\nBased on the following conversation between a \n\n- P \n\n- \n\n- \n\n \n\n\n\n \n\n \n \n\n- \n\n \n\n- Solution: \n\n\nRewrite \n\n-Write a comprehensive, \n\n- [A_ \n\n- https:// \n \n \n \n\n-Write a \n\nA \n\nprompt \n \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n#### QUESTION\n\n# \n\n# \n\n \n \n\n \n\n \nParagraph \n\nBased on the provided document, a group of friends. \n\n\n### \n\n<|end- \n\n\n\n\n\n\n \n\n\nQuestion:\n\n- P \n\n\n\n\n\n### \n\n \n\nInput: \n- Write a comprehensive \n\n \n\n \n\n \n\nYour task: \n-[ \n\n \n\n \n\n \n\n \n\n \n\n\n\n\n\n\n \n\n---\n\n### \n\n \n\n \n\n \n\n \n\nRewrite \n\n- [ \n\nUser: \n\n \n\n \n\n \n\nDocument \n\n### \n\n\n\n\nSolve the following instruction \n\nWrite a comprehensive, \n\n\n### \n\n \n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\nTextual and Solution\n\n#: \n- \nSubtracting the following \n\n \n\n\n\n\n\n \n\n\n \n\n\n\n\nrewrite \n\n \n\n \n\n \n\n \n-\nemma.\n\n(a \n\n### \nBased on the following textbook-based \n\n# Q-Violence \n\n\n \n\nDocument \n\n\n \n\n\n \n\n \n\n\nDocument Type\n\n\n\n\n\n\n\nRewrite \n\n \n\n\n\n\n- I's \n\n \n\n\n\n\n\n\n\n \n\n\n\n\n\n#### \n- HR \n\n\n \n\n\n\n\n\n\n\n\n\n\n \n\n\n\nI'm sorry, \n\n \n\n\n\n\nWrite a complex instruction \n \n\n###",
+  "timestamp": "2026-09-06T19:13:42"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/143",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 261,
+  "completion_tokens": 185,
+  "total_tokens": 446,
+  "duration_s": 3.362,
+  "eval_duration_s": 3.33,
+  "parsed": true,
+  "collected": 7,
+  "passed": 2,
+  "failed": 5,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import words_in_sentence\n\ndef test_words_in_sentence_empty_sentence():\n    assert words_in_sentence(\"\") == \"\"\n\ndef test_words_in_sentence_single_word():\n    assert words_in_sentence(\"a\") == \"a\"\n\ndef test_words_in_sentence_multiple_words():\n    assert words_in_sentence(\"This is a test\") == \"is\"\n\ndef test_words_in_sentence_multiple_words_with_prime_length():\n    assert words_in_sentence(\"This is a test with prime length words\") == \"is\"\n\ndef test_words_in_sentence_multiple_words_with_non_prime_length():\n    assert words_in_sentence(\"This is a test with non prime length words\") == \"\"\n\ndef test_words_in_sentence_long_sentence():\n    assert words_in_sentence(\"This is a test with multiple words\") == \"is\"\n\ndef test_words_in_sentence_no_prime_length_words():\n    assert words_in_sentence(\"This is a test with no prime length words\") == \"\"",
+  "timestamp": "2026-09-06T20:36:45"
+}

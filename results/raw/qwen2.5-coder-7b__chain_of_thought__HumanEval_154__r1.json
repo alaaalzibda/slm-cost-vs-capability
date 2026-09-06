@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/154",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 277,
+  "completion_tokens": 410,
+  "total_tokens": 687,
+  "duration_s": 16.922,
+  "eval_duration_s": 16.852,
+  "parsed": true,
+  "collected": 6,
+  "passed": 6,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import cycpattern_check\n\n# The function cycpattern_check checks if the second word or any of its rotations is a substring in the first word.\n# It should return True if the condition is met, and False otherwise.\n\n# Test cases:\n# 1. cycpattern_check(\"abcd\",\"abd\") => False - \"abd\" is not a substring of \"abcd\"\n# 2. cycpattern_check(\"hello\",\"ell\") => True - \"ell\" is a substring of \"hello\"\n# 3. cycpattern_check(\"whassup\",\"psus\") => False - \"psus\" is not a substring of \"whassup\"\n# 4. cycpattern_check(\"abab\",\"baa\") => True - \"baa\" is a substring of \"abab\" (rotation of \"abab\")\n# 5. cycpattern_check(\"efef\",\"eeff\") => False - \"eeff\" is not a substring of \"efef\"\n# 6. cycpattern_check(\"himenss\",\"simen\") => True - \"simen\" is a substring of \"himenss\" (rotation of \"himenss\")\n\ndef test_cycpattern_check_abd_not_substring():\n    assert cycpattern_check(\"abcd\", \"abd\") == False\n\ndef test_cycpattern_check_ell_is_substring():\n    assert cycpattern_check(\"hello\", \"ell\") == True\n\ndef test_cycpattern_check_psus_not_substring():\n    assert cycpattern_check(\"whassup\", \"psus\") == False\n\ndef test_cycpattern_check_baa_is_substring():\n    assert cycpattern_check(\"abab\", \"baa\") == True\n\ndef test_cycpattern_check_eeff_not_substring():\n    assert cycpattern_check(\"efef\", \"eeff\") == False\n\ndef test_cycpattern_check_simen_is_substring():\n    assert cycpattern_check(\"himenss\", \"simen\") == True",
+  "timestamp": "2026-09-06T17:20:38"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/32",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 415,
+  "completion_tokens": 455,
+  "total_tokens": 870,
+  "duration_s": 7.904,
+  "eval_duration_s": 7.145,
+  "parsed": true,
+  "collected": 6,
+  "passed": 2,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "import pytest\nfrom solution import find_zero\n\n\ndef test_find_zero_with_simple_polynomial():\n    assert round(find_zero([1, 2]), 2) == -0.5\n\n\ndef test_find_zero_with_quadratic_polynomial():\n    assert round(find_zero([-6, 11, -6, 1]), 2) == 1.0\n\n\ndef test_find_zero_with_complex_polynomial():\n    # Assuming the function can handle complex coefficients and roots\n    complex_coeffs = [1, 2+3j, 4-2j]\n    # This is a placeholder for the expected root, as the actual calculation\n    # would depend on the specific polynomial and its properties.\n    expected_root = complex(0.5, 1.5)\n    assert find_zero(complex_coeffs) == expected_root\n\n\ndef test_find_zero_with_invalid_input():\n    with pytest.raises(ValueError):\n        find_zero([1, 2, 3])  # Invalid input: odd number of coefficients\n\n\ndef test_find_zero_with_no_solution():\n    # Assuming the function raises an exception or returns a specific value\n    # when no solution is found. This is a placeholder test.\n    with pytest.raises(ValueError):\n        find_zero([1, 0, 0])  # Invalid input: largest non-zero coefficient is not positive\n\n\ndef test_find_zero_with_polynomial_with_no_real_solutions():\n    # Assuming the function can identify when there are no real solutions\n    # and handle such cases appropriately. This is a placeholder test.\n    with pytest.raises(ValueError):\n        find_zero([1, -2, 1])  # x^2 - 2x + 1 = 0 has no real solutions",
+  "timestamp": "2026-09-06T18:51:06"
+}

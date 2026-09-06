@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/80",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 235,
+  "completion_tokens": 201,
+  "total_tokens": 436,
+  "duration_s": 3.654,
+  "eval_duration_s": 3.618,
+  "parsed": true,
+  "collected": 9,
+  "passed": 9,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_happy\n\ndef test_is_happy_empty_string():\n    assert is_happy(\"\") == False\n\ndef test_is_happy_single_character():\n    assert is_happy(\"a\") == False\n\ndef test_is_happy_two_characters():\n    assert is_happy(\"ab\") == False\n\ndef test_is_happy_three_characters_distinct():\n    assert is_happy(\"abc\") == True\n\ndef test_is_happy_three_characters_repeated():\n    assert is_happy(\"aaa\") == False\n\ndef test_is_happy_three_characters_repeated_twice():\n    assert is_happy(\"aab\") == False\n\ndef test_is_happy_long_string_distinct():\n    assert is_happy(\"abcdefgh\") == True\n\ndef test_is_happy_long_string_repeated():\n    assert is_happy(\"aabbcc\") == False\n\ndef test_is_happy_long_string_repeated_twice():\n    assert is_happy(\"aabbbcc\") == False",
+  "timestamp": "2026-09-06T20:35:13"
+}

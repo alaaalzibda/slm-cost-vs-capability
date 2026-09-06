@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/107",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 327,
+  "completion_tokens": 157,
+  "total_tokens": 484,
+  "duration_s": 3.349,
+  "eval_duration_s": 2.85,
+  "parsed": true,
+  "collected": 6,
+  "passed": 3,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import even_odd_palindrome\n\ndef test_even_odd_palindrome_small():\n    assert even_odd_palindrome(3) == (1, 2)\n\ndef test_even_odd_palindrome_medium():\n    assert even_odd_palindrome(12) == (4, 6)\n\ndef test_even_odd_palindrome_large():\n    assert even_odd_palindrome(1000) == (500, 500)\n\ndef test_even_odd_palindrome_edge_case():\n    assert even_odd_palindrome(1) == (0, 1)\n\ndef test_even_odd_palindrome_invalid_input():\n    with pytest.raises(TypeError):\n        even_odd_palindrome(\"a\")\n\ndef test_even_odd_palindrome_negative_input():\n    with pytest.raises(ValueError):\n        even_odd_palindrome(-1)",
+  "timestamp": "2026-09-06T20:36:10"
+}

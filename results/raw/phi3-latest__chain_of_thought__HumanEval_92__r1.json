@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/92",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 334,
+  "completion_tokens": 482,
+  "total_tokens": 816,
+  "duration_s": 8.469,
+  "eval_duration_s": 7.491,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "You's a_ \n\n\n \n\n\n\nI've: \n \n\n(bob: \n \nYou \n \nYou'ran \n\nQuestion:. \n \nI've\n\nChat \n\n\nYou'de \n\n-f \n\nDocument \n\nI'an \n\nAssistant: \n- \n \nI'an \n\n-FDAI's \n\n### \nInstruction \n\n \n-f \n\nRe- \n\nCraft a \n\n** \n\n# \nYou are, \n\nQuestion: A \n\nChemical Reasoning, a_\n\nI'de \n \nYou'de \n\nTitle \n\nDocument \n\n-EUA: \n\n \n\nc/ \n \nYou'de \n\nTitle \n\n-Given the \n \nYou found that, based on \n\n- \n\n \n\nI'in \n\n\nI.\n\n\n \nBased on \n\nThe given text.\n\n<|/I'decide \n\n** \nI'anovelty.\n\n<|endcode \n\nAssistant: \n\n- P\n\n \n\n \n\n \n\nHey, M \n\n\n---\n\n- Instruction:\n\n- HRV.\n\n \n\n\nA \n\n\n# \nBased on the document, I'deve been \n\n2 \n\n# \nInstruction:\n\n \n\n\n \n\n \n\n\n\n\nAssistant: \n\nI's \n\n\n\nRewrite \n\nI've been \n\n- Write a \n\n\n2.\n \n \nYou are a \n\nUser: \n\n- i.",
+  "timestamp": "2026-09-06T19:14:27"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/92",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 292,
+  "completion_tokens": 507,
+  "total_tokens": 799,
+  "duration_s": 9.301,
+  "eval_duration_s": 9.162,
+  "parsed": true,
+  "collected": 5,
+  "passed": 3,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function any_int takes three numbers as input.\n# It should return True if one of the numbers is equal to the sum of the other two.\n# It should return False in any other cases, including if the numbers are not integers.\n# The function should also handle cases where the numbers are negative or decimal.\n\nfrom solution import any_int\n\n# Test the function with positive integers\ndef test_any_int_positive_integers():\n    assert any_int(5, 2, 7) == True\n    assert any_int(3, 2, 2) == False\n    assert any_int(3, -2, 1) == True\n    assert any_int(3, 2, 4) == False\n\n# Test the function with negative integers\ndef test_any_int_negative_integers():\n    assert any_int(-5, 2, 7) == True\n    assert any_int(-3, 2, 2) == False\n    assert any_int(-3, -2, 1) == True\n    assert any_int(-3, 2, -4) == False\n\n# Test the function with decimal numbers\ndef test_any_int_decimal_numbers():\n    assert any_int(3.6, 2.2, 2) == False\n    assert any_int(3.6, 2.2, 3.8) == False\n    assert any_int(3.6, 2.2, 3.6) == True\n    assert any_int(3.6, 2.2, 4.4) == False\n\n# Test the function with zero\ndef test_any_int_zero():\n    assert any_int(0, 2, 2) == False\n    assert any_int(0, 2, 0) == True\n    assert any_int(0, -2, 2) == False\n    assert any_int(0, -2, 0) == True\n\n# Test the function with non-integer inputs\ndef test_any_int_non_integer_inputs():\n    assert any_int(3.6, 2, 2) == False\n    assert any_int(3, 2.2, 2) == False\n    assert any_int(3, 2, 2.2) == False\n    assert any_int(3, 2, 2.6) == False",
+  "timestamp": "2026-09-06T20:46:26"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/106",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 279,
+  "completion_tokens": 431,
+  "total_tokens": 710,
+  "duration_s": 7.972,
+  "eval_duration_s": 7.816,
+  "parsed": true,
+  "collected": 7,
+  "passed": 6,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function f takes an integer n as input.\n# It returns a list of size n, where each element at index i is either the factorial of i (if i is even) or the sum of numbers from 1 to i (if i is odd).\n# We need to test the function's behavior for different values of n, including edge cases like n=0, n=1, and n=2.\n# We also need to test the function's behavior for different values of n, including larger values of n to ensure it handles them correctly.\n\nfrom solution import f\n\n# Test the function's behavior for different values of n\ndef test_f_even():\n    # Test the function with n=4, which should return [1, 2, 6, 24]\n    assert f(4) == [1, 2, 6, 24]\n\ndef test_f_odd():\n    # Test the function with n=3, which should return [1, 2, 3]\n    assert f(3) == [1, 2, 3]\n\ndef test_f_zero():\n    # Test the function with n=0, which should return an empty list\n    assert f(0) == []\n\ndef test_f_one():\n    # Test the function with n=1, which should return [1]\n    assert f(1) == [1]\n\ndef test_f_two():\n    # Test the function with n=2, which should return [1, 2]\n    assert f(2) == [1, 2]\n\ndef test_f_negative():\n    # Test the function with n=-1, which should raise an error\n    try:\n        f(-1)\n        assert False, \"Expected an error to be raised\"\n    except Exception:\n        pass\n\ndef test_f_non_integer():\n    # Test the function with n=3.14, which should raise an error\n    try:\n        f(3.14)\n        assert False, \"Expected an error to be raised\"\n    except Exception:\n        pass",
+  "timestamp": "2026-09-06T20:47:38"
+}

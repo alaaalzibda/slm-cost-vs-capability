@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/31",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 828,
+  "completion_tokens": 716,
+  "total_tokens": 1544,
+  "duration_s": 23.688,
+  "eval_duration_s": 12.357,
+  "parsed": true,
+  "collected": 19,
+  "passed": 18,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\n\nimport pytest\n\n\ndef test_is_prime_with_known_prime():\n\n    assert is_prime(11) == True\n\n\ndef test_is_prime_with_known_non_prime():\n\n    assert is_prime(4) == False\n\n\ndef test_is_prime_with_number_one():\n\n    assert is_prime(1) == False\n\n\ndef test_is_prime_with_number_two():\n\n    assert is_prime(2) == True\n\n\ndef test_is_prime_with_number_three():\n\n    assert is_prime(3) == True\n\n\ndef test_is_prime_with_number_25():\n\n    assert is_prime(25) == False\n\n\ndef test_is_prime_with_number_35():\n\n    assert is_prime(35) == False\n\n\ndef test_is_prime_with_number_100():\n\n    assert is_prime(100) == False\n\n\ndef test_is_prime_with_number_101():\n\n    assert is_prime(101) == True\n\n\ndef test_is_prime_with_number_13441():\n\n    assert is_prime(13441) == True\n\n\ndef test_is_prime_with_number_61():\n\n    assert is_prime(61) == True\n\n\ndef test_is_prime_with_negative_number():\n\n    assert is_prime(-11) == False\n\n\ndef test_is_prime_with_zero():\n\n    assert is_prime(0) == False\n\n\ndef test_is_prime_with_non_prime_not_divisible_by_2_3_or_5():\n\n    assert is_prime(49) == False\n\n\ndef test_is_prime_with_large_prime():\n\n    assert is_prime(967) == True\n\n\ndef test_is_prime_with_large_non_prime_not_divisible_by_2_3_or_5():\n\n    assert is_prime(97) == False\n\n\ndef test_is_prime_with_large_non_prime_divisible_by_2_3_or_5():\n\n    assert is_prime(98) == False\n\n\ndef test_is_prime_with_large_non_prime_not_divisible_by_2_3_or_5_but_has_prime_factor():\n\n    assert is_prime(99) == False\n\n\ndef test_is_prime_with_large_non_prime_not_divisible_by_2_3_or_5_and_no_prime_factor():\n\n    assert is_prime(10000000000000000000000000000000) == False",
+  "timestamp": "2026-09-06T19:36:31"
+}

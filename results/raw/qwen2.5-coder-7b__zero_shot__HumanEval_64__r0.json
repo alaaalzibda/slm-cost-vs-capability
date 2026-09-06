@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/64",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 228,
+  "completion_tokens": 190,
+  "total_tokens": 418,
+  "duration_s": 8.186,
+  "eval_duration_s": 7.414,
+  "parsed": true,
+  "collected": 8,
+  "passed": 7,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import vowels_count\n\ndef test_vowels_count_empty_string():\n    assert vowels_count(\"\") == 0\n\ndef test_vowels_count_single_vowel():\n    assert vowels_count(\"a\") == 1\n\ndef test_vowels_count_multiple_vowels():\n    assert vowels_count(\"abcde\") == 2\n\ndef test_vowels_count_all_vowels():\n    assert vowels_count(\"aeiou\") == 5\n\ndef test_vowels_count_with_y():\n    assert vowels_count(\"ACEDY\") == 3\n\ndef test_vowels_count_with_y_not_at_end():\n    assert vowels_count(\"ACEDYX\") == 2\n\ndef test_vowels_count_case_insensitive():\n    assert vowels_count(\"AEIOUY\") == 6\n\ndef test_vowels_count_non_vowel():\n    assert vowels_count(\"bcdfg\") == 0",
+  "timestamp": "2026-09-06T16:37:39"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/73",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 289,
+  "completion_tokens": 147,
+  "total_tokens": 436,
+  "duration_s": 3.036,
+  "eval_duration_s": 2.217,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "-Follow- \n \n \n\n---\n\n201 \n\nCan you'death \n\n<|endent \n\n- \n--- \n \nYou're \n\n \n \n-! ## \n\nRevital \n\nassistant/solution \n\n\n\n** \nI' \n\n\nSolution \n\nInstruction \n\n3. \n\n \nI.\n\n \n\n---\n\n-Given the following \n \nYou'an \n\n** \n\nTopic:",
+  "timestamp": "2026-09-06T19:07:47"
+}

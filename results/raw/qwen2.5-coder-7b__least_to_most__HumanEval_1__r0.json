@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/1",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 627,
+  "completion_tokens": 463,
+  "total_tokens": 1090,
+  "duration_s": 19.913,
+  "eval_duration_s": 18.009,
+  "parsed": true,
+  "collected": 10,
+  "passed": 9,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import separate_paren_groups\n\n\ndef test_empty_string():\n    assert separate_paren_groups('') == []\n\n\ndef test_single_pair():\n    assert separate_paren_groups('( )') == ['()']\n\n\ndef test_multiple_groups():\n    assert separate_paren_groups('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\n\ndef test_ignores_spaces():\n    assert separate_paren_groups(' ( ) (( )) (( )( )) ') == ['()', '(())', '(()())']\n\n\ndef test_unbalanced_group():\n    assert separate_paren_groups('(()') == []\n\n\ndef test_only_closing_parentheses():\n    assert separate_paren_groups('))') == []\n\n\ndef test_only_opening_parentheses():\n    assert separate_paren_groups('((') == []\n\n\ndef test_mixed_balanced_and_unbalanced():\n    assert separate_paren_groups('( ) (()') == ['()', '(()']\n\n\ndef test_deeply_nested_groups():\n    assert separate_paren_groups('((()))') == ['((()))']\n\n\ndef test_large_number_of_groups():\n    groups = ''.join(['('] * 1000 + [')'] * 1000)\n    assert separate_paren_groups(groups) == [groups]",
+  "timestamp": "2026-09-06T17:20:58"
+}

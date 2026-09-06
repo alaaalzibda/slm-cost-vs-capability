@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/1",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 187,
+  "completion_tokens": 214,
+  "total_tokens": 401,
+  "duration_s": 17.262,
+  "eval_duration_s": 4.016,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "```python\nfrom solution import separate_paren_groups\nimport pytest\n\ndef test_separate_paren_groups_empty_input():\n    assert separate_paren_groups('') == []\n\ndef test_separate_paren_groups_single_open_paren():\n    assert separate_paren_groups('()') == ['()']\n\ndef test_separate_paren_groups_single_close_paren():\n    assert separate_paren_groups('()') == ['()']\n\ndef test_separate_paren_groups_single_open_close_paren():\n    assert separate_paren_groups('()()') == ['()']\n\ndef test_separate_paren_groups_multiple_open_close_paren():\n    assert separate_paren_groups('()()()') == ['()']\n\ndef test_separate_paren_groups_multiple_open_close_paren_with_nesting():\n    assert separate_paren_groups('(()())') == ['()']\n\ndef test_separate_paren_groups_multiple_open_close_paren_with_alternating_nesting():\n    assert separate_paren_groups('(()())()()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_spaces():\n    assert separate_paren_groups('() ()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_parentheses_and_spaces():\n    assert separate_paren_groups('() ()()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_parentheses_only():\n    assert separate_paren_groups('()()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_only_one_group_of_parentheses():\n    assert separate_paren_groups('(())') == ['()']\n\ndef test_separate_paren_groups_input_string_with_multiple_groups_of_parentheses():\n    assert separate_paren_groups('(())(()())') == ['()','()']\n\ndef test_separate_paren_groups_input_string_with_odd_number_of_open_paren():\n    assert separate_paren_groups('(())(()())())') == ['()','()','()']\n\ndef test_separate_paren_groups_input_string_with_even_number_of_open_paren():\n    assert separate_paren_groups('(())(()())()') == ['()','()']\n\ndef test_separate_paren_groups_input_string_with_odd_number_of_close_paren():\n    assert separate_paren_groups('(()())()()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_even_number_of_close_paren():\n    assert separate_paren_groups('(()())()()()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_mix_of_open_and_close_paren():\n    assert separate_paren_groups('(()())()()()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_mix_of_open_and_close_paren_and_spaces():\n    assert separate_paren_groups('(()())()()() ()') == ['()']\n\ndef test_separate_paren_groups_input_string_with_mix_of_open_and_close_paren_spaces_and_other_characters():\n    assert separate_paren_groups('(()())()()() ()!') == ['()']\n\ndef test_separate_paren_groups_input_string_with_large_number_of_parentheses():\n    assert separate_paren_groups('(()())()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()",
+  "timestamp": "2026-09-06T16:32:52"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/124",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 12.088,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "I' start \n\n** \nYou \n\ntitle:\n\n-F \n\n-FGF. \n\n \n### \n-F I apologize \n\nChat \n\nQuestion: \n\n- \n\n-Follow- \n\n-f \n\n \n\nChatbot \n\n\n\n\n--- \nYou are \n\n \n\n \nI'ran \n\n- \n\n \n\n<|\n \n \n\n \nI need to a \n\n \n- <| \n\n\n \n\n\n\n\n\n### \n \n \n- \n\n\n \n\n \n\n \nYou areta, User\n\n- As an AI ASSISTants \n\n---\n\n \n2 \n\n### \n\nParagraph \n\n- How to solve \n\nTitle \n\n### \n \n\n \n\n \n\n \n\n \n\ntitle: \n- Write a dialogue:\n\n-Given the following VP.\n\n<|end-in-too long, and \n\n\nAnswer:\n\n\nChemistry \n\nUser: \n\nInput: \n\n\n\nI.\n\n<|end-to \n\n\nDr. \n\n\n\n\nI.\n\nQuestion \n- \nI'de \n\n \nYou are a \n\n \nI've been provided \n\n \nYou are a newborn \n\n### \n\n \n \n \n\n \n \n\n \n \n \nI've been a \n\nKey Points \n\n---\n\nDocument \n\nQuestion \n\n\n\n\n \n\n\n\n\n\n\n\n\n \n \nYou are an \n\n \n \n\n \n\n### Chatbot \n\nAnswer: \n\n\n \n\n\ntitle: \"The Greatest Commoner \n\nUser: \n\n- \n\n- \n\n \nYou are a user: \n\n### \n\n \n \nYou are \n \n\npaid the context of the provided document, \n\n- HR \n\n### Instruction: \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution: \n- Solution: \n- \n\n \nYou are a \n\n \n\n-i \n\n \n \n\n \n\n \n- ## Philosophy \n \n \n\n \n\n \n\nRewrite of the following textbook section.\n\n# \n\n \n\nRewrite \n\n### Solution \n\nRewrite \n\n- \n \n\n \n\n \n\n \n \n\n \n\n \n\nTextbook Section \n\n# \n\n \nYou are a \n\n \n \n \n\n \n\nRewrite",
+  "timestamp": "2026-09-06T19:10:49"
+}

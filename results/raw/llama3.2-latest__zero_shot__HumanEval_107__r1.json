@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/107",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 327,
+  "completion_tokens": 226,
+  "total_tokens": 553,
+  "duration_s": 4.118,
+  "eval_duration_s": 4.086,
+  "parsed": true,
+  "collected": 4,
+  "passed": 0,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import even_odd_palindrome\n\ndef test_even_odd_palindrome():\n    assert even_odd_palindrome(3) == (1, 2)\n    assert even_odd_palindrome(12) == (4, 6)\n    assert even_odd_palindrome(1) == (0, 1)\n    assert even_odd_palindrome(10) == (4, 6)\n    assert even_odd_palindrome(100) == (40, 60)\n\ndef test_range_inclusion():\n    assert even_odd_palindrome(5) == (2, 3)\n    assert even_odd_palindrome(15) == (6, 9)\n\ndef test_edge_cases():\n    assert even_odd_palindrome(0) == (0, 0)\n    assert even_odd_palindrome(1) == (0, 1)\n    assert even_odd_palindrome(2) == (0, 2)\n\ndef test_invalid_input():\n    with pytest.raises(TypeError):\n        even_odd_palindrome(\"hello\")\n    with pytest.raises(TypeError):\n        even_odd_palindrome(3.14)",
+  "timestamp": "2026-09-06T20:36:14"
+}

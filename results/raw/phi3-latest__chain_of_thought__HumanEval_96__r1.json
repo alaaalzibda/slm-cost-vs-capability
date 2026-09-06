@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/96",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 355,
+  "completion_tokens": 1346,
+  "total_tokens": 1701,
+  "duration_s": 22.368,
+  "eval_duration_s": 22.339,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "I's a group of \n\n\n \nYou \n-/\u7368 \n\n-Five years ago. \n \n---\n\nDocument the following sentence, you are there'de \nInstantiating a) Instruction:\n\n-fro \n\n** \n \n \nYou'de \ninstruction \n\n-Fx \n\n-Given the text of the document, \n\n%%G \n\n```python \n\n\nCraft a random sample of the following paragraph: \n\n2000 words \n\n \nI'deve been \n\nOkay, here'in \n\nDocument a) \n\n-Given \n\nCraft a text-of_BOTH \n\nCraft a comprehensive, \n\n- Instruction: \n\n- \n\nCraft a \n\n-Following \n\n- \n\nCraft a researcher, I'an \n\n### \nI'de-\n\n- \n\nQuestion: \n\n- \n\nRewrite \n\nThe \n\n### \n\ntitle \n\n \n\n\n\n\n\nI'deveiing the input: \n\n\n \n\n \n- \n\n \n\ntitle: \n\n\n\n- \n\nQuestion: \n\n- \n\n \n \nUser: \n\n- Write a \n\n \nYou are a conversation.\n\nI.\n\n\nI.\n \nYou are a \n\n\n\n\n \n \n\n\nHey, the \n\nI need to the following \n\n\n \nI's \n\n### \n\nQuestion \n\n-Given \n\nUser: \n( \n\nI need to \n\n-Give \n\n-Hey \n\nprom \n\n- Rewrite \n\n- \n\n\n\n\n \n \n\n \n\n\n\n\nChatbot: \n\nText-based reasoning \n\n- \n\n\n\n\n\n\" \n\n \n\n \n\n\n\n\n\n \nYou'utely Instruction:\n-Q: \"The \n\n \nI \n\nI'm sorry, I's \n\nInput: \n\nWrite a \n\n### \nI apologize \n\n# \nInstruction:\n\n\nassistant: \"The \n\ntitle: Noumenia, I \n\nInput: \n\nI've been \n\nTitle: I'm sorry, I apologize \n\nAb \n\n\n\n\n\n\n\n\n\n\n\n \n\n\n#### Q2: Given the following \n\n### Instruments \n\n# \n- Instruction: \n\n### \n\n \n\nRewrite \n\n \n\n \n\n \n\n \n\n \n \n\n- \n \n \n\nprompt \n\n \n \n\nQuestion.\n\n### \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n## Ex \n\n \n\nWrite a comprehensive and \n\n \n\nInput: \n\n- [ \n\nuser: Hey \n\n \n\nBased on the provided textbook-based document \n\n## Q= \n- Write a \n\n\n---\n- \nYou are a \n\nInstruction:\n\nWrite a comprehensive and \n\n \n\n \n\n\n \n\n \nDocument \n\n\n\n\n\n\n\n\n\n\n\n \n\n \n\n- [\n\n# Instruction:\n\n- HRV.\nBased on the provided text-based decision-making \n\n---\n\n# \n\n \n\nInput: \n- Solution \n\n\nGiven the following sentence:\n\n\n---\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\nrewrite \n\n \n\n \n\n\n\n \n\nSolution \n \n\nWrite a conversation\n\n- \nImagine you are a \n \n\nWrite a comprehensive, \n\nInput:\n- Solution \n \n\nWrite a comprehensive, \n\n \n\n\n\n\nthe following conversation.\n\nInstruction:\n# Instruction:\n\n\n \n\n\n\n2.\n\n \n\n\n\n\nGiven the following sentence:\n\nWrite a comprehensive, \n\nRewrite \n \n\n\n\n \n\nWrite a Python function in a \n\nGiven the following sentence \n\n\n \n\n\n\n \n\n\n\n\n\n \n\n\n\n\n\n \n\n\n \n\n### \n\n\n \n\n \n\n\n \n\n \n\n# \n\n \n\n \n\n\n \n\n \n\n \n\n\n\n\nI'm sorry, \n\n\n \n\n\n\nI'm sorry, \n\n### \n\n\n \n\n\nWrite a python \n\n\n\nI' \n\n \n\n\n\nI's \n\n\n\n \n\n\n\nI'm working on a question:\n\n\n\n\nI'm sorry, \n\n\n\n \n\n\n\n \n\n\n\nI'm sorry, I'm sorry, I'm sorry, I'm sorry, \n\n\n\n\nWrite a complex and \n\n\n\nThe assistant(\n\n\nRewritten Paragraph \n\n\n\nTitle: \"The Greatest \n\n\n\n\n \n\n## Solution:",
+  "timestamp": "2026-09-06T19:15:10"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/80",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 268,
+  "completion_tokens": 279,
+  "total_tokens": 547,
+  "duration_s": 10.617,
+  "eval_duration_s": 10.562,
+  "parsed": true,
+  "collected": 4,
+  "passed": 4,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_happy\n\n# The function is_happy checks if a string is happy.\n# A string is happy if its length is at least 3 and every 3 consecutive letters are distinct.\n# If the string's length is less than 3, it is not happy.\n# If any 3 consecutive letters are not distinct, the string is not happy.\n\n# Test cases:\n# 1. Empty string: should return False\n# 2. String with length less than 3: should return False\n# 3. String with all distinct 3 consecutive letters: should return True\n# 4. String with at least one set of non-distinct 3 consecutive letters: should return False\n\ndef test_empty_string():\n    assert is_happy(\"\") == False\n\ndef test_length_less_than_3():\n    assert is_happy(\"a\") == False\n    assert is_happy(\"ab\") == False\n\ndef test_distinct_3_consecutive_letters():\n    assert is_happy(\"abc\") == True\n    assert is_happy(\"adb\") == True\n    assert is_happy(\"xyz\") == True\n\ndef test_non_distinct_3_consecutive_letters():\n    assert is_happy(\"aa\") == False\n    assert is_happy(\"aab\") == False\n    assert is_happy(\"xyy\") == False",
+  "timestamp": "2026-09-06T16:59:23"
+}

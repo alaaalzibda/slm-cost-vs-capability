@@ -1,0 +1,359 @@
+model,strategy,task_id,rep,n_calls,prompt_tokens,completion_tokens,total_tokens,duration_s,eval_duration_s,parsed,collected,passed,failed,errors,line_coverage,branch_coverage,no_module_import,error
+llama3.2:latest,chain_of_thought,HumanEval/106,0,1,279,431,710,7.972,7.816,True,7,6,1,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/106,1,1,279,313,592,5.705,5.661,True,8,3,5,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/107,0,1,372,325,697,6.077,5.901,True,7,3,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/107,1,1,372,511,883,9.374,9.337,True,1,0,1,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/110,0,1,352,401,753,7.49,7.286,True,6,5,1,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/110,1,1,352,361,713,6.61,6.551,True,5,2,3,0,90.9090909090909,90.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/124,0,1,420,501,921,9.331,9.149,True,6,4,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/124,1,1,420,371,791,6.793,6.719,True,11,9,2,0,91.66666666666667,87.5,False,
+llama3.2:latest,chain_of_thought,HumanEval/143,0,1,306,329,635,6.106,5.938,True,6,2,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/143,1,1,306,272,578,4.937,4.899,True,7,1,6,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/146,0,1,276,297,573,5.5,5.334,True,8,5,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/146,1,1,276,510,786,9.269,9.228,True,0,0,0,0,,,False,"_specialFilter()
+test_generated.py:17: in test_specialFilter
+    assert specialFilter([15, -73, 14, -15]) == 2
+E   assert 1 == 2
+E    +  where 1 = specialFilter([15, -73, 14, -15])
+=========================== short test summary info ============================
+ERROR test_generated.py - assert 1 == 2
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.10s
+"
+llama3.2:latest,chain_of_thought,HumanEval/148,0,1,366,344,710,6.409,6.21,True,6,6,0,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/148,1,1,366,386,752,7.005,6.971,True,7,7,0,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/154,0,1,289,307,596,5.674,5.518,True,9,7,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/154,1,1,289,397,686,7.194,7.153,True,3,1,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/1,0,1,277,400,677,7.704,7.487,True,10,5,5,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/1,1,1,277,349,626,6.441,6.304,True,7,4,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/24,0,1,212,322,534,6.672,6.449,True,7,2,5,0,87.5,75.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/24,1,1,212,266,478,4.904,4.768,True,7,3,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/31,0,1,256,244,500,5.163,5.005,True,8,8,0,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/31,1,1,256,334,590,6.139,6.002,True,5,3,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/32,0,1,416,440,856,8.117,7.971,True,6,2,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/32,1,1,416,665,1081,12.151,12.103,True,8,0,8,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/35,0,1,239,393,632,7.23,7.073,True,8,7,1,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/35,1,1,239,296,535,5.345,5.307,True,5,3,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/39,0,1,256,369,625,6.776,6.635,True,0,0,0,0,,,False,timeout
+llama3.2:latest,chain_of_thought,HumanEval/39,1,1,256,307,563,5.59,5.511,True,0,0,0,0,,,False,timeout
+llama3.2:latest,chain_of_thought,HumanEval/55,0,1,207,306,513,5.645,5.479,True,0,0,0,0,,,False,timeout
+llama3.2:latest,chain_of_thought,HumanEval/55,1,1,207,276,483,5.005,4.94,True,4,2,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/59,0,1,223,276,499,5.091,4.942,True,6,3,3,0,91.30434782608695,90.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/59,1,1,223,323,546,5.834,5.792,True,6,5,1,0,91.30434782608695,90.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/64,0,1,285,498,783,9.157,9.011,True,7,3,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/64,1,1,285,428,713,7.765,7.719,True,7,4,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/67,0,1,367,528,895,9.739,9.573,True,7,3,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/67,1,1,367,366,733,6.677,6.608,True,4,1,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/68,0,1,468,450,918,8.368,8.178,True,8,6,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/68,1,1,468,438,906,7.986,7.951,True,8,7,1,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/73,0,1,315,570,885,10.522,10.324,True,8,5,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/73,1,1,315,449,764,8.182,8.123,True,8,5,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/74,0,1,350,383,733,7.109,6.921,True,8,6,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/74,1,1,350,427,777,7.766,7.715,True,10,10,0,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/80,0,1,280,412,692,7.583,7.424,True,6,4,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/80,1,1,280,287,567,5.211,5.153,True,7,6,1,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/92,0,1,292,507,799,9.301,9.162,True,5,3,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/92,1,1,292,519,811,9.436,9.378,True,5,1,4,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/94,0,1,449,516,965,9.537,9.38,True,8,6,2,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/94,1,1,449,630,1079,11.545,11.509,True,6,3,3,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/96,0,1,304,1385,1689,25.739,25.547,True,21,2,19,0,100.0,100.0,False,
+llama3.2:latest,chain_of_thought,HumanEval/96,1,1,304,306,610,5.666,5.544,True,8,6,2,0,100.0,100.0,False,
+llama3.2:latest,least_to_most,HumanEval/1,0,2,187,214,401,17.262,4.016,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+llama3.2:latest,least_to_most,HumanEval/1,1,2,663,723,1386,13.885,13.073,True,15,3,12,0,100.0,100.0,False,
+llama3.2:latest,least_to_most,HumanEval/24,0,2,589,636,1225,12.28,11.445,True,10,0,10,0,87.5,75.0,False,
+llama3.2:latest,least_to_most,HumanEval/24,1,2,582,661,1243,12.725,11.906,True,10,2,8,0,87.5,75.0,False,
+llama3.2:latest,least_to_most,HumanEval/31,0,2,686,629,1315,12.194,11.329,True,13,12,1,0,100.0,100.0,False,
+llama3.2:latest,least_to_most,HumanEval/31,1,2,589,496,1085,9.642,8.938,True,12,9,3,0,100.0,100.0,False,
+llama3.2:latest,least_to_most,HumanEval/32,0,2,912,1161,2073,22.27,21.272,True,0,0,0,0,,,False,timeout
+llama3.2:latest,zero_shot,HumanEval/106,0,1,234,201,435,3.963,3.621,True,6,1,5,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/106,1,1,234,170,404,3.084,3.054,True,4,1,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/107,0,1,327,157,484,3.349,2.85,True,6,3,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/107,1,1,327,226,553,4.118,4.086,True,4,0,4,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/110,0,1,307,199,506,4.044,3.595,True,6,5,1,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/110,1,1,307,293,600,5.339,5.305,True,5,2,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/124,0,1,375,289,664,5.808,5.25,True,6,4,2,0,91.66666666666667,87.5,False,
+llama3.2:latest,zero_shot,HumanEval/124,1,1,375,308,683,5.627,5.594,True,6,5,1,0,83.33333333333333,75.0,False,
+llama3.2:latest,zero_shot,HumanEval/143,0,1,261,232,493,4.589,4.189,True,9,5,4,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/143,1,1,261,185,446,3.362,3.33,True,7,2,5,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/146,0,1,231,221,452,4.329,3.986,True,8,5,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/146,1,1,231,203,434,3.689,3.653,True,8,7,1,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/148,0,1,321,158,479,3.356,2.85,True,6,6,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/148,1,1,321,152,473,2.774,2.738,True,6,4,2,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/154,0,1,244,226,470,4.42,4.072,True,6,5,1,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/154,1,1,244,225,469,4.336,4.298,True,6,3,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/1,0,1,232,227,459,6.327,4.07,True,7,3,4,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/1,1,1,232,188,420,5.92,3.359,True,6,4,2,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/24,0,1,167,102,269,2.139,1.895,True,4,2,2,0,87.5,75.0,False,
+llama3.2:latest,zero_shot,HumanEval/24,1,1,167,120,287,2.376,2.137,True,5,2,3,0,87.5,75.0,False,
+llama3.2:latest,zero_shot,HumanEval/31,0,1,211,197,408,4.389,4.075,True,7,7,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/31,1,1,211,170,381,3.699,3.391,True,6,6,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/32,0,1,371,267,638,5.818,5.26,True,0,0,0,0,,,False,timeout
+llama3.2:latest,zero_shot,HumanEval/32,1,1,371,336,707,6.203,6.144,True,0,0,0,0,,,False,timeout
+llama3.2:latest,zero_shot,HumanEval/35,0,1,194,218,412,4.352,4.047,True,8,7,1,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/35,1,1,194,222,416,4.166,4.12,True,7,6,1,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/39,0,1,211,176,387,3.986,3.683,True,8,5,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/39,1,1,211,176,387,3.72,3.68,True,8,5,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/55,0,1,162,138,300,2.702,2.47,True,6,4,2,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/55,1,1,162,148,310,2.678,2.647,True,6,4,2,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/59,0,1,178,173,351,3.344,3.105,True,5,3,2,0,91.30434782608695,90.0,False,
+llama3.2:latest,zero_shot,HumanEval/59,1,1,178,151,329,2.739,2.704,True,6,3,3,0,91.30434782608695,90.0,False,
+llama3.2:latest,zero_shot,HumanEval/64,0,1,240,236,476,4.87,4.53,True,9,3,6,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/64,1,1,240,232,472,4.223,4.19,True,9,4,5,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/67,0,1,322,296,618,6.227,5.723,True,5,2,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/67,1,1,322,187,509,3.41,3.375,True,4,3,1,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/68,0,1,423,234,657,4.909,4.248,True,7,7,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/68,1,1,423,231,654,4.229,4.194,True,7,7,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/73,0,1,270,238,508,4.699,4.294,True,7,5,2,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/73,1,1,270,238,508,4.329,4.291,True,7,5,2,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/74,0,1,305,172,477,3.559,3.104,True,5,5,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/74,1,1,305,173,478,3.174,3.135,True,5,5,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/80,0,1,235,201,436,3.965,3.617,True,9,9,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/80,1,1,235,201,436,3.654,3.618,True,9,9,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/92,0,1,247,189,436,3.75,3.405,True,7,7,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/92,1,1,247,187,434,3.398,3.366,True,7,7,0,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/94,0,1,404,579,983,11.206,10.592,True,5,2,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/94,1,1,404,886,1290,16.377,16.322,True,5,2,3,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/96,0,1,259,238,497,4.719,4.295,True,8,4,4,0,100.0,100.0,False,
+llama3.2:latest,zero_shot,HumanEval/96,1,1,259,196,455,3.56,3.529,True,6,5,1,0,100.0,100.0,False,
+phi3:latest,chain_of_thought,HumanEval/106,0,1,303,135,438,2.76,2.026,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/106,1,1,0,0,0,13.813,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/107,0,1,0,0,0,22.883,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/107,1,1,0,0,0,22.506,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/110,0,1,377,173,550,3.679,2.683,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/110,1,1,377,90,467,1.382,1.359,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/124,0,1,0,0,0,20.349,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 6)"
+phi3:latest,chain_of_thought,HumanEval/124,1,1,0,0,0,12.928,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/143,0,1,352,90,442,2.137,1.35,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/143,1,1,0,0,0,20.246,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/146,0,1,0,0,0,3.489,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 8)"
+phi3:latest,chain_of_thought,HumanEval/146,1,1,305,155,460,2.396,2.35,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 10)"
+phi3:latest,chain_of_thought,HumanEval/148,0,1,419,25,444,1.204,0.367,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/148,1,1,419,24,443,0.376,0.352,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 3)"
+phi3:latest,chain_of_thought,HumanEval/154,0,1,322,640,962,11.157,10.039,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/154,1,1,0,0,0,9.884,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/1,0,1,317,348,665,5.974,5.343,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/1,1,1,317,484,801,7.704,7.527,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/24,0,1,237,209,446,3.631,3.135,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,chain_of_thought,HumanEval/24,1,1,237,426,663,6.579,6.554,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,chain_of_thought,HumanEval/31,0,1,0,0,0,1.798,0.0,False,0,0,0,0,,,False,"SyntaxError: unexpected indent (test_generated.py, line 2)"
+phi3:latest,chain_of_thought,HumanEval/31,1,1,295,151,446,2.316,2.27,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/32,0,1,465,319,784,5.919,5.004,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/32,1,1,465,80,545,1.247,1.222,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/35,0,1,0,0,0,2.321,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/35,1,1,264,130,394,1.997,1.95,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/39,0,1,288,104,392,2.091,1.554,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/39,1,1,288,97,385,1.467,1.446,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/55,0,1,230,322,552,5.74,4.879,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/55,1,1,0,0,0,22.826,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/59,0,1,254,183,437,3.408,2.731,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 2)"
+phi3:latest,chain_of_thought,HumanEval/59,1,1,254,216,470,3.264,3.242,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/64,0,1,326,120,446,2.425,1.806,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/64,1,1,326,112,438,1.706,1.683,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 6)"
+phi3:latest,chain_of_thought,HumanEval/67,0,1,431,1166,1597,20.567,19.262,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/67,1,1,0,0,0,9.207,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/68,0,1,530,727,1257,12.808,11.777,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/68,1,1,530,278,808,4.613,4.37,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/73,0,1,339,97,436,2.111,1.47,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 10)"
+phi3:latest,chain_of_thought,HumanEval/73,1,1,0,0,0,20.389,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 6)"
+phi3:latest,chain_of_thought,HumanEval/74,0,1,395,51,446,1.721,0.764,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/74,1,1,0,0,0,12.868,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/80,0,1,311,81,392,1.929,1.211,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/80,1,1,0,0,0,11.634,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/92,0,1,0,0,0,8.775,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/92,1,1,334,482,816,8.469,7.491,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/94,0,1,509,44,553,1.62,0.667,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/94,1,1,0,0,0,16.556,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/96,0,1,355,82,437,2.09,1.232,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,chain_of_thought,HumanEval/96,1,1,355,1346,1701,22.368,22.339,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/1,0,2,2256,7699,9955,159.818,154.014,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/1,1,2,2256,20420,22676,430.964,424.993,True,0,0,0,0,,,False,"
+WARNING: Failed to generate report: No data to report.
+
+
+no tests ran in 0.02s
+"
+phi3:latest,least_to_most,HumanEval/24,0,2,2177,13380,15557,281.638,276.315,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/24,1,2,2177,6564,8741,135.988,130.489,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/31,0,2,2675,4358,7033,96.632,84.711,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/31,1,2,828,716,1544,23.688,12.357,True,19,18,1,0,100.0,100.0,False,
+phi3:latest,least_to_most,HumanEval/32,0,2,2407,4037,6444,84.695,78.755,True,2,0,2,0,0.0,0.0,True,
+phi3:latest,least_to_most,HumanEval/32,1,2,2407,24896,27303,536.216,525.994,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/35,0,2,2206,12754,14960,274.296,266.007,True,2,0,2,0,0.0,0.0,True,
+phi3:latest,least_to_most,HumanEval/35,1,2,2050,430,2480,598.987,8.304,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/39,0,2,179,14601,14780,338.327,309.509,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/39,1,2,0,0,0,386.662,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/55,0,2,2174,8894,11068,192.427,180.99,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,least_to_most,HumanEval/55,1,2,0,0,0,556.742,0.0,True,0,0,0,0,,,False,"test_generated.py ______________________
+test_generated.py:1: in <module>
+    Documentation/text
+E   NameError: name 'Documentation' is not defined
+=========================== short test summary info ============================
+ERROR test_generated.py - NameError: name 'Documentation' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.09s
+"
+phi3:latest,zero_shot,HumanEval/106,0,1,253,182,435,3.249,2.733,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 2)"
+phi3:latest,zero_shot,HumanEval/106,1,1,253,192,445,2.914,2.891,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 2)"
+phi3:latest,zero_shot,HumanEval/107,0,1,371,75,446,1.788,1.125,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/107,1,1,371,82,453,1.255,1.233,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/110,0,1,0,0,0,30.525,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/110,1,1,0,0,0,25.07,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/124,0,1,0,0,0,18.985,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 3)"
+phi3:latest,zero_shot,HumanEval/124,1,1,0,0,0,12.088,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/143,0,1,302,132,434,3.751,1.986,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/143,1,1,302,100,402,1.532,1.503,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/146,0,1,255,147,402,2.705,2.22,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,zero_shot,HumanEval/146,1,1,255,147,402,2.24,2.218,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 2)"
+phi3:latest,zero_shot,HumanEval/148,0,1,369,47,416,1.78,0.701,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 3)"
+phi3:latest,zero_shot,HumanEval/148,1,1,369,100,469,1.532,1.507,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 3)"
+phi3:latest,zero_shot,HumanEval/154,0,1,272,165,437,2.93,2.477,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 8)"
+phi3:latest,zero_shot,HumanEval/154,1,1,272,279,551,4.26,4.236,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,zero_shot,HumanEval/1,0,1,267,323,590,7.754,5.287,True,9,4,5,0,100.0,100.0,False,
+phi3:latest,zero_shot,HumanEval/1,1,1,267,284,551,4.376,4.317,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 11)"
+phi3:latest,zero_shot,HumanEval/24,0,1,187,346,533,5.539,5.214,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 8)"
+phi3:latest,zero_shot,HumanEval/24,1,1,187,251,438,3.8,3.756,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 11)"
+phi3:latest,zero_shot,HumanEval/31,0,1,245,116,361,2.108,1.728,True,1,1,0,0,100.0,100.0,False,
+phi3:latest,zero_shot,HumanEval/31,1,1,245,116,361,1.756,1.726,True,1,1,0,0,100.0,100.0,False,
+phi3:latest,zero_shot,HumanEval/32,0,1,415,455,870,7.904,7.145,True,6,2,4,0,100.0,100.0,False,
+phi3:latest,zero_shot,HumanEval/32,1,1,415,495,910,8.172,8.027,True,0,0,0,0,,,False,timeout
+phi3:latest,zero_shot,HumanEval/35,0,1,214,220,434,3.871,3.351,True,5,4,1,0,100.0,100.0,False,
+phi3:latest,zero_shot,HumanEval/35,1,1,214,222,436,3.49,3.379,True,5,4,1,0,100.0,100.0,False,
+phi3:latest,zero_shot,HumanEval/39,0,1,238,812,1050,13.427,12.983,True,0,0,0,0,,,False,timeout
+phi3:latest,zero_shot,HumanEval/39,1,1,238,7120,7358,144.21,143.901,False,0,0,0,0,,,False,"SyntaxError: expected an indented block (test_generated.py, line 125)"
+phi3:latest,zero_shot,HumanEval/55,0,1,180,2496,2676,47.959,46.997,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/55,1,1,180,3882,4062,89.359,88.855,False,0,0,0,0,,,False,"SyntaxError: expected an indented block (test_generated.py, line 17)"
+phi3:latest,zero_shot,HumanEval/59,0,1,204,808,1012,16.636,15.485,False,0,0,0,0,,,False,"SyntaxError: expected an indented block (test_generated.py, line 64)"
+phi3:latest,zero_shot,HumanEval/59,1,1,204,1215,1419,23.003,22.814,False,0,0,0,0,,,False,"SyntaxError: unexpected indent (test_generated.py, line 3)"
+phi3:latest,zero_shot,HumanEval/64,0,1,0,0,0,7.949,0.0,True,7,0,7,0,0.0,0.0,True,
+phi3:latest,zero_shot,HumanEval/64,1,1,276,12037,12313,253.385,253.254,False,0,0,0,0,,,False,"SyntaxError: expected an indented block (test_generated.py, line 52)"
+phi3:latest,zero_shot,HumanEval/67,0,1,0,0,0,116.795,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/67,1,1,381,14,395,1.338,0.198,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/68,0,1,480,352,832,6.87,5.548,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/68,1,1,480,1224,1704,20.479,20.453,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/73,0,1,289,147,436,3.036,2.217,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/73,1,1,289,178,467,2.706,2.684,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/74,0,1,345,50,395,1.359,0.74,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/74,1,1,345,100,445,1.525,1.503,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 1)"
+phi3:latest,zero_shot,HumanEval/80,0,1,261,201,462,3.519,3.026,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,zero_shot,HumanEval/80,1,1,261,182,443,2.758,2.736,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,zero_shot,HumanEval/92,0,1,284,151,435,2.858,2.272,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,zero_shot,HumanEval/92,1,1,0,0,0,14.443,0.0,False,0,0,0,0,,,False,"SyntaxError: EOL while scanning string literal (test_generated.py, line 10)"
+phi3:latest,zero_shot,HumanEval/94,0,1,0,0,0,22.345,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 3)"
+phi3:latest,zero_shot,HumanEval/94,1,1,0,0,0,28.475,0.0,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 3)"
+phi3:latest,zero_shot,HumanEval/96,0,1,305,139,444,5.037,2.1,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+phi3:latest,zero_shot,HumanEval/96,1,1,305,81,386,1.229,1.206,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 4)"
+qwen2.5-coder:7b,chain_of_thought,HumanEval/106,0,1,269,338,607,13.191,12.797,True,6,5,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/106,1,1,269,355,624,13.507,13.442,True,7,7,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/107,0,1,363,509,872,19.749,19.313,True,6,5,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/107,1,1,363,529,892,20.233,20.163,True,6,3,3,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/110,0,1,340,480,820,18.722,18.224,True,7,7,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/110,1,1,340,323,663,12.332,12.264,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/124,0,1,434,661,1095,26.166,25.621,True,12,9,3,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/124,1,1,434,405,839,15.459,15.384,True,10,9,1,0,83.33333333333333,75.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/143,0,1,296,1246,1542,48.687,48.251,True,32,29,3,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/143,1,1,296,191,487,7.317,7.236,True,5,3,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/146,0,1,274,517,791,20.41,19.922,True,8,6,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/146,1,1,274,292,566,11.286,11.202,True,6,5,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/148,0,1,354,345,699,13.818,13.461,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/148,1,1,354,262,616,10.181,10.114,True,5,0,5,0,0.0,0.0,True,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/154,0,1,277,404,681,15.695,15.305,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/154,1,1,277,410,687,16.922,16.852,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/1,0,1,265,228,493,9.136,8.856,True,6,5,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/1,1,1,265,249,514,9.487,9.424,True,7,7,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/24,0,1,201,251,452,9.783,9.497,True,5,4,1,0,87.5,75.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/24,1,1,201,305,506,11.541,11.478,True,7,6,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/31,0,1,251,305,556,11.824,11.55,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/31,1,1,251,216,467,8.246,8.183,True,7,6,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/32,0,1,406,320,726,12.429,12.136,True,3,3,0,0,85.0,83.33,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/32,1,1,406,569,975,21.655,21.591,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,chain_of_thought,HumanEval/35,0,1,232,199,431,7.817,7.482,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/35,1,1,232,227,459,8.603,8.549,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/39,0,1,246,286,532,11.048,10.772,True,3,2,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/39,1,1,246,390,636,14.787,14.723,True,9,6,3,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/55,0,1,198,305,503,11.774,11.486,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,chain_of_thought,HumanEval/55,1,1,198,589,787,22.393,22.287,False,0,0,0,0,,,False,"SyntaxError: invalid syntax (test_generated.py, line 35)"
+qwen2.5-coder:7b,chain_of_thought,HumanEval/59,0,1,217,308,525,11.916,11.646,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,chain_of_thought,HumanEval/59,1,1,217,2508,2725,96.737,96.594,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,chain_of_thought,HumanEval/64,0,1,273,1236,1509,47.375,46.983,True,20,7,13,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/64,1,1,273,411,684,15.649,15.561,True,10,8,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/67,0,1,371,886,1257,34.018,33.711,True,9,4,5,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/67,1,1,371,660,1031,25.107,25.032,True,7,4,3,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/68,0,1,459,609,1068,23.454,23.132,True,10,10,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/68,1,1,459,534,993,20.364,20.291,True,8,7,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/73,0,1,303,523,826,20.096,19.804,True,8,8,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/73,1,1,303,427,730,16.255,16.185,True,9,8,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/74,0,1,338,226,564,8.858,8.561,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/74,1,1,338,287,625,10.936,10.876,True,6,5,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/80,0,1,268,264,532,10.28,9.999,True,4,4,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/80,1,1,268,279,547,10.617,10.562,True,4,4,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/92,0,1,280,553,833,21.392,21.105,True,2,0,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/92,1,1,280,295,575,11.249,11.172,True,3,2,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/94,0,,,,,,,False,,,,,,,,timeout: timed out
+qwen2.5-coder:7b,chain_of_thought,HumanEval/94,1,1,478,696,1174,28.516,26.482,True,12,12,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/96,0,1,302,305,607,12.005,11.566,True,6,5,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,chain_of_thought,HumanEval/96,1,1,302,261,563,9.942,9.882,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/1,0,2,627,463,1090,19.913,18.009,True,10,9,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/1,1,2,664,494,1158,19.73,18.679,True,10,9,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/24,0,2,516,442,958,18.589,16.931,True,10,9,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/24,1,2,557,518,1075,21.022,19.619,True,9,3,6,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/31,0,,,,,,,False,,,,,,,,timeout: timed out
+qwen2.5-coder:7b,least_to_most,HumanEval/31,1,2,514,260,774,12.106,10.344,True,8,8,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/32,0,,,,,,,False,,,,,,,,timeout: timed out
+qwen2.5-coder:7b,least_to_most,HumanEval/32,1,2,1130,801,1931,34.589,30.913,True,11,1,10,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/35,0,2,551,583,1134,23.73,22.08,True,15,10,5,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/35,1,2,564,623,1187,24.186,23.62,True,15,8,7,0,100.0,100.0,False,
+qwen2.5-coder:7b,least_to_most,HumanEval/39,0,2,868,863,1731,35.747,32.793,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,least_to_most,HumanEval/39,1,,,,,,,False,,,,,,,,timeout: timed out
+qwen2.5-coder:7b,least_to_most,HumanEval/55,0,2,977,2243,3220,90.737,87.055,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,least_to_most,HumanEval/55,1,2,391,228,619,10.262,8.501,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,least_to_most,HumanEval/59,0,,,,,,,False,,,,,,,,timeout: timed out
+qwen2.5-coder:7b,zero_shot,HumanEval/106,0,1,224,133,357,5.75,5.014,True,5,5,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/106,1,1,224,133,357,5.089,5.029,True,5,5,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/107,0,1,318,182,500,7.98,6.883,True,5,2,3,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/107,1,1,318,149,467,5.674,5.623,True,5,3,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/110,0,1,295,317,612,13.115,12.147,True,10,9,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/110,1,1,295,290,585,11.798,11.735,True,9,9,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/124,0,1,389,271,660,12.598,11.228,True,4,3,1,0,83.33333333333333,75.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/124,1,1,389,290,679,12.244,12.184,True,4,2,2,0,83.33333333333333,75.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/143,0,1,251,214,465,9.922,9.047,True,8,6,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/143,1,1,251,150,401,6.109,6.049,True,6,2,4,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/146,0,1,229,236,465,10.951,10.099,True,7,6,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/146,1,1,229,198,427,8.222,8.161,True,7,6,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/148,0,1,309,173,482,8.154,6.948,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/148,1,1,309,173,482,7.112,7.05,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/154,0,1,232,158,390,7.011,6.237,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/154,1,1,232,162,394,6.458,6.4,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/1,0,1,220,180,400,14.202,7.345,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/1,1,1,220,180,400,7.712,7.629,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/24,0,1,156,138,294,6.149,5.545,True,6,4,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/24,1,1,156,133,289,5.058,5.003,True,6,4,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/31,0,1,206,148,354,6.198,5.576,True,3,3,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/31,1,1,206,101,307,4.358,4.304,True,2,2,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/32,0,1,361,138,499,6.473,5.249,True,4,2,2,0,85.0,83.33,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/32,1,1,361,159,520,6.281,6.224,True,5,3,2,0,85.0,83.33,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/35,0,1,187,163,350,6.979,6.324,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/35,1,1,187,153,340,5.822,5.767,True,5,4,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/39,0,1,201,114,315,4.918,4.289,True,5,5,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/39,1,1,201,109,310,4.155,4.096,True,5,5,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/55,0,1,153,65,218,2.934,2.429,True,3,3,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/55,1,1,153,60,213,2.504,2.449,True,3,3,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/59,0,1,172,161,333,6.913,6.4,True,0,0,0,0,,,False,timeout
+qwen2.5-coder:7b,zero_shot,HumanEval/59,1,1,172,64,236,2.505,2.389,True,2,2,0,0,91.30434782608695,90.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/64,0,1,228,190,418,8.186,7.414,True,8,7,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/64,1,1,228,209,437,8.223,8.161,True,7,5,2,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/67,0,1,326,102,428,5.013,3.855,True,1,1,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/67,1,1,326,132,458,5.032,4.977,True,4,4,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/68,0,1,414,218,632,9.766,8.27,True,8,8,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/68,1,1,414,193,607,7.329,7.266,True,4,4,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/73,0,1,258,250,508,10.329,9.459,True,7,7,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/73,1,1,258,240,498,9.138,9.077,True,7,7,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/74,0,1,293,160,453,7.014,6.041,True,5,5,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/74,1,1,293,169,462,6.451,6.387,True,5,5,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/80,0,1,223,88,311,4.521,3.624,True,2,2,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/80,1,1,223,214,437,8.134,8.081,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/92,0,1,235,284,519,11.769,11.011,True,2,1,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/92,1,1,235,140,375,5.552,5.49,True,2,1,1,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/94,0,1,433,355,788,15.437,13.63,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/94,1,1,433,361,794,14.251,14.185,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/96,0,1,257,192,449,8.135,7.258,True,6,6,0,0,100.0,100.0,False,
+qwen2.5-coder:7b,zero_shot,HumanEval/96,1,1,257,192,449,7.314,7.252,True,6,6,0,0,100.0,100.0,False,

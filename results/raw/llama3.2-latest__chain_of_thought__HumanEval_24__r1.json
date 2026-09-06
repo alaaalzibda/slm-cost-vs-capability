@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/24",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 212,
+  "completion_tokens": 266,
+  "total_tokens": 478,
+  "duration_s": 4.904,
+  "eval_duration_s": 4.768,
+  "parsed": true,
+  "collected": 7,
+  "passed": 3,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function should return the largest divisor of n, which is smaller than n.\n# It should handle edge cases like n = 1, n = 0, and negative numbers.\n# It should also handle cases where n is a prime number.\n\nfrom solution import largest_divisor\n\ndef test_largest_divisor_even_number():\n    # Test with an even number\n    assert largest_divisor(10) == 5\n\ndef test_largest_divisor_odd_number():\n    # Test with an odd number\n    assert largest_divisor(11) == 1\n\ndef test_largest_divisor_zero():\n    # Test with zero\n    assert largest_divisor(0) == 0\n\ndef test_largest_divisor_negative_number():\n    # Test with a negative number\n    assert largest_divisor(-5) == -5\n\ndef test_largest_divisor_prime_number():\n    # Test with a prime number\n    assert largest_divisor(7) == 1\n\ndef test_largest_divisor_one():\n    # Test with 1\n    assert largest_divisor(1) == 1\n\ndef test_largest_divisor_large_number():\n    # Test with a large number\n    assert largest_divisor(1000) == 1",
+  "timestamp": "2026-09-06T20:37:21"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/146",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 305,
+  "completion_tokens": 155,
+  "total_tokens": 460,
+  "duration_s": 2.396,
+  "eval_duration_s": 2.35,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 10)",
+  "generated_code": "You \n\n\nChapter \n\n \n\n\n \nYou'in a \n\n \nYou \n\nYour task:\n\n\n\n20 \n\n\n\n```python \nBGI/\n\n\n  \n1. \n\n\n2.\n\nI'in \n\n-Given \n\nDocument: \n\n- Correct \n\n \n- [user: \n\nInput:\n\n\n\n\n**q2/3\n\n\nI'm looking for me.\n\nQuestion: What is the following sentence, \n\nInstruction: \n\nInstruction: \n\n\ndrafts",
+  "timestamp": "2026-09-06T19:17:19"
+}

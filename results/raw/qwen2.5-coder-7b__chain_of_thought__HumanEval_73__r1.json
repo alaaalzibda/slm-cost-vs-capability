@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/73",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 303,
+  "completion_tokens": 427,
+  "total_tokens": 730,
+  "duration_s": 16.255,
+  "eval_duration_s": 16.185,
+  "parsed": true,
+  "collected": 9,
+  "passed": 8,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import smallest_change\n\n# The function should return the minimum number of changes required to make the array palindromic.\n# An empty array or an array with one element is already palindromic, so no changes are needed.\n# For an array with an even number of elements, the first half should match the reversed second half.\n# For an array with an odd number of elements, the first half should match the reversed second half, ignoring the middle element.\n# If the array is already palindromic, the function should return 0.\n# If the array cannot be made palindromic, the function should return the length of the array.\n\ndef test_empty_array():\n    assert smallest_change([]) == 0\n\ndef test_single_element():\n    assert smallest_change([1]) == 0\n\ndef test_even_palindromic_array():\n    assert smallest_change([1, 2, 3, 2, 1]) == 0\n\ndef test_even_non_palindromic_array():\n    assert smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1\n\ndef test_odd_palindromic_array():\n    assert smallest_change([1, 2, 3, 2, 1]) == 0\n\ndef test_odd_non_palindromic_array():\n    assert smallest_change([1, 2, 3, 5, 4, 7, 9, 6]) == 4\n\ndef test_array_with_all_elements_same():\n    assert smallest_change([1, 1, 1, 1]) == 0\n\ndef test_array_with_all_elements_different():\n    assert smallest_change([1, 2, 3, 4, 5, 6, 7, 8, 9]) == 4\n\ndef test_array_with_one_element_different():\n    assert smallest_change([1, 2, 3, 4, 5, 6, 7, 8, 10]) == 1",
+  "timestamp": "2026-09-06T16:58:41"
+}

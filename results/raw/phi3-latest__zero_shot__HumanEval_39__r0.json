@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/39",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 238,
+  "completion_tokens": 812,
+  "total_tokens": 1050,
+  "duration_s": 13.427,
+  "eval_duration_s": 12.983,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "from solution import prime_fib\n\n\ndef test_prime_fib_first_value():\n\n    assert prime_fib(1) == 2\n\n\ndef test_prime_fib_second_value():\n\n    assert prime_fib(2) == 3\n\n\ndef test_prime_fib_third_value():\n\n    assert prime_fib(3) == 5\n\n\ndef test_prime_fib_fourth_value():\n\n    assert prime_fib(4) == 13\n\n\ndef test_prime_fib_fifth_value():\n\n    assert prime_fib(5) == 89\n\n\ndef test_prime_fib_sixth_value():\n\n    assert prime_fib(6) == 233\n\n\ndef test_prime_fib_seventh_value():\n\n    assert prime_fib(7) == 377\n\n\ndef test_prime_fib_eighth_value():\n\n    assert prime_fib(8) == 610\n\n\ndef test_prime_fib_ninth_value():\n\n    assert prime_fib(9) == 987\n\n\ndef test_prime_fib_tenth_value():\n\n    assert prime_fib(10) == 1597\n\n\ndef test_prime_fib_eleventh_value():\n\n    assert prime_fib(11) == 2584\n\n\ndef test_prime_fib_twelfth_value():\n\n    assert prime_fib(12) == 4181\n\n\ndef test_prime_fib_thirteenth_value():\n\n    assert prime_fib(13) == 75401\n\n\ndef test_prime_fib_fourteenth_value():\n\n    assert prime_fib(14) == 1089151\n\n\ndef test_prime_fib_fifteenth_value():\n\n    assert prime_fib(15) == 177635681\n\n\ndef test_prime_fib_sixteenth_value():\n\n    assert prime_fib(16) == 28657\n\n\ndef test_prime_fib_seventeenth_value():\n\n    assert prime_fib(17) == 514229\n\n\ndef test_prime_fib_eighteenth_value():\n\n    assert prime_fib(18) == 1346269\n\n\ndef test_prime_fib_nineteenth_value():\n\n    assert prime_fib(19) == 2178309\n\n\ndef test_prime_fib_twentieth_value():\n\n    assert prime_fib(20) == 302747\n\n\ndef test_prime_fib_twenty_first_value():\n\n    assert prime_fib(21) == 5702887\n\n\ndef test_prime_fib_twenty_second_value():\n\n    assert prime_fib(22) == 1070507\n\n\ndef test_prime_fib_twenty_third_value():\n\n    assert prime_fib(23) == 286571",
+  "timestamp": "2026-09-06T18:55:35"
+}

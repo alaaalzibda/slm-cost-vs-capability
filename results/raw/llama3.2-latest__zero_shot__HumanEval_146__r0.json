@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/146",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 231,
+  "completion_tokens": 221,
+  "total_tokens": 452,
+  "duration_s": 4.329,
+  "eval_duration_s": 3.986,
+  "parsed": true,
+  "collected": 8,
+  "passed": 5,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import specialFilter\n\ndef test_specialFilter_empty_array():\n    assert specialFilter([]) == 0\n\ndef test_specialFilter_no_odd_digits():\n    assert specialFilter([12, 14, 15]) == 0\n\ndef test_specialFilter_no_odd_first_last_digits():\n    assert specialFilter([15, 14, 16]) == 0\n\ndef test_specialFilter_single_element():\n    assert specialFilter([15]) == 1\n\ndef test_specialFilter_multiple_elements():\n    assert specialFilter([15, 33, 14, -73, 14, -15]) == 2\n\ndef test_specialFilter_negative_numbers():\n    assert specialFilter([15, -73, -14, 15]) == 2\n\ndef test_specialFilter_all_odd_digits():\n    assert specialFilter([15, 35, 55, 75, 95]) == 5\n\ndef test_specialFilter_mixed_odd_digits():\n    assert specialFilter([15, 14, 35, 73, 95]) == 3",
+  "timestamp": "2026-09-06T20:36:49"
+}

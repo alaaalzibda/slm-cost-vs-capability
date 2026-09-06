@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/106",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 269,
+  "completion_tokens": 338,
+  "total_tokens": 607,
+  "duration_s": 13.191,
+  "eval_duration_s": 12.797,
+  "parsed": true,
+  "collected": 6,
+  "passed": 5,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import f\n\n# Test the function with a small value of n\ndef test_f_small_n():\n    assert f(1) == [1], \"Test with n=1 failed\"\n    assert f(2) == [1, 2], \"Test with n=2 failed\"\n\n# Test the function with a larger value of n\ndef test_f_large_n():\n    assert f(5) == [1, 2, 6, 24, 15], \"Test with n=5 failed\"\n\n# Test the function with n=0\ndef test_f_zero_n():\n    assert f(0) == [], \"Test with n=0 failed\"\n\n# Test the function with n=10\ndef test_f_ten_n():\n    assert f(10) == [1, 2, 6, 24, 15, 720, 28, 40320, 45, 3628800], \"Test with n=10 failed\"\n\n# Test the function with a negative value of n\ndef test_f_negative_n():\n    try:\n        f(-1)\n    except ValueError as e:\n        assert str(e) == \"n must be a non-negative integer\", \"Test with negative n failed\"\n\n# Test the function with a non-integer value of n\ndef test_f_non_integer_n():\n    try:\n        f(3.5)\n    except TypeError as e:\n        assert str(e) == \"n must be a non-negative integer\", \"Test with non-integer n failed\"",
+  "timestamp": "2026-09-06T17:16:01"
+}

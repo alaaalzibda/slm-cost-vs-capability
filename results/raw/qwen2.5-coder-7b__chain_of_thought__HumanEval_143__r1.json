@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/143",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 296,
+  "completion_tokens": 191,
+  "total_tokens": 487,
+  "duration_s": 7.317,
+  "eval_duration_s": 7.236,
+  "parsed": true,
+  "collected": 5,
+  "passed": 3,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import words_in_sentence\n\n# The function should return an empty string if the input sentence is empty\n# The function should return the original sentence if all word lengths are prime\n# The function should return only the words with prime lengths in the original order\n# The function should handle sentences with words of non-prime lengths\n# The function should handle sentences with words of length 1 (which is not prime)\n\ndef test_empty_sentence():\n    assert words_in_sentence(\"\") == \"\"\n\ndef test_all_prime_lengths():\n    assert words_in_sentence(\"This is a test\") == \"is\"\n\ndef test_some_prime_lengths():\n    assert words_in_sentence(\"lets go for swimming\") == \"go for\"\n\ndef test_non_prime_lengths():\n    assert words_in_sentence(\"one two three four five\") == \"two three five\"\n\ndef test_word_length_one():\n    assert words_in_sentence(\"a b c d e f\") == \"b c d\"",
+  "timestamp": "2026-09-06T17:19:07"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/59",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 223,
+  "completion_tokens": 323,
+  "total_tokens": 546,
+  "duration_s": 5.834,
+  "eval_duration_s": 5.792,
+  "parsed": true,
+  "collected": 6,
+  "passed": 5,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 91.30434782608695,
+  "branch_coverage": 90.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# - The function should return the largest prime factor of the input number.\n# - It should handle edge cases where the input number is a prime number.\n# - It should handle edge cases where the input number is less than 2.\n# - It should handle edge cases where the input number is 2.\n# - It should handle edge cases where the input number is a power of 2.\n# - It should handle edge cases where the input number is a product of multiple primes.\n\nfrom solution import largest_prime_factor\n\n# Test the function with different inputs\ndef test_largest_prime_factor_prime_input():\n    # Test with a prime number\n    assert largest_prime_factor(29) == 29\n\ndef test_largest_prime_factor_not_prime_input():\n    # Test with a non-prime number\n    assert largest_prime_factor(30) == 5\n\ndef test_largest_prime_factor_edge_case_less_than_2():\n    # Test with a number less than 2\n    with pytest.raises(ValueError):\n        largest_prime_factor(1)\n\ndef test_largest_prime_factor_edge_case_2():\n    # Test with the number 2\n    assert largest_prime_factor(2) == 2\n\ndef test_largest_prime_factor_edge_case_power_of_2():\n    # Test with a power of 2\n    assert largest_prime_factor(8) == 2\n\ndef test_largest_prime_factor_edge_case_product_of_primes():\n    # Test with a product of multiple primes\n    assert largest_prime_factor(210) == 7",
+  "timestamp": "2026-09-06T20:44:36"
+}

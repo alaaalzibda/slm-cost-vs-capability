@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/143",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 306,
+  "completion_tokens": 272,
+  "total_tokens": 578,
+  "duration_s": 4.937,
+  "eval_duration_s": 4.899,
+  "parsed": true,
+  "collected": 7,
+  "passed": 1,
+  "failed": 6,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function takes a sentence as input and returns a string containing words\n# from the original sentence whose lengths are prime numbers.\n# The order of the words in the new string should be the same as the original one.\n# We need to test the following cases:\n# - Empty sentence\n# - Sentence with no prime length words\n# - Sentence with one prime length word\n# - Sentence with multiple prime length words\n# - Sentence with non-prime length words\n# - Edge cases: very long sentence, very short sentence\n\nfrom solution import words_in_sentence\n\ndef test_empty_sentence():\n    assert words_in_sentence(\"\") == \"\"\n\ndef test_no_prime_length_words():\n    assert words_in_sentence(\"This is a test\") == \"\"\n\ndef test_one_prime_length_word():\n    assert words_in_sentence(\"This is a 7 test\") == \"a\"\n\ndef test_multiple_prime_length_words():\n    assert words_in_sentence(\"This is a 7 test 23\") == \"a 7\"\n\ndef test_non_prime_length_words():\n    assert words_in_sentence(\"This is a test 4\") == \"\"\n\ndef test_long_sentence():\n    assert words_in_sentence(\"This is a very long test sentence\") == \"\"\n\ndef test_short_sentence():\n    assert words_in_sentence(\"This is a short sentence\") == \"\"",
+  "timestamp": "2026-09-06T20:48:43"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/32",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 406,
+  "completion_tokens": 569,
+  "total_tokens": 975,
+  "duration_s": 21.655,
+  "eval_duration_s": 21.591,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "from solution import find_zero\n\n# The function `find_zero` is designed to find a zero of a polynomial given its coefficients.\n# It assumes the coefficients list has an even number of elements and the largest non-zero coefficient\n# guarantees a solution. The function returns only one zero point.\n\n# Test cases:\n# 1. Polynomial with a single term (constant function)\n# 2. Polynomial with a linear term\n# 3. Polynomial with a quadratic term\n# 4. Polynomial with a cubic term\n# 5. Polynomial with a higher degree term\n# 6. Polynomial with a negative leading coefficient\n# 7. Polynomial with a zero leading coefficient (should raise an error)\n# 8. Polynomial with a single zero (should return that zero)\n# 9. Polynomial with multiple zeros (should return one of them)\n\ndef test_find_zero_constant():\n    # Polynomial: f(x) = 5\n    assert find_zero([5]) == 0\n\ndef test_find_zero_linear():\n    # Polynomial: f(x) = 2x + 3\n    assert find_zero([3, 2]) == -1.5\n\ndef test_find_zero_quadratic():\n    # Polynomial: f(x) = x^2 - 4\n    assert find_zero([-4, 0, 1]) == 2\n\ndef test_find_zero_cubic():\n    # Polynomial: f(x) = x^3 - 6x^2 + 11x - 6\n    assert find_zero([-6, 11, -6, 1]) == 1\n\ndef test_find_zero_higher_degree():\n    # Polynomial: f(x) = x^4 - 10x^3 + 35x^2 - 50x + 24\n    assert find_zero([-24, 50, -35, 10, 1]) == 2\n\ndef test_find_zero_negative_leading_coefficient():\n    # Polynomial: f(x) = -x^2 + 4\n    assert find_zero([4, 0, -1]) == 2\n\ndef test_find_zero_zero_leading_coefficient():\n    # Polynomial: f(x) = 0\n    with pytest.raises(ValueError):\n        find_zero([0])\n\ndef test_find_zero_single_zero():\n    # Polynomial: f(x) = (x - 3)^2\n    assert find_zero([-9, 6, 1]) == 3\n\ndef test_find_zero_multiple_zeros():\n    # Polynomial: f(x) = (x - 1)(x - 2)(x - 3)\n    assert find_zero([-6, 11, -6, 1]) == 1",
+  "timestamp": "2026-09-06T16:46:09"
+}

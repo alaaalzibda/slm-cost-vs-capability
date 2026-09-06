@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/55",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 162,
+  "completion_tokens": 148,
+  "total_tokens": 310,
+  "duration_s": 2.678,
+  "eval_duration_s": 2.647,
+  "parsed": true,
+  "collected": 6,
+  "passed": 4,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import fib\n\ndef test_fib_base_case():\n    assert fib(0) == 0\n\ndef test_fib_single_element():\n    assert fib(1) == 1\n\ndef test_fib_small_values():\n    assert fib(2) == 1\n    assert fib(3) == 2\n    assert fib(4) == 3\n\ndef test_fib_larger_values():\n    assert fib(10) == 55\n    assert fib(8) == 21\n\ndef test_fib_negative_value():\n    with pytest.raises(ValueError):\n        fib(-1)\n\ndef test_fib_non_integer_value():\n    with pytest.raises(TypeError):\n        fib(1.5)",
+  "timestamp": "2026-09-06T20:34:12"
+}

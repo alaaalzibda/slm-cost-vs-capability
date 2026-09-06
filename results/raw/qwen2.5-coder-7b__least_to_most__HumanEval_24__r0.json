@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/24",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 516,
+  "completion_tokens": 442,
+  "total_tokens": 958,
+  "duration_s": 18.589,
+  "eval_duration_s": 16.931,
+  "parsed": true,
+  "collected": 10,
+  "passed": 9,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_divisor\n\ndef test_prime_number():\n    assert largest_divisor(7) == 1\n\ndef test_composite_number():\n    assert largest_divisor(15) == 5\n\ndef test_smallest_input():\n    assert largest_divisor(1) is None\n\ndef test_negative_number():\n    assert largest_divisor(-10) is None\n\ndef test_large_number():\n    assert largest_divisor(1000000007) == 1\n\ndef test_power_of_prime():\n    assert largest_divisor(8) == 4\n\ndef test_product_of_two_distinct_primes():\n    assert largest_divisor(15) == 5\n\ndef test_product_of_multiple_primes():\n    assert largest_divisor(60) == 30\n\ndef test_product_of_prime_and_power_of_another_prime():\n    assert largest_divisor(18) == 9\n\ndef test_product_of_prime_and_power_of_itself():\n    assert largest_divisor(9) == 3",
+  "timestamp": "2026-09-06T17:23:36"
+}

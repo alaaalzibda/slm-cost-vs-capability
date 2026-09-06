@@ -1,0 +1,101 @@
+[
+  {
+    "model": "llama3.2:latest",
+    "strategy": "chain_of_thought",
+    "n": 50,
+    "median_tokens": 710,
+    "median_seconds": 7.1,
+    "mean_branch_coverage": 98.5,
+    "pct_executable": 92.0,
+    "test_pass_rate": 58.2,
+    "pct_no_import": 0.0
+  },
+  {
+    "model": "llama3.2:latest",
+    "strategy": "least_to_most",
+    "n": 7,
+    "median_tokens": 1243,
+    "median_seconds": 12.7,
+    "mean_branch_coverage": 90.0,
+    "pct_executable": 71.4,
+    "test_pass_rate": 43.3,
+    "pct_no_import": 0.0
+  },
+  {
+    "model": "llama3.2:latest",
+    "strategy": "zero_shot",
+    "n": 50,
+    "median_tokens": 469,
+    "median_seconds": 4.1,
+    "mean_branch_coverage": 97.8,
+    "pct_executable": 96.0,
+    "test_pass_rate": 68.0,
+    "pct_no_import": 0.0
+  },
+  {
+    "model": "phi3:latest",
+    "strategy": "chain_of_thought",
+    "n": 50,
+    "median_tokens": 460,
+    "median_seconds": 4.1,
+    "mean_branch_coverage": 0,
+    "pct_executable": 0.0,
+    "test_pass_rate": 0,
+    "pct_no_import": 0.0
+  },
+  {
+    "model": "phi3:latest",
+    "strategy": "least_to_most",
+    "n": 14,
+    "median_tokens": 10511,
+    "median_seconds": 278.0,
+    "mean_branch_coverage": 33.3,
+    "pct_executable": 21.4,
+    "test_pass_rate": 78.3,
+    "pct_no_import": 14.3
+  },
+  {
+    "model": "phi3:latest",
+    "strategy": "zero_shot",
+    "n": 50,
+    "median_tokens": 445,
+    "median_seconds": 4.1,
+    "mean_branch_coverage": 85.7,
+    "pct_executable": 14.0,
+    "test_pass_rate": 47.1,
+    "pct_no_import": 2.0
+  },
+  {
+    "model": "qwen2.5-coder:7b",
+    "strategy": "chain_of_thought",
+    "n": 50,
+    "median_tokens": 663,
+    "median_seconds": 13.5,
+    "mean_branch_coverage": 96.2,
+    "pct_executable": 88.0,
+    "test_pass_rate": 79.6,
+    "pct_no_import": 2.0
+  },
+  {
+    "model": "qwen2.5-coder:7b",
+    "strategy": "least_to_most",
+    "n": 15,
+    "median_tokens": 1134,
+    "median_seconds": 21.0,
+    "mean_branch_coverage": 100.0,
+    "pct_executable": 53.3,
+    "test_pass_rate": 64.8,
+    "pct_no_import": 0.0
+  },
+  {
+    "model": "qwen2.5-coder:7b",
+    "strategy": "zero_shot",
+    "n": 50,
+    "median_tokens": 437,
+    "median_seconds": 7.0,
+    "mean_branch_coverage": 98.1,
+    "pct_executable": 98.0,
+    "test_pass_rate": 86.7,
+    "pct_no_import": 0.0
+  }
+]

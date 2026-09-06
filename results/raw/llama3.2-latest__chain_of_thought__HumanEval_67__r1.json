@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/67",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 367,
+  "completion_tokens": 366,
+  "total_tokens": 733,
+  "duration_s": 6.677,
+  "eval_duration_s": 6.608,
+  "parsed": true,
+  "collected": 4,
+  "passed": 1,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function takes a string describing the number of apples and oranges, and an integer\n# representing the total number of fruits in the basket. It returns the number of mango\n# fruits by subtracting the number of apples and oranges from the total.\n\nfrom solution import fruit_distribution\n\n# Test the function with valid inputs\ndef test_fruit_distribution_valid_inputs():\n    assert fruit_distribution(\"5 apples and 6 oranges\", 19) == 8\n    assert fruit_distribution(\"0 apples and 1 oranges\", 3) == 2\n    assert fruit_distribution(\"2 apples and 3 oranges\", 100) == 95\n    assert fruit_distribution(\"100 apples and 1 oranges\", 120) == 19\n\n# Test the function with invalid inputs\ndef test_fruit_distribution_invalid_inputs():\n    with pytest.raises(ValueError):\n        fruit_distribution(\"5 apples and 6 oranges\", 0)\n    with pytest.raises(ValueError):\n        fruit_distribution(\"0 apples and 1 oranges\", 0)\n    with pytest.raises(ValueError):\n        fruit_distribution(\"2 apples and 3 oranges\", 0)\n\n# Test the function with edge cases\ndef test_fruit_distribution_edge_cases():\n    assert fruit_distribution(\"0 apples and 0 oranges\", 0) == 0\n    assert fruit_distribution(\"100 apples and 100 oranges\", 100) == 0\n    assert fruit_distribution(\"0 apples and 0 oranges\", 100) == 100\n\n# Test the function with non-numeric inputs\ndef test_fruit_distribution_non_numeric_inputs():\n    with pytest.raises(ValueError):\n        fruit_distribution(\"5 apples and 6 oranges\", \"a\")\n    with pytest.raises(ValueError):\n        fruit_distribution(\"0 apples and 1 oranges\", \"b\")",
+  "timestamp": "2026-09-06T20:45:11"
+}

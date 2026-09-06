@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/110",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 352,
+  "completion_tokens": 361,
+  "total_tokens": 713,
+  "duration_s": 6.61,
+  "eval_duration_s": 6.551,
+  "parsed": true,
+  "collected": 5,
+  "passed": 2,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 90.9090909090909,
+  "branch_coverage": 90.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function should return \"YES\" if it's possible to make all elements in lst1 even.\n# This can be done by checking if all elements in lst1 are even or if there are enough\n# odd elements in lst2 to make all elements in lst1 even.\n# If there are not enough odd elements in lst2, the function should return \"NO\".\n# The function should also handle the case where lst1 and lst2 have the same elements.\n\nfrom solution import exchange\n\n# Test cases\ndef test_exchange_even_lists():\n    # Test case where lst1 and lst2 have the same elements\n    assert exchange([2, 4, 6], [2, 4, 6]) == \"YES\"\n\ndef test_exchange_no_odd_elements():\n    # Test case where lst1 has no odd elements\n    assert exchange([2, 4, 6], [2, 4, 6]) == \"YES\"\n\ndef test_exchange_not_enough_odd_elements():\n    # Test case where lst1 has more odd elements than lst2\n    assert exchange([1, 2, 3, 4], [1, 2, 3, 4]) == \"NO\"\n\ndef test_exchange_empty_lists():\n    # Test case where lst1 or lst2 is empty\n    with pytest.raises(ValueError):\n        exchange([], [1, 2, 3, 4])\n\ndef test_exchange_non_integer_elements():\n    # Test case where lst1 or lst2 contains non-integer elements\n    with pytest.raises(TypeError):\n        exchange([1, 2, 3, 4], [1.0, 2.0, 3.0, 4.0])",
+  "timestamp": "2026-09-06T20:48:14"
+}

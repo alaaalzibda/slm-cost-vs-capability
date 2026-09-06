@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/55",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 198,
+  "completion_tokens": 305,
+  "total_tokens": 503,
+  "duration_s": 11.774,
+  "eval_duration_s": 11.486,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "from solution import fib\n\n# Test the base case of the Fibonacci sequence\ndef test_fib_base_case():\n    assert fib(1) == 1, \"The 1st Fibonacci number should be 1\"\n\n# Test the second base case of the Fibonacci sequence\ndef test_fib_second_base_case():\n    assert fib(2) == 1, \"The 2nd Fibonacci number should be 1\"\n\n# Test the general case of the Fibonacci sequence\ndef test_fib_general_case():\n    assert fib(10) == 55, \"The 10th Fibonacci number should be 55\"\n    assert fib(8) == 21, \"The 8th Fibonacci number should be 21\"\n\n# Test the edge case of the Fibonacci sequence\ndef test_fib_edge_case():\n    assert fib(0) == 0, \"The 0th Fibonacci number should be 0\"\n\n# Test the negative input case\ndef test_fib_negative_input():\n    try:\n        fib(-1)\n    except ValueError as e:\n        assert str(e) == \"Input must be a non-negative integer\", \"Negative input should raise a ValueError\"\n\n# Test the large input case\ndef test_fib_large_input():\n    assert fib(50) == 12586269025, \"The 50th Fibonacci number should be 12586269025\"",
+  "timestamp": "2026-09-06T16:49:04"
+}

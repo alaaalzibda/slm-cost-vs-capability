@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/39",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 246,
+  "completion_tokens": 286,
+  "total_tokens": 532,
+  "duration_s": 11.048,
+  "eval_duration_s": 10.772,
+  "parsed": true,
+  "collected": 3,
+  "passed": 2,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import prime_fib\n\n# The function prime_fib returns the n-th Fibonacci number that is also prime.\n# It starts with the first prime Fibonacci number, which is 2.\n# The sequence of prime Fibonacci numbers is: 2, 3, 5, 13, 89, ...\n# The function should handle edge cases such as n = 1, which should return 2.\n\n# Test the function with the first few values of n to ensure it returns the correct prime Fibonacci numbers.\ndef test_prime_fib_first_five():\n    assert prime_fib(1) == 2\n    assert prime_fib(2) == 3\n    assert prime_fib(3) == 5\n    assert prime_fib(4) == 13\n    assert prime_fib(5) == 89\n\n# Test the function with a larger value of n to ensure it continues to return the correct prime Fibonacci numbers.\ndef test_prime_fib_sixth_value():\n    assert prime_fib(6) == 233\n\n# Test the function with a value of n that is out of the expected range to ensure it raises a ValueError.\ndef test_prime_fib_out_of_range():\n    with pytest.raises(ValueError):\n        prime_fib(0)\n    with pytest.raises(ValueError):\n        prime_fib(-1)",
+  "timestamp": "2026-09-06T16:46:37"
+}

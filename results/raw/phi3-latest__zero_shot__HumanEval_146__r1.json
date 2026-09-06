@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/146",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 255,
+  "completion_tokens": 147,
+  "total_tokens": 402,
+  "duration_s": 2.24,
+  "eval_duration_s": 2.218,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 2)",
+  "generated_code": "You \nQuestion: \n\nA \n\n\nChat \n\nQ: \nBoth of the \n\nWrite a \n\n\n  \n\n\n \n\n   \nYou \n\n-Given a list of \n\n#### Question \n\n==== \n\n \nYou'de \n\n \n\n\n \n\n-! Prompt the \n\n\n\nAs an AI:\n\n2. \n\nq: \n \n\n \n\n-Given \n\n \n-endResult:",
+  "timestamp": "2026-09-06T19:10:59"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/1",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 267,
+  "completion_tokens": 323,
+  "total_tokens": 590,
+  "duration_s": 7.754,
+  "eval_duration_s": 5.287,
+  "parsed": true,
+  "collected": 9,
+  "passed": 4,
+  "failed": 5,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "import pytest\n\nfrom solution import separate_paren_groups\n\n\ndef test_basic_functionality():\n\n    assert separate_paren_groups('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\n\ndef test_empty_string():\n\n    assert separate_paren_groups('') == []\n\n\ndef test_single_group():\n\n    assert separate\u043d\u043e\u0441\u0438\u043c\u043e\u0441\u0442\u044c_\u043e\u043f\u0435\u0440\u0430\u0442\u043e\u0440\u043e\u0432('(())') == ['()']\n\n\ndef test_no_parentheses():\n\n    assert separate_paren_groups('abc') == []\n\n\ndef test_mixed_parentheses():\n\n    assert separate_paren_groups('(())()') == ['()', '()']\n\n\ndef test_unbalanced_parentheses():\n\n    with pytest.raises(ValueError):\n\n        separate_paren_groups('(()')\n\n\ndef test_nested_parentheses():\n\n    assert separate_paren_groups('((()))') == ['((()))']\n\n\ndef test_overlapping_parentheses():\n\n    assert separate_paren_groups('(())(())') == ['()', '()']\n\n\ndef test_whitespace_ignored():\n\n    assert separate_paren_groups(' ( ( ) ) ') == ['()']",
+  "timestamp": "2026-09-06T18:50:39"
+}

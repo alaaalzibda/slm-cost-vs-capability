@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/74",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 345,
+  "completion_tokens": 50,
+  "total_tokens": 395,
+  "duration_s": 1.359,
+  "eval_duration_s": 0.74,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "You't \n\n#### \n\n\nUser: I'de \n\n\nSolution: \n\n\n\nWrite a \n\n \n \nYou'de",
+  "timestamp": "2026-09-06T19:07:51"
+}

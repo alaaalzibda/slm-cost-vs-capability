@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/106",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 269,
+  "completion_tokens": 355,
+  "total_tokens": 624,
+  "duration_s": 13.507,
+  "eval_duration_s": 13.442,
+  "parsed": true,
+  "collected": 7,
+  "passed": 7,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import f\n\n# Test cases for the function f\n# 1. Test with n = 0, expected output is an empty list\n# 2. Test with n = 1, expected output is [1]\n# 3. Test with n = 2, expected output is [1, 2]\n# 4. Test with n = 3, expected output is [1, 2, 6]\n# 5. Test with n = 4, expected output is [1, 2, 6, 24]\n# 6. Test with n = 5, expected output is [1, 2, 6, 24, 15]\n# 7. Test with n = 6, expected output is [1, 2, 6, 24, 15, 720]\n\ndef test_f_n_0():\n    assert f(0) == []\n\ndef test_f_n_1():\n    assert f(1) == [1]\n\ndef test_f_n_2():\n    assert f(2) == [1, 2]\n\ndef test_f_n_3():\n    assert f(3) == [1, 2, 6]\n\ndef test_f_n_4():\n    assert f(4) == [1, 2, 6, 24]\n\ndef test_f_n_5():\n    assert f(5) == [1, 2, 6, 24, 15]\n\ndef test_f_n_6():\n    assert f(6) == [1, 2, 6, 24, 15, 720]",
+  "timestamp": "2026-09-06T17:16:15"
+}

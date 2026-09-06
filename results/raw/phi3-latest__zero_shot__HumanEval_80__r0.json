@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/80",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 261,
+  "completion_tokens": 201,
+  "total_tokens": 462,
+  "duration_s": 3.519,
+  "eval_duration_s": 3.026,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "You \nYou \n\n---\n\n \nYou \n\n \n\n \n- C++ \n \n \nI \n\nDocument \n\n\"The \n\nYour \n\nUser: \n\n\nYour \n\n \n-Given \n\n \n \nYounger, the solution. \n\n\n \n-Five \n\ninstruction: \n\n\n\nTitle: \"The \n\n \n-Oxford \n\n \n \nYou \n\n \n\n- [Instruction \n\n \n\n- Command Blog \n\nd \n\nUser:** \n\n \nI'deve been a) \nQuestion \n\n \n\n \nI'ran",
+  "timestamp": "2026-09-06T19:07:56"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/31",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 211,
+  "completion_tokens": 170,
+  "total_tokens": 381,
+  "duration_s": 3.699,
+  "eval_duration_s": 3.391,
+  "parsed": true,
+  "collected": 6,
+  "passed": 6,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\ndef test_is_prime_negative_numbers():\n    assert not is_prime(-1)\n    assert not is_prime(-2)\n    assert not is_prime(-3)\n\ndef test_is_prime_zero_and_one():\n    assert not is_prime(0)\n    assert not is_prime(1)\n\ndef test_is_prime_small_primes():\n    assert is_prime(2)\n    assert is_prime(3)\n    assert is_prime(5)\n\ndef test_is_prime_large_primes():\n    assert is_prime(13441)\n    assert is_prime(61)\n\ndef test_is_prime_composites():\n    assert not is_prime(4)\n    assert not is_prime(6)\n    assert not is_prime(8)\n\ndef test_is_prime_edge_cases():\n    assert is_prime(101)\n    assert is_prime(11)",
+  "timestamp": "2026-09-06T20:29:36"
+}

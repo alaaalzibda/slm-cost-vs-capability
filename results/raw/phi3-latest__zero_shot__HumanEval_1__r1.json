@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/1",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 267,
+  "completion_tokens": 284,
+  "total_tokens": 551,
+  "duration_s": 4.376,
+  "eval_duration_s": 4.317,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 11)",
+  "generated_code": "import pytest\n\nfrom solution import separate_paren_groups\n\n\ndef test_separate_paren_groups():\n\n    assert separate_paren_groups('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\n\ndef test_separate end_paren_groups():\n\n    assert separate_paren_groups('()') == ['()']\n\n\ndef test_separate_paren_groups_empty():\n\n    assert separate_paren_groups('') == []\n\n\ndef test_separate_paren_groups_single():\n\n    assert separate_paren_groups('()') == ['()']\n\n\ndef test_separate_paren_groups_mixed():\n\n    assert separate_paren_groups('()()') == ['()', '()']\n\n\ndef test_separate_paren_groups_unbalanced():\n\n    with pytest.raises(ValueError):\n\n        separate_paren_groups('(()')\n\n\ndef test_separate_paren_groups_nested():\n\n    assert separate_paren_groups('(()())') == ['()', '()()']",
+  "timestamp": "2026-09-06T18:50:44"
+}

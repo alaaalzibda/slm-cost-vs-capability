@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/143",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 251,
+  "completion_tokens": 150,
+  "total_tokens": 401,
+  "duration_s": 6.109,
+  "eval_duration_s": 6.049,
+  "parsed": true,
+  "collected": 6,
+  "passed": 2,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import words_in_sentence\n\ndef test_words_in_sentence():\n    assert words_in_sentence(\"This is a test\") == \"is\"\n\ndef test_words_in_sentence_multiple_words():\n    assert words_in_sentence(\"lets go for swimming\") == \"go for\"\n\ndef test_words_in_sentence_no_prime_length_words():\n    assert words_in_sentence(\"hello world\") == \"\"\n\ndef test_words_in_sentence_single_prime_length_word():\n    assert words_in_sentence(\"a\") == \"a\"\n\ndef test_words_in_sentence_sentence_with_special_characters():\n    assert words_in_sentence(\"This is a test!\") == \"is\"\n\ndef test_words_in_sentence_sentence_with_numbers():\n    assert words_in_sentence(\"123 456 789\") == \"\"",
+  "timestamp": "2026-09-06T16:41:42"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/55",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 2174,
+  "completion_tokens": 8894,
+  "total_tokens": 11068,
+  "duration_s": 192.427,
+  "eval_duration_s": 180.99,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "| Line Number | Input Value | Expected Output | Test Case Description |\n\n|-------------|-------------|----------------|---------------------|\n\n| 5 | 0 | 0 | Tests the base case for the first Fibonacci number. |\n\n| 6 | 1 | 1 | Tests the base case for the second Fibonacci number. |\n\n| 7 | 2 | 1 | Tests the third Fibonacci number, which should be the sum of the first two. |\n\n| 8 | 3 | 2 | Tests the fourth Fibonacci number, which should be the sum of the second and third. |\n\n| 9 | 4 | 3 | Tests the fifth Fibonacci number, which should be the sum of the third and fourth. |\n\n| 10 | 5 | 5 | Tests the sixth Fibonacci number, which should be the sum of the fourth and fifth. |\n\n| 11 | 10 | 55 | Tests the tenth Fibonacci number, which should be the sum of the eighth and ninth. |\n\n| 12 | 15 | 610 | Tests the fifteenth Fibonacci number, which should be the sum of the thirteenth and fourteenth. |\n\n| 13 | 20 | 6763 | Tests the twentieth Fibonacci number, which should be the sum of the sixteenth and seventeenth. |\n\n| 14 | 21 | 832040 | Tests the twenty-first Fibonacci number, which should be the sum of the seventeenth and eighteenth. |\n\n| 15 | 25 | 75025 | Tests the twenty-fifth Fibonacci number, which should be the sum of the twenty-third and twenty-fourth. |\n\n| 16 | 30 | 832040 | Tests the thirty-first Fibonacci number, which should be the sum of the twenty-fifth and twenty-sixth. |\n\n| 17 | 35 | 11342953668141223149048 | Tests the thirty-fifth Fibonacci number, which should be the sum of the thirty-fourth and thirty-fifth. |\n\n| 18 | 40 | 122001604140625 | Tests the forty-first Fibonacci number, which should be the sum of the forty-second and forty-third. |\n\n| 19 | 45 | 122001604140625 | Tests the forty-fifth Fibonacci number, which should be the sum of the forty-fourth and forty-fifth. |\n\n| 20 | 50 | 1346269405559 | Tests the fifty-first Fibonacci number, which should be the sum of the fifty-second and fifty-third. |\n\n| 21 | 55 | 1258626902504 | Tests the fifty-fifth Fibonacci number, which should be the sum of the fifty-fourth and fifty-sixth. |\n\n| 22 | 60 | 1346269405559 | Tests the sixty-first Fibonacci number, which should be the sum of the fifty-seventh and fifty-eighth. |\n\n| 23 | 65 | 1216451603774169 | Tests the sixty-fifth Fibonacci number, which should be the sum of the fifty-ninth and sixtieth. |\n\n| 24 | 70 | 1258626902504 | Tests the seventy-first Fibonacci number, which should be the sum of the sixty-first and sixty-second. |\n\n| 25 | 75 | 1258626902504 | Tests the seventy-fifth Fibonacci number, which should be the sum of the sixty-third and sixty-fourth. |\n\n| 26 | 100 | 354224848179261915004 | Tests the one hundredth Fibonacci number, which should be the sum of the ninety-ninth and one hundredth. |",
+  "timestamp": "2026-09-06T20:16:43"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/35",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 564,
+  "completion_tokens": 623,
+  "total_tokens": 1187,
+  "duration_s": 24.186,
+  "eval_duration_s": 23.62,
+  "parsed": true,
+  "collected": 15,
+  "passed": 8,
+  "failed": 7,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import max_element\n\ndef test_empty_list():\n    assert max_element([]) is None\n\ndef test_single_element():\n    assert max_element([42]) == 42\n\ndef test_positive_elements():\n    assert max_element([1, 2, 3, 4, 5]) == 5\n\ndef test_negative_elements():\n    assert max_element([-5, -3, -1, -2]) == -1\n\ndef test_mixed_elements():\n    assert max_element([-5, 3, -1, 2, -3, 3, 9, 0, 123, 1, -10]) == 123\n\ndef test_duplicate_elements():\n    assert max_element([3, 3, 3, 3]) == 3\n\ndef test_mixed_data_types():\n    with pytest.raises(TypeError):\n        max_element([1, \"2\", 3])\n\ndef test_non_comparable_elements():\n    class NonComparable:\n        pass\n    with pytest.raises(TypeError):\n        max_element([NonComparable(), NonComparable()])\n\ndef test_large_elements():\n    assert max_element([1e308, 1e309]) == 1e309\n\ndef test_float_elements():\n    assert max_element([1.1, 2.2, 3.3]) == 3.3\n\ndef test_complex_elements():\n    with pytest.raises(TypeError):\n        max_element([1+2j, 3+4j])\n\ndef test_nested_elements():\n    with pytest.raises(TypeError):\n        max_element([[1, 2], [3, 4]])\n\ndef test_none_elements():\n    with pytest.raises(TypeError):\n        max_element([1, None, 3])\n\ndef test_nan_elements():\n    import math\n    assert max_element([math.nan, 1, 2]) == 2\n\ndef test_infinity_elements():\n    import math\n    assert max_element([math.inf, 1, 2]) == math.inf",
+  "timestamp": "2026-09-06T17:57:33"
+}

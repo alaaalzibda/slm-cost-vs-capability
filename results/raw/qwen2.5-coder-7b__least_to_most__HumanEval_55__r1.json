@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/55",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 391,
+  "completion_tokens": 228,
+  "total_tokens": 619,
+  "duration_s": 10.262,
+  "eval_duration_s": 8.501,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "from solution import fib\n\ndef test_fib_positive_integer():\n    assert fib(10) == 55\n    assert fib(1) == 1\n    assert fib(8) == 21\n\ndef test_fib_zero():\n    assert fib(0) == 0\n\ndef test_fib_negative_integer():\n    with pytest.raises(ValueError):\n        fib(-1)\n\ndef test_fib_large_value():\n    assert fib(50) == 12586269025\n\ndef test_fib_non_integer():\n    with pytest.raises(TypeError):\n        fib('a')",
+  "timestamp": "2026-09-06T18:20:50"
+}

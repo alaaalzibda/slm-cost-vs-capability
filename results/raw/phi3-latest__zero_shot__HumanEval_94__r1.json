@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/94",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 28.475,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 3)",
+  "generated_code": "-Following \n\nChemicals. \n\nI'dept \n\n2.\n\n### \nB- \n\n\nInput:\n\n       \n \n\n\nI'deve \n\n\n\n\n\n\n\n\n\n \n\n\nI'deve been a \n\n \nYou can'de \n\nInput:\n\nHistorical data \n\n- Rewrite the following text.\n\nInput:\n\n- \n\n \n\n\n \n\n\n### \n \n- \n\n \n\n### \n\n- G \n\n \n\n \nYou areYou's \n\nI'deve been \n\nAnswer: \n- [ \n\n\nuser: I'm sorry \n\n- \n\n\n \n\n \n\n \n\n \n\n\n### \n \n\n\n- \n\ninstruction:\n\n \nBased on the following conversation between a user: \n\n\n1. AI, so-called \n\n\nI.\n\n \n\n\n\nI'm sorry I'm \n\n# Q \n\n \n \n \n \n\nYour task: \n\n\nRewrite \n\n \n\nThe \n\n \n \nI'de \n\n- Write a \n\n\n-Given \n\nQuestion: \n- [strawberry \n\nCraft a \n\n \n\n\n \n\n#### \n\n \n \n\nKeyword: \n\n \n \n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot: \n\n\n\n### \n\n \n\ntitle:I'm sorry \n\ntitle: \n\n\u6307\u5b9a \n\nQ \n\nRewrite \n\nDocument \n\nuser: \n\n# Instruction:\n- HOW DOES THE AI, the \n\n- I'm sorry, I'm sorry, I'm sorry \n\n \nInstruction: \n- P \n\n \n- \n\nAbsolon, \n\n### \n\nRewrite \n\n \n\n\n\n\n \n\n\n\n\nAnswer: \n\n\nSolution: \n\n\n- I's \n\n \n\n## \n\n- \n\nQuestion \n\n#### Q7\n\nQuestion:\n\n### \n\nAssume I'm sorry, \n\n### Solution \n\n- I's \n\nprompt \n \n\n- HRV, a \n\nprompt \n\nGiven the following paragraphs \n\n### \n\n \n\n\n## \n\nTextbook Solution: \n\n\n## \n\n\n\n\n\n\n\n## \n## \n\nRewrite \n\nWrite a detailed, \n\nRewrite \n\n\n2\n\nRewrite \n\nWrite a comprehensive review of a \n\n### \n\n \n\nInput: \n\n\n\n\n\n\n\n\n\n\n2.\n\nRewrite \n\nUser: Hey, I apologize, \n\nUser: \"I'm trying to create a comprehensive and \n\nI apologize, \n\nI apologize, \n\nI apologize, \n\nRewrite \n\nI'm sorry, \n\nAssistant: \n\nRewrite \n \n\n\n(Our discussionions \n \n\nRewrite \n \n\nWrite a comprehensive, \n \n \n\nWrite a comprehensive review of the document, the other handballing, and the following conversation, I \n\n\n\n\n- \n\nWrite a comprehensive, \n\n### \n\n \n\n\n\n\n \n\n\n\n\n\n \n\n\n\nrewrite \n\n \n\n \n\n\n\n\n\n \n\nWrite a function to calculate_text=\n\nprom \n\n\n\n\n\n\n\n\n\n\n\n\n \n\n### \n\n## \n\n\nRewrite \n\nQuestion \n\n-Given the following sentence \n\n\n\n\n\n\n\n\n\n\n\n\n\nI'm sorry, I apologize, I'm sorry, \n\n### \n\n---\n\n\n\n\n\n\n \n\n\n\n\n- Solution \n \n\n\nSolve a \n\n\n \n\n\n\n\n \n\n \n\n\n \n\n\n\nI'm sorry, \n\n\n\n\nWrite a complex instruction, I'm sorry, \n\n\n\n \n \n\n\n\n\nGiven the following document \n\n\n \n\n\n\n\nGiven a \n\n\n\nI'm sorry, \n\n\n\n \n\n\n\nI's \n\n\n \n\n\n#### Solution \n\n\n\n\n\n\n\n\n\n\nI' \n\nThe following conversation \n\n\n\n\n\nPositive and I \n\n\n\n\n\n\n\n\n R \n\n\n\n\nGiven a \n\n\n\n\nI'm sorry, \n\n\n\n\n \n\nWrite a complex instruction, I'm sorry, \n \n\n\n\nSol \n\n \n\n### \n### \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGiven \n\n\n\n\n\n**Solution:**\n \n\n\u6307\u4ee4 \n\n\n\n\n\n# You are a young child psychology\n\n\n \n\n### \n\n \n\n \n\n\n\n\nGiven a \n\n\n \n\n \n\n\n### Solution\n\nI'\n\n\n\n### Solopan\n\n\n\n\nRewrite of \n\n\n \n\nGiven a scenario, you are a trustworthy assistant, I's\n\n\n \n\n\n\n\n(Your task: Craft a comprehensive analysis of the essays and I'm sorry,\n\nYour task:** \n\n\n\n\n\n> \n\nRewrite of the document, \"The Greatest HRM\n\n\n \n\n \n\n### HR \n\n\n\n\n\n\n\n\n\n\nGiven \n\n\n \n\nGiven the original text-based on the Taoiseach\n\n\n\nI'm sorry, I'm sorry, I'm sorry, \n\n\n\n\n\nI's \n\n\n\nWrite a detailed, \n\n\n \n\n \n\n\n\n\nI've noticed that the provided document provided by the provided document, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I's",
+  "timestamp": "2026-09-06T19:09:07"
+}

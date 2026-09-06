@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/1",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 663,
+  "completion_tokens": 723,
+  "total_tokens": 1386,
+  "duration_s": 13.885,
+  "eval_duration_s": 13.073,
+  "parsed": true,
+  "collected": 15,
+  "passed": 3,
+  "failed": 12,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import separate_paren_groups\nimport pytest\n\ndef test_separate_paren_groups_empty_input():\n    assert separate_paren_groups('') == []\n\ndef test_separate_paren_groups_single_open_parenthesis():\n    assert separate_paren_groups('()') == ['()']\n\ndef test_separate_paren_groups_single_close_parenthesis():\n    assert separate_paren_groups('()') == ['()']\n\ndef test_separate_paren_groups_single_open_close_parenthesis():\n    assert separate_paren_groups('()()') == ['()']\n\ndef test_separate_paren_groups_multiple_open_parentheses():\n    assert separate_paren_groups('((()))') == ['()']\n\ndef test_separate_paren_groups_multiple_open_close_parentheses_with_spaces():\n    assert separate_paren_groups('(()())') == ['()']\n\ndef test_separate_paren_groups_multiple_open_close_parentheses_with_spaces_at_beginning():\n    assert separate_paren_groups('(()())') == ['()']\n\ndef test_separate_paren_groups_multiple_open_close_parentheses_not_balanced():\n    assert separate_paren_groups('(()') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses():\n    assert separate_paren_groups('( () (()))') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses_not_balanced():\n    assert separate_paren_groups('( () (()))') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses_with_square_brackets():\n    assert separate_paren_groups('( [()] (()))') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses_with_square_brackets_and_spaces():\n    assert separate_paren_groups('( [()] (()))') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses_with_square_brackets_and_characters():\n    assert separate_paren_groups('( [()] (()))') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses_balanced_with_square_brackets_and_characters():\n    assert separate_paren_groups('( [()] (()))') == ['()']\n\ndef test_separate_paren_groups_multiple_groups_of_nested_parentheses_balanced_with_square_brackets_and_characters_and_spaces():\n    assert separate_paren_groups('( [()] (()))') == ['()']",
+  "timestamp": "2026-09-06T20:49:40"
+}

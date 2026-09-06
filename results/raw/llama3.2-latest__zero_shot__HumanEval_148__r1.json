@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/148",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 321,
+  "completion_tokens": 152,
+  "total_tokens": 473,
+  "duration_s": 2.774,
+  "eval_duration_s": 2.738,
+  "parsed": true,
+  "collected": 6,
+  "passed": 4,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import bf\n\ndef test_bf_valid_input():\n    assert bf(\"Jupiter\", \"Neptune\") == (\"Saturn\", \"Uranus\")\n\ndef test_bf_valid_input_empty():\n    assert bf(\"Earth\", \"Mercury\") == ()\n\ndef test_bf_valid_input_out_of_order():\n    assert bf(\"Mercury\", \"Jupiter\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")\n\ndef test_bf_invalid_input():\n    assert bf(\"Invalid\", \"Neptune\") == ()\n\ndef test_bf_invalid_input_empty():\n    assert bf(\"\", \"Neptune\") == ()\n\ndef test_bf_invalid_input_empty_both():\n    assert bf(\"\", \"\") == ()",
+  "timestamp": "2026-09-06T20:37:00"
+}

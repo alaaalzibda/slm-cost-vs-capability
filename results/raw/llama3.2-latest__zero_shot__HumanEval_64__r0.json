@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/64",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 240,
+  "completion_tokens": 236,
+  "total_tokens": 476,
+  "duration_s": 4.87,
+  "eval_duration_s": 4.53,
+  "parsed": true,
+  "collected": 9,
+  "passed": 3,
+  "failed": 6,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import vowels_count\n\ndef test_vowels_count_empty_string():\n    assert vowels_count(\"\") == 0\n\ndef test_vowels_count_single_character():\n    assert vowels_count(\"a\") == 1\n    assert vowels_count(\"A\") == 0\n\ndef test_vowels_count_no_vowels():\n    assert vowels_count(\"bcdfg\") == 0\n\ndef test_vowels_count_vowels_only():\n    assert vowels_count(\"aeiou\") == 5\n\ndef test_vowels_count_vowels_and_consonants():\n    assert vowels_count(\"abcde\") == 3\n\ndef test_vowels_count_vowels_at_end():\n    assert vowels_count(\"ACEDY\") == 3\n\ndef test_vowels_count_vowels_and_y_at_end():\n    assert vowels_count(\"ACEDYy\") == 4\n\ndef test_vowels_count_non_alphabetical_characters():\n    assert vowels_count(\"abc!23\") == 3\n\ndef test_vowels_count_non_ascii_characters():\n    assert vowels_count(\"\u00e1\u00e9\u00ed\u00f3\u00fa\") == 5",
+  "timestamp": "2026-09-06T20:34:24"
+}

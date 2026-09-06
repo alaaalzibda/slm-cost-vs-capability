@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/1",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 232,
+  "completion_tokens": 188,
+  "total_tokens": 420,
+  "duration_s": 5.92,
+  "eval_duration_s": 3.359,
+  "parsed": true,
+  "collected": 6,
+  "passed": 4,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import separate_paren_groups\nimport pytest\n\ndef test_separate_paren_groups_empty_string():\n    assert separate_paren_groups('') == []\n\ndef test_separate_paren_groups_single_group():\n    assert separate_paren_groups('( )') == ['()']\n\ndef test_separate_paren_groups_multiple_groups():\n    assert separate_paren_groups('( ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\ndef test_separate_paren_groups_nested_groups():\n    assert separate_paren_groups('( ( ) ) (( )) (( )( ))') == ['()', '(())', '(()())']\n\ndef test_separate_paren_groups_no_spaces():\n    assert separate_paren_groups('( )(( ))(( )( ))') == ['()', '(())', '(()())']\n\ndef test_separate_paren_groups_invalid_input():\n    with pytest.raises(ValueError):\n        separate_paren_groups(')(')",
+  "timestamp": "2026-09-06T20:29:30"
+}

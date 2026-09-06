@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/124",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 434,
+  "completion_tokens": 661,
+  "total_tokens": 1095,
+  "duration_s": 26.166,
+  "eval_duration_s": 25.621,
+  "parsed": true,
+  "collected": 12,
+  "passed": 9,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import valid_date\n\n# Test cases to validate the valid_date function\n\n# Test an empty date string\ndef test_empty_date():\n    assert not valid_date('')\n\n# Test a date with invalid month\ndef test_invalid_month():\n    assert not valid_date('13-01-2020')\n\n# Test a date with invalid day\ndef test_invalid_day():\n    assert not valid_date('00-01-2020')\n\n# Test a date with day greater than 31\ndef test_day_greater_than_31():\n    assert not valid_date('02-32-2020')\n\n# Test a date with day greater than 30 in a month with 30 days\ndef test_day_greater_than_30():\n    assert not valid_date('04-31-2020')\n\n# Test a date with valid format but invalid day for February\ndef test_invalid_day_for_february():\n    assert not valid_date('02-30-2020')\n\n# Test a date with valid format and valid day for February in a leap year\ndef test_valid_day_for_february_leap_year():\n    assert valid_date('02-29-2020')\n\n# Test a date with valid format and valid day for February in a non-leap year\ndef test_valid_day_for_february_non_leap_year():\n    assert not valid_date('02-29-2021')\n\n# Test a date with valid format and valid day for months 1, 3, 5, 7, 8, 10, 12\ndef test_valid_day_for_months_1_3_5_7_8_10_12():\n    assert valid_date('01-31-2020')\n    assert valid_date('03-31-2020')\n    assert valid_date('05-31-2020')\n    assert valid_date('07-31-2020')\n    assert valid_date('08-31-2020')\n    assert valid_date('10-31-2020')\n    assert valid_date('12-31-2020')\n\n# Test a date with valid format and valid day for months 4, 6, 9, 11\ndef test_valid_day_for_months_4_6_9_11():\n    assert valid_date('04-30-2020')\n    assert valid_date('06-30-2020')\n    assert valid_date('09-30-2020')\n    assert valid_date('11-30-2020')\n\n# Test a date with valid format and valid month and day\ndef test_valid_date_format():\n    assert valid_date('06-04-2020')\n\n# Test a date with invalid format (using slashes instead of dashes)\ndef test_invalid_date_format():\n    assert not valid_date('06/04/2020')",
+  "timestamp": "2026-09-06T17:17:54"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/146",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 3.489,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 8)",
+  "generated_code": "You \n\n\nChapter \n\n \n\n<|\n \n\n\n\n \n\n \nHuman-North \n\n   \n \nYou'dex",
+  "timestamp": "2026-09-06T19:17:16"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/55",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 207,
+  "completion_tokens": 306,
+  "total_tokens": 513,
+  "duration_s": 5.645,
+  "eval_duration_s": 5.479,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "# Reasoning:\n# The function `fib` takes an integer `n` as input and returns the `n`-th Fibonacci number.\n# The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of the previous two.\n# The function should handle positive integer inputs, and it should return 0 for `n=0`, 1 for `n=1`, and the correct Fibonacci number for larger `n`.\n# The function should also handle negative integer inputs, which should raise a ValueError.\n# The function should handle non-integer inputs, which should raise a TypeError.\n\nfrom solution import fib\n\ndef test_fib_positive_integer():\n    # Test the function with a positive integer input\n    assert fib(10) == 55\n\ndef test_fib_negative_integer():\n    # Test the function with a negative integer input\n    with pytest.raises(ValueError):\n        fib(-1)\n\ndef test_fib_non_integer_input():\n    # Test the function with a non-integer input\n    with pytest.raises(TypeError):\n        fib(3.5)\n\ndef test_fib_zero():\n    # Test the function with input 0\n    assert fib(0) == 0\n\ndef test_fib_one():\n    # Test the function with input 1\n    assert fib(1) == 1\n\ndef test_fib_large_n():\n    # Test the function with a large input\n    assert fib(50) == 12586269025",
+  "timestamp": "2026-09-06T20:44:20"
+}

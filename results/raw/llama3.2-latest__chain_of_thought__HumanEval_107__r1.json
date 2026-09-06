@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/107",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 372,
+  "completion_tokens": 511,
+  "total_tokens": 883,
+  "duration_s": 9.374,
+  "eval_duration_s": 9.337,
+  "parsed": true,
+  "collected": 1,
+  "passed": 0,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function even_odd_palindrome takes a positive integer n as input.\n# It returns a tuple containing the number of even and odd integer palindromes\n# that fall within the range (1, n), inclusive.\n# The function should handle the boundary values of 1 <= n <= 10^3.\n# It should also handle the case where n is 1, which is the only even palindrome.\n# Additionally, it should handle the case where n is 10^3, which is the only odd palindrome.\n\nfrom solution import even_odd_palindrome\n\ndef test_even_odd_palindrome():\n    # Test case 1: n = 3\n    assert even_odd_palindrome(3) == (1, 2), \"Test case 1 failed\"\n\n    # Test case 2: n = 12\n    assert even_odd_palindrome(12) == (4, 6), \"Test case 2 failed\"\n\n    # Test case 3: n = 1\n    assert even_odd_palindrome(1) == (1, 0), \"Test case 3 failed\"\n\n    # Test case 4: n = 10\n    assert even_odd_palindrome(10) == (4, 6), \"Test case 4 failed\"\n\n    # Test case 5: n = 100\n    assert even_odd_palindrome(100) == (4, 96), \"Test case 5 failed\"\n\n    # Test case 6: n = 1000\n    assert even_odd_palindrome(1000) == (4, 996), \"Test case 6 failed\"\n\n    # Test case 7: n = 2\n    assert even_odd_palindrome(2) == (1, 1), \"Test case 7 failed\"\n\n    # Test case 8: n = 10^6\n    assert even_odd_palindrome(10**6) == (999, 999999), \"Test case 8 failed\"\n\n    # Test case 9: n = 0 (not a positive integer)\n    try:\n        even_odd_palindrome(0)\n        assert False, \"Test case 9 failed\"\n    except ValueError:\n        pass\n\n    # Test case 10: n = -1 (not a positive integer)\n    try:\n        even_odd_palindrome(-1)\n        assert False, \"Test case 10 failed\"\n    except ValueError:\n        pass",
+  "timestamp": "2026-09-06T20:48:00"
+}

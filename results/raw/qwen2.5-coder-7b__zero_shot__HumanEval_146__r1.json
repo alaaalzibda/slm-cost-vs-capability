@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/146",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 229,
+  "completion_tokens": 198,
+  "total_tokens": 427,
+  "duration_s": 8.222,
+  "eval_duration_s": 8.161,
+  "parsed": true,
+  "collected": 7,
+  "passed": 6,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import specialFilter\n\ndef test_specialFilter_empty_list():\n    assert specialFilter([]) == 0\n\ndef test_specialFilter_no_valid_numbers():\n    assert specialFilter([2, 4, 6, 8]) == 0\n\ndef test_specialFilter_with_valid_numbers():\n    assert specialFilter([15, -73, 14, -15]) == 1\n\ndef test_specialFilter_with_multiple_valid_numbers():\n    assert specialFilter([33, -2, -3, 45, 21, 109]) == 2\n\ndef test_specialFilter_with_negative_numbers():\n    assert specialFilter([-11, -13, -15]) == 3\n\ndef test_specialFilter_with_single_valid_number():\n    assert specialFilter([11]) == 1\n\ndef test_specialFilter_with_single_invalid_number():\n    assert specialFilter([10]) == 0",
+  "timestamp": "2026-09-06T16:42:02"
+}

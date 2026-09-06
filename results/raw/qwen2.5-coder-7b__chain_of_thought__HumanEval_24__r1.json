@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/24",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 201,
+  "completion_tokens": 305,
+  "total_tokens": 506,
+  "duration_s": 11.541,
+  "eval_duration_s": 11.478,
+  "parsed": true,
+  "collected": 7,
+  "passed": 6,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_divisor\n\n# The function `largest_divisor` should return the largest divisor of a given number `n` that is smaller than `n`.\n# For prime numbers, the largest divisor will be 1.\n# For composite numbers, the largest divisor will be less than `n` and greater than 1.\n# The function should handle negative numbers by returning None, as negative numbers do not have positive divisors.\n# The function should handle zero by returning None, as zero does not have positive divisors.\n\ndef test_largest_divisor_prime():\n    # Test with a prime number\n    assert largest_divisor(17) == 1\n\ndef test_largest_divisor_composite():\n    # Test with a composite number\n    assert largest_divisor(24) == 12\n\ndef test_largest_divisor_negative():\n    # Test with a negative number\n    assert largest_divisor(-10) is None\n\ndef test_largest_divisor_zero():\n    # Test with zero\n    assert largest_divisor(0) is None\n\ndef test_largest_divisor_one():\n    # Test with one\n    assert largest_divisor(1) is None\n\ndef test_largest_divisor_even():\n    # Test with an even number\n    assert largest_divisor(10) == 5\n\ndef test_largest_divisor_odd():\n    # Test with an odd number\n    assert largest_divisor(15) == 5",
+  "timestamp": "2026-09-06T16:43:13"
+}

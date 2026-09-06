@@ -1,0 +1,8 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/32",
+  "rep": 0,
+  "error": "timeout: timed out",
+  "parsed": false
+}

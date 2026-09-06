@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/31",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 514,
+  "completion_tokens": 260,
+  "total_tokens": 774,
+  "duration_s": 12.106,
+  "eval_duration_s": 10.344,
+  "parsed": true,
+  "collected": 8,
+  "passed": 8,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\ndef test_is_prime_one():\n    assert not is_prime(1)\n\ndef test_is_prime_even():\n    assert not is_prime(4)\n\ndef test_is_prime_two():\n    assert is_prime(2)\n\ndef test_is_prime_odd_prime():\n    assert is_prime(11)\n\ndef test_is_prime_composite():\n    assert not is_prime(15)\n\ndef test_is_prime_large_number():\n    assert is_prime(13441)\n\ndef test_is_prime_not_prime_due_to_divisibility():\n    assert not is_prime(61 * 2)\n\ndef test_is_prime_large_prime():\n    assert is_prime(61)",
+  "timestamp": "2026-09-06T17:41:09"
+}

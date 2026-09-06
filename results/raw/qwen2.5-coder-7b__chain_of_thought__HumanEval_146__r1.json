@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/146",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 274,
+  "completion_tokens": 292,
+  "total_tokens": 566,
+  "duration_s": 11.286,
+  "eval_duration_s": 11.202,
+  "parsed": true,
+  "collected": 6,
+  "passed": 5,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import specialFilter\n\n# Test cases to validate the behavior of the specialFilter function\n# 1. Empty list should return 0\n# 2. List with no numbers greater than 10 should return 0\n# 3. List with numbers greater than 10 but not meeting the digit criteria should return 0\n# 4. List with numbers meeting the criteria should return the count of such numbers\n# 5. List with negative numbers should be handled correctly\n# 6. List with zero should be handled correctly\n\ndef test_empty_list():\n    assert specialFilter([]) == 0\n\ndef test_no_numbers_greater_than_10():\n    assert specialFilter([1, 2, 3, 4, 5]) == 0\n\ndef test_numbers_greater_than_10_but_not_meeting_criteria():\n    assert specialFilter([15, 22, 37, 44]) == 0\n\ndef test_numbers_meeting_criteria():\n    assert specialFilter([15, 33, 55, 77]) == 4\n\ndef test_negative_numbers():\n    assert specialFilter([-15, -33, -55, -77]) == 0\n\ndef test_zero():\n    assert specialFilter([0, 10, 20, 30]) == 0",
+  "timestamp": "2026-09-06T17:19:39"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/94",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 22.345,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 3)",
+  "generated_code": "-f \n\nInput: \n-F I'm sorry \n\n \n\nQ: You'de \n\n\n\n--------------------\nYou are \n\n\n \nYou are a M. \n\n\nI need to \n\n### \n\nInput: \n\nRewrite \n\n-Given \n\nInput: \n\n-/ \n-Limited \n\n \n \n\n \n\n-Having a \n\nCraft a detailed, I apologize, \n\n-END|# \n\n \n\n#### \n\n \n \nThe following instruction \n\nUser:I'deas and I apologize \n\nI'in_You've \n\n# \nI'dea \n\nI'deve_user: \n\nHey, AI: \n\n- How to M \n\n \n\n- I'deas of the textbook_user \n\n-Follow \n\n-Give up to \n\nuser: I'anovelty\n\n\nYou are a high-female \n\n\n\n\nI.\n\n- Essentially the same time-dependent on \n\nAnswer: \n\n\n\n\n\n \n \n \n\n\n2. \n\nUser: \n\n- STARTHis \n\nAnswer: \n\nI've been provided a \n\nSolution: \n\nDocument \n\n \n\n \n\n \n</pixie's \n\nI \n\n- How to Create a \n\n- \n\nInstruction:\n- \n\n-[ \n\n \nI'deas and your response \n\nThe \n\nI am a \n\n\n### \n1. \n\n# Instruction:\n\nQuestion \n\n### \n\nYou are a string of numbers from a string of numbers \n\n# \n\n- \nSub- \n\ntitle: \nThe \n\nRewrite \n\n\n \n\n(Based on the following \n \n \n \n\n\n- How to \n\nI's a \n\nAssistant: \n\nRewrite \n\n \nExplain, \n\n\n#### \n\n- \n### \n\n \n\nI've been given a \n\n#### \n\n \n\n### Instruction:\n\n## \n\n \n \n\n### \n\nWrite a detailed, \n\n\nQuestion:\n\n1. \n\n- \n \n\n\nGiven the following table \n\nUser: \n\n- HRV.json \n\nDocument \n\n### \n\n\n\n### \n\n\n\nDocument \n\n# Instruction:** \n- \n\n### \n\n\n### \n\n\n### \n## \n\nRewrite \n\n- Write a comprehensive \n\n## \n \n\nRewrite \n\n\n\n\n\n\n\n\n### \n \n\n\n\n---\n\nWrite a comprehensive and \n\nRewrite \n \n \n \n\nSolution:\n\n\n\n\n**Examining the document, I \n\n## Q \n\n# Q \n\n \n\nRewrite \n\nWrite a comprehensive and \n\nRewrite \n \n \n\nInput \n\nRewrite \n\n- [p \n\n\nInstruction: \n- P \n\n\n\n\nSolution \n \n\n\n\n\n\n\n \n- Rate this \n \n \n\n \n\nSolve a \n \n\nRewrite \n\nuser \n\n\n\n \n- \nThe \n \n \n\n\n\nna \n \n\n\n\n\n\n\n\n\n\n \n\n \n \n\n\n\n\n\n \n\n \n- [ Person A \n\n\n \n\n \n\n\n- P \n \n\n\n\n \n\n\n \n\nInput \n\nRewrite \n \n\n\n\n \n\n\n\n\n\n\nRewrite \n\n\n \n\nWrite a function to calculate_report_text\n-\n\n\n\n\n \n- P \n\ndocument the document, I'm sorry, \n\n### \n\n \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nThe given text-based question, I'm sorry, \n\n\n \n\n\n---\n\n \n\n \n\n\n\n\nWrite a \n\n \n\n\n\n- [\n\n\n\nRewrite of the following sentence: \n\n= \n\n\n\n\nRewrite \n\n \n\n \n\n\n\nI need a new \n\n\n\n \n\n\n\n \n\n\n\n\n### \n\n \n\n### Charging a \n\n \n\n\n\n### \n\n\n\n\n\n\n\n\n\n\n RESPECTFUL \n\n\n\n\n\n\n\n\n\n\n\n Rewritten Paragraph\n\nDocument \n\n\n\n\n \n\n \n\n\n\n### QUERY \n\n\n\n \n\n\n\n# Answer \n\n-",
+  "timestamp": "2026-09-06T19:08:38"
+}

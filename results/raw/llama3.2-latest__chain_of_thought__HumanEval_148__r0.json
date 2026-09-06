@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/148",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 366,
+  "completion_tokens": 344,
+  "total_tokens": 710,
+  "duration_s": 6.409,
+  "eval_duration_s": 6.21,
+  "parsed": true,
+  "collected": 6,
+  "passed": 6,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Function bf is expected to return a tuple of planets in order of their distance from the sun\n# It should return an empty tuple if either planet1 or planet2 is not a valid planet name\n# The valid planet names are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune\n# The function should return planets in order of their distance from the sun\n\nfrom solution import bf\n\n# Test case 1: Valid input with correct order\ndef test_bf_valid_input():\n    assert bf(\"Jupiter\", \"Neptune\") == (\"Saturn\", \"Uranus\")\n\n# Test case 2: Valid input with incorrect order\ndef test_bf_incorrect_order():\n    assert bf(\"Neptune\", \"Jupiter\") == (\"Saturn\", \"Uranus\")\n\n# Test case 3: Valid input with correct order, but planet1 is closer to the sun\ndef test_bf_correct_order_closest_to_sun():\n    assert bf(\"Mercury\", \"Neptune\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\")\n\n# Test case 4: Invalid input with incorrect planet name\ndef test_bf_invalid_input():\n    assert bf(\"Invalid\", \"Neptune\") == ()\n\n# Test case 5: Invalid input with correct planet name but incorrect order\ndef test_bf_invalid_order():\n    assert bf(\"Jupiter\", \"Invalid\") == ()\n\n# Test case 6: Invalid input with correct planet names but incorrect order\ndef test_bf_invalid_order_correct_names():\n    assert bf(\"Jupiter\", \"Saturn\") == ()",
+  "timestamp": "2026-09-06T20:49:05"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/110",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 25.07,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "You's theft \n\n\n\n\n\n** \n\n\n \n1.\n\nI's theft \n\n\n  \n\n GAMET \n\n\n** \n \n\n\n\nSolution \n\n \n \n-flood, Alice:\n\nInput:\n\n- I apologize the text- \n\n-Following \n\nassistant \n\n\nProvide a detailed, \n \n\nC \nROUGH,I'm sorry \n\nd \n \n-Given the following text from a natural and the G. \n\n\n\"I.\n\nq:**/ HRV \n\n2. \n\nCraft a\n\n\nSolution: \nAs a person. \n\nInput:\n\n- P \n\nThe following information. \n\n\n \nYou'ran_\n\nInput: \n\nInput: \n\n \nI'deve been \n\nInput: \n\n\n##### \nAlice's age_tube_text \n\n \n- \n\n- \n\n- Prompt the user \n\nCraft a Python \n\n### \nOkay, now \n\ntitle:\nSubject: \n\nTitle \n\nDocument \n\n\n \n \n\n2021 \n\ntitle: \n\n\ntitle: \n\n- \n\n \n\n\n\n### Solution \n\nQuestion \n\n- P \n\n \n\nQuestion \nI.\n\n# QD \n\n\nProblem:\nQuestion.\n\nEx \n\n\n### \nYou are a group of \n\n\n \n\n# Q1: \n\n\n \n\n### \n- I'm sorry \n\n \nYour task: \n\nprompt \n\n- M \n\nWrite a \n\n(Write a \n\n\n\n\n\n\n\n2 \n\nThe \n\n\n \n\n \n\n\n**Your task: \n\n\n \nYou are a newborn's wristwatcher \n\nBase theory \n\nQuestion \n\n\n\n\n\n\n\n\n\n\nI.\n\n \n\n \n\n \n\n- \n\nI'ution \n\nQuestion:\n\n### \nI. \n\n# \n\n# Instruction:\n- \n\nR \n\nEx- \n\ntitle: \n\nYou are an idealized_text=\n \n \n \n \n \n \n\n \n\ninstruction: \n- HR \n\n \n\n#### QUEST TOI.\n\n### Answer: \n\n- H \n\n \n\n \n\nI'm sorry, \n\n- P \n\nQuestion \n\n### \n\n\nQuestioning the other hand-in \n\n## QUERY \n\n# QUESTION \n\n# \n\nAnswer:\n\n\n## \nYou are a researcher, \n\nI apologize \n\n#### \n\nChapter \n\n### Solution \n\n# \n\n \n\n\n## \n\nRewrite \n\n \n\nDocument \n\n# \n\n \n\n\n\n\nGiven the following sentence \n\n## \n\n\n#### Instruction: \n- Prompt \n\nGiven the following sentence \n\nAssistant \n \n\n \n\nInput \n- Write a comprehensive \n\nRewrite \n\n \n\nRewrite \n\n\n\n\n\n \n\n \n\n \n\n \n\n \n\n \nDocument \n\n<|end- \n\n# Instruction:\n\n\n## Instruction: \n\n(a) \n\nRewrite \n\n\n#### \n\n### \n\n\n\ndrafting a \n\n\n \n\nRewrite \n\n\n# Problem: \n\n\n\n\n \n\nWrite a comprehensive review of the document, I \n\n## \n\n \n\n\n\n\n\n\n\n \n\nInstruction:\n- \n\n \n\n\n\nSolving the following instruction.\n\n\n \n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nrewrite \n\n\n\n\n\nGiven the following sentence \n\n\n\n\n\n\n \n\n\n- \n\n\n\n\nRewrite \n\n- PROMI apologize \n\nRewrite \n\n---\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n \n\nWrite a comprehensive, \n\n\nGiven a \n\n\n\n\n\n\n\n\n\n \n \n\n# \n\n \n\nSolution \n\n\n \n\n \n \n\n\n\n\nPackage A and \n\n### \n\n\n \n\n\n \n\n\n\n\n- \n\n \n\n\n\n\nGiven a \n\n\n\n\n\n- \n\nQuestion=\n\n\n \n\nGiven the following sentence:\n\n\n\n\nGiven a \n\n\nGiven a \n\n\n \n\n\nThursday \n\n\n\n\nGiven the following document \n\n \n\n\n\n\n### \n\n\n\n \n\n\n\n\n# Problem:\n- \n\n\n\nRewrite \n\n \n\n### \n\nYour task:\n\n\n\nGiven a \n\n\n\nGiven the following document \n\n\n \n\n\nSolving the following sentence, I",
+  "timestamp": "2026-09-06T19:10:18"
+}

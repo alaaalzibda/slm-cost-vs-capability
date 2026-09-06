@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/92",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 235,
+  "completion_tokens": 284,
+  "total_tokens": 519,
+  "duration_s": 11.769,
+  "eval_duration_s": 11.011,
+  "parsed": true,
+  "collected": 2,
+  "passed": 1,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import any_int\n\ndef test_any_int_true():\n    assert any_int(5, 2, 7) == True\n    assert any_int(3, -2, 1) == True\n\ndef test_any_int_false():\n    assert any_int(3, 2, 2) == False\n    assert any_int(3.6, -2.2, 2) == False\n    assert any_int(5, 5, 10) == True\n    assert any_int(0, 0, 0) == True\n    assert any_int(-5, 5, 0) == True\n    assert any_int(10, -5, 15) == True\n    assert any_int(10, 5, 15) == True\n    assert any_int(10, 15, 5) == True\n    assert any_int(10, 15, -5) == False\n    assert any_int(10, -15, 5) == False\n    assert any_int(-10, 15, 5) == False\n    assert any_int(-10, -15, 5) == False\n    assert any_int(-10, -15, -5) == False",
+  "timestamp": "2026-09-06T16:39:16"
+}

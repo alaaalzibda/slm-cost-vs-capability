@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/74",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 338,
+  "completion_tokens": 287,
+  "total_tokens": 625,
+  "duration_s": 10.936,
+  "eval_duration_s": 10.876,
+  "parsed": true,
+  "collected": 6,
+  "passed": 5,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import total_match\n\n# Test cases to validate the behavior of the total_match function\n# 1. Both lists are empty\n# 2. Both lists have the same total number of characters\n# 3. The first list has fewer characters than the second list\n# 4. The second list has fewer characters than the first list\n# 5. One list is empty and the other is not\n# 6. Lists with mixed case characters\n\ndef test_empty_lists():\n    assert total_match([], []) == []\n\ndef test_equal_char_count():\n    assert total_match(['hi', 'admin'], ['hI', 'Hi']) == ['hi', 'admin']\n\ndef test_first_list_fewer_chars():\n    assert total_match(['hi', 'admin'], ['hi', 'hi', 'admin', 'project']) == ['hi', 'admin']\n\ndef test_second_list_fewer_chars():\n    assert total_match(['hi', 'admin'], ['hI', 'hi', 'hi']) == ['hI', 'hi', 'hi']\n\ndef test_one_empty_list():\n    assert total_match(['4'], ['1', '2', '3', '4', '5']) == ['4']\n\ndef test_mixed_case_characters():\n    assert total_match(['4'], ['1', '2', '3', '4', '5']) == ['4']",
+  "timestamp": "2026-09-06T16:59:01"
+}

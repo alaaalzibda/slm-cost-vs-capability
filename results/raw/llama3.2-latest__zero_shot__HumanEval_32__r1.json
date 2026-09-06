@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/32",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 371,
+  "completion_tokens": 336,
+  "total_tokens": 707,
+  "duration_s": 6.203,
+  "eval_duration_s": 6.144,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "from solution import find_zero\n\ndef test_find_zero_single_coefficient():\n    assert find_zero([1]) == 0\n\ndef test_find_zero_two_coefficients():\n    assert round(find_zero([1, 2]), 2) == -0.5\n    assert round(find_zero([2, 1]), 2) == 0.5\n\ndef test_find_zero_three_coefficients():\n    assert round(find_zero([1, 2, 3]), 2) == 1.0\n    assert round(find_zero([3, 2, 1]), 2) == -1.0\n\ndef test_find_zero_four_coefficients():\n    assert round(find_zero([1, 2, 3, 4]), 2) == 1.0\n    assert round(find_zero([4, 3, 2, 1]), 2) == -1.0\n\ndef test_find_zero_negative_coefficients():\n    assert round(find_zero([-1, 2]), 2) == 1.0\n    assert round(find_zero([2, -1]), 2) == -1.0\n\ndef test_find_zero_large_coefficients():\n    assert round(find_zero([1000, 2000, 3000]), 2) == 1.0\n    assert round(find_zero([2000, 1000, 3000]), 2) == -1.0\n\ndef test_find_zero_invalid_input():\n    with pytest.raises(TypeError):\n        find_zero(\"hello\")\n    with pytest.raises(TypeError):\n        find_zero([1, 2, None])",
+  "timestamp": "2026-09-06T20:33:48"
+}

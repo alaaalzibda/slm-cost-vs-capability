@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/32",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 416,
+  "completion_tokens": 440,
+  "total_tokens": 856,
+  "duration_s": 8.117,
+  "eval_duration_s": 7.971,
+  "parsed": true,
+  "collected": 6,
+  "passed": 2,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n#   - The function find_zero takes a list of coefficients as input.\n#     The list must have an even number of elements.\n#     The largest non-zero coefficient is guaranteed to exist.\n#     This is because the polynomial is of even degree and has non-zero coefficients.\n#   - The function returns the zero point of the polynomial.\n#     If there are multiple solutions, only one is returned.\n#   - The function does not handle invalid input.\n#     It should raise an error if the input list has an odd number of elements.\n#   - The function should handle the case where the largest non-zero coefficient is zero.\n#     In this case, the function should return None or a special value.\n\nfrom solution import find_zero\n\ndef test_find_zero_even_degree_polynomial():\n    # Test with a simple polynomial\n    assert round(find_zero([1, 2]), 2) == -0.5\n\ndef test_find_zero_multiple_solutions():\n    # Test with a polynomial that has multiple solutions\n    assert round(find_zero([-6, 11, -6, 1]), 2) == 1.0\n\ndef test_find_zero_largest_non_zero_coefficient():\n    # Test with a polynomial where the largest non-zero coefficient is at the end\n    assert round(find_zero([1, 0, 0, 0, 0, 0, -6]), 2) == 1.0\n\ndef test_find_zero_largest_non_zero_coefficient_zero():\n    # Test with a polynomial where the largest non-zero coefficient is zero\n    assert find_zero([0, 1, 0, 0, 0, 0, -6]) is None\n\ndef test_find_zero_odd_degree_polynomial():\n    # Test with a polynomial that has an odd degree\n    # This should raise an error\n    with pytest.raises(ValueError):\n        find_zero([1, 2, 3])\n\ndef test_find_zero_empty_list():\n    # Test with an empty list\n    # This should raise an error\n    with pytest.raises(ValueError):\n        find_zero([])",
+  "timestamp": "2026-09-06T20:37:36"
+}

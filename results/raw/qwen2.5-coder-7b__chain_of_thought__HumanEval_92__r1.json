@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/92",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 280,
+  "completion_tokens": 295,
+  "total_tokens": 575,
+  "duration_s": 11.249,
+  "eval_duration_s": 11.172,
+  "parsed": true,
+  "collected": 3,
+  "passed": 2,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import any_int\n\n# The function any_int checks if any one of the three provided numbers is equal to the sum of the other two.\n# It also checks if all the numbers are integers. If these conditions are met, it returns True; otherwise, it returns False.\n\n# Test cases:\n# 1. All numbers are integers and one of them is the sum of the other two.\n# 2. All numbers are integers but no one of them is the sum of the other two.\n# 3. One of the numbers is not an integer.\n# 4. All numbers are integers and two of them are the same, making the third one the sum of the other two.\n\ndef test_any_int_true():\n    assert any_int(5, 2, 7) == True\n    assert any_int(3, -2, 1) == True\n    assert any_int(0, 0, 0) == True\n\ndef test_any_int_false():\n    assert any_int(3, 2, 2) == False\n    assert any_int(3.6, -2.2, 2) == False\n    assert any_int(5, 5, 10) == False\n\ndef test_any_int_mixed_types():\n    assert any_int(3, 2, 5) == True\n    assert any_int(3, 2, 6) == False",
+  "timestamp": "2026-09-06T16:59:56"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/96",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 305,
+  "completion_tokens": 139,
+  "total_tokens": 444,
+  "duration_s": 5.037,
+  "eval_duration_s": 2.1,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "You \nYou \n\ninstruction:\n\n\n\n### \n\n-F \n\n- \n \nAs a \n\n\nYour HTML5 \n\n\n\n\"The \n\n \n \n- \n- \n\n\n\n \n\n- \n\n \n \nThe \n\nQuestion: \n\nI'an \n\n- \n\n-Five years \n\n- [Question \n\nYour task: \n\ninstructor \n \nYou'ran",
+  "timestamp": "2026-09-06T19:09:12"
+}

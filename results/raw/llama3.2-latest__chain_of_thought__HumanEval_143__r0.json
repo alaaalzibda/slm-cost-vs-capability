@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/143",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 306,
+  "completion_tokens": 329,
+  "total_tokens": 635,
+  "duration_s": 6.106,
+  "eval_duration_s": 5.938,
+  "parsed": true,
+  "collected": 6,
+  "passed": 2,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function takes a sentence as input and returns a string containing words\n# whose lengths are prime numbers. The order of the words in the new string should\n# be the same as the original sentence. We need to test the following cases:\n# 1. An empty sentence\n# 2. A sentence with a single word of prime length\n# 3. A sentence with multiple words of prime length\n# 4. A sentence with no words of prime length\n# 5. A sentence with words of non-prime length\n# 6. A sentence with words of prime length, but not all of them\n\nfrom solution import words_in_sentence\n\n# Test an empty sentence\ndef test_empty_sentence():\n    assert words_in_sentence(\"\") == \"\"\n\n# Test a sentence with a single word of prime length\ndef test_single_prime_word():\n    assert words_in_sentence(\"a\") == \"a\"\n\n# Test a sentence with multiple words of prime length\ndef test_multiple_prime_words():\n    assert words_in_sentence(\"is a test\") == \"is\"\n\n# Test a sentence with no words of prime length\ndef test_no_prime_words():\n    assert words_in_sentence(\"hello world\") == \"\"\n\n# Test a sentence with words of non-prime length\ndef test_non_prime_words():\n    assert words_in_sentence(\"hello world this is a test\") == \"\"\n\n# Test a sentence with words of prime length, but not all of them\ndef test_some_prime_words():\n    assert words_in_sentence(\"is a test lets go for swimming\") == \"is a test\"",
+  "timestamp": "2026-09-06T20:48:38"
+}

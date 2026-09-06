@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/96",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 355,
+  "completion_tokens": 82,
+  "total_tokens": 437,
+  "duration_s": 2.09,
+  "eval_duration_s": 1.232,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "You'de \n\nuser: I'in \n\n \n- [Question \n \nYou'de \n\nQuestion:\n\n \n\nYour task: I's a shower, so I'in",
+  "timestamp": "2026-09-06T19:14:48"
+}

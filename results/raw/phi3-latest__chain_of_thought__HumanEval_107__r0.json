@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/107",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 22.883,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "-Given the following sentence. \n\nUser: I'deas \nAs a researcher, I'in \n\n### \n \n \n---\n-Given the documentary evidence that the paragraph: \n\n-Given the \n\ninstruction:.\n\nThe A \n\nYou are \n\n### \nHey \n\nI'devei, the Furniture \n\n### \n\nYou \n\n- Rewrite the_text= \n\nSolution:\n\n \n\n \n\n\nSolution: \nHey \n\n- I \n\n\n Solution \n\n### \nAs an AI:\n\nInput: \n\nInput: \"I'de \n\n-H \n\nI'devei, I apologize \n\nUser:**/FuseAI: \n\n### \nI'm sorry \n\nI'm sorry \n\n \n- \n\n\n \n\n \n- \n\n\n \n\n \n\n\n\nSolution: \n\n\n- Legal and Your task: \n \nYou are a \n\nChapter \n\n# \n \n- ## Answer: \n\nInput:\n\n- \n\n \nYou are an \n\nYour task:\n- HRV/nature of the following \n\n\n \n \n \n\n### \n\ninstruction:\nThe \n\n \nI'm sorry \n\n \nI'm sorry it's a \n\nQuestion:** \n\nWrite a conversation between a person who's \n\n### \nI apologize \n\nRewrite \n\n- How does the following \n\n\n\n\n\n \n\n\n\n\n\n\n\n---\n\n# \n\n### \n\n \nYou are \n\n- \n\n<|\n\n \n\n\n \n\nRewrite \n\nuser: \n\nI've been \n\n \nYoung's Law of Democracy and its \n\ntitle: I'm sorry \n\n\n \n\n-I \n\n- \n-I \nYou's \n\n \n\n\n\n \n\n- \n- Write a \n\nInput: \n\n \nI'm sorry \n \n\nInput:\n\nRewrite \n\n#### \n- user: \nI've been given a \n\nAssistant: \nI'm sorry, I apologize \n\nuser: I'm trying to create a \n\nI apologize \n\n#### QUESTION \n\n1. \n\nDocument \n\nRewrite \n \n \n\n\n# QUERY \n\n### \n\n \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n# \n\ntakes_on \n\n# \n\n \n\n## Q-Violence, I'm a baffled_text=\n\n \n\n\n# \n\n(a) \n\n\ninstruction: \n\n\n \n\nInput: \n\nRewrite \n\nWrite a comprehensive list of \n\nWrite a comprehensive list of \n\n\n \n\n\nWrite a comprehensive and \n\n \n\n \n\n \n\n \nDocument \n\n\n\n\n\n\n\n\n\n\n\n\n**Exerc0\n\n--- \n\n\n\n### \n\n\nduring the document, I'm sorry, \n\n<|end- \n\n\n\nWrite a comprehensive and \n\nInput \n\n \n\nRewrite \n \n\nThe \n\n#### Problem- \n\n\n \n\nInput: \n\n\n \n\n### \n\n \n\n\nYour task:\n- [ \n\nRewrite \n\n\n\n\n\n \n\n\n \n\n\n \n\n \n\nDocument \n\nWrite a comprehensive and \n\n \n\n\n\n\n### \nBased on the document, a \n\n\n\n\n \n\n\n\n\n\n \n\n \n- Write a text-based decision-making model for a new document \n\n\n\n \n\n \n\n\n\n\n\n\n \n\n\nGiven the following sentence \n\n\n \n\n\n\n** \n\n#### \n\n\n\n\nGiven a \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\nWrite a comprehensive answer \n \n\n# \n\n\n \n\n \n\n \n\n \n\n \n\n\n\n\n\nThe provided text-based on the provided document, I'm sorry, \n\n### \n\n\n \n\n\n\n## \n\n \n\n \n\n\n\n\n\nRewrite \n\n\n \n\n## Solution \n\n# Q1 \n\n\n\n\n \n\n## Draft a \n\n\n\nThe document, as an \n\n\n \n\n \n\n\n\n\n\n\n\n\n\n\n\n\nWrite a complex instruction, I's \n\n\n\n\n- [Your task: I'm sorry, \n\n \n\n \n\n \n\n### \n\nAbacavity, \n\n\n\u6307\u4ee4 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n \n\n \n\n \n\n\n\n###",
+  "timestamp": "2026-09-06T19:15:49"
+}

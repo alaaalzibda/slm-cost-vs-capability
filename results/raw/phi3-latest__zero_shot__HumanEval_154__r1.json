@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/154",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 272,
+  "completion_tokens": 279,
+  "total_tokens": 551,
+  "duration_s": 4.26,
+  "eval_duration_s": 4.236,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "You \n\n \n- [Customer: \n\n\nUser: Hey \n\n \n \n\n \n \nYou \n\n--- \n\n \nYou \n\n\nassistant: \n \n---\n \n \nYou'de:\nA \n\n\n\nDocument \n\n \n\n- [Hey \n \nYouH \n\nCutting- \n \nDocument text_user \n\nCertainly \n\n- \n \nYou'de \n\n** \n\nReferencing the following sentence, you are \n\nuser \n\nCraft a+ \n\nInput. \n-Given the_it \n\n \n-endox's work, and the assistant: \n\nInstrude, I'in \n\n-Given a:\n\n \n--- Solution: \n\npaid \n\n**Answer: \n\n-Given \n\nDocument the following sentence, \n\nI'de the more_user \n\nI'in",
+  "timestamp": "2026-09-06T19:11:10"
+}

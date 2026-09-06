@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/92",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 284,
+  "completion_tokens": 151,
+  "total_tokens": 435,
+  "duration_s": 2.858,
+  "eval_duration_s": 2.272,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "You \nChat \n\nQuestion: \n\n\n\n\n\"The \n\n** \n \nDocument \n\n\n  \n[advice \n\n\n \n \nYou'de:\n\n\n\n\n  \n\n<|/ \n \n \n\nDocument:\n\nUser: \n\nI'in \n\nI've been \n\n \nI. \n\n- [Document \n\nCertainly, I'in \n\n\nInstruction: \n\nUser:",
+  "timestamp": "2026-09-06T19:08:02"
+}

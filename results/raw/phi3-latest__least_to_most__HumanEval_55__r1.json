@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/55",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 556.742,
+  "eval_duration_s": 0.0,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "test_generated.py ______________________\ntest_generated.py:1: in <module>\n    Documentation/text\nE   NameError: name 'Documentation' is not defined\n=========================== short test summary info ============================\nERROR test_generated.py - NameError: name 'Documentation' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n",
+  "generated_code": "Documentation/text\n\n# \n\n### Answer\n\n\n### Solution",
+  "timestamp": "2026-09-06T20:26:01"
+}

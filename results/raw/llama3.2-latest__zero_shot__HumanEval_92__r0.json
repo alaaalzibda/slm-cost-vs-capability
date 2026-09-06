@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/92",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 247,
+  "completion_tokens": 189,
+  "total_tokens": 436,
+  "duration_s": 3.75,
+  "eval_duration_s": 3.405,
+  "parsed": true,
+  "collected": 7,
+  "passed": 7,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import any_int\n\ndef test_any_int_true():\n    assert any_int(5, 2, 7) == True\n\ndef test_any_int_false_equal_numbers():\n    assert any_int(3, 2, 2) == False\n\ndef test_any_int_true_negative_number():\n    assert any_int(3, -2, 1) == True\n\ndef test_any_int_false_non_integer():\n    assert any_int(3.6, -2.2, 2) == False\n\ndef test_any_int_false_non_integer_sum():\n    assert any_int(3, 2, 3.6) == False\n\ndef test_any_int_false_non_integer_sum_negative():\n    assert any_int(3, -2, -1) == False\n\ndef test_any_int_false_non_integer_sum_negative_negative():\n    assert any_int(3, -2, -3) == False",
+  "timestamp": "2026-09-06T20:35:17"
+}

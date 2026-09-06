@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/32",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 406,
+  "completion_tokens": 320,
+  "total_tokens": 726,
+  "duration_s": 12.429,
+  "eval_duration_s": 12.136,
+  "parsed": true,
+  "collected": 3,
+  "passed": 3,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 85.0,
+  "branch_coverage": 83.33,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import find_zero\n\n# The function find_zero is designed to find a zero of a polynomial given its coefficients.\n# It assumes the list of coefficients has an even number of elements and the largest non-zero\n# coefficient guarantees a solution. The function returns only one zero point.\n\n# Test cases:\n# 1. For a linear polynomial (degree 1), the zero should be the negation of the constant term divided by the coefficient of x.\n# 2. For a cubic polynomial (degree 3), the zero should be one of the roots of the polynomial.\n# 3. The function should handle polynomials with leading zeros (i.e., coefficients that are zero but not the largest non-zero coefficient).\n\ndef test_find_zero_linear():\n    # Test a linear polynomial f(x) = 1 + 2x\n    assert round(find_zero([1, 2]), 2) == -0.5\n\ndef test_find_zero_cubic():\n    # Test a cubic polynomial f(x) = (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    assert round(find_zero([-6, 11, -6, 1]), 2) == 1.0\n\ndef test_find_zero_leading_zeros():\n    # Test a polynomial with leading zeros\n    assert round(find_zero([0, 0, 1, 2]), 2) == -0.5",
+  "timestamp": "2026-09-06T16:43:47"
+}

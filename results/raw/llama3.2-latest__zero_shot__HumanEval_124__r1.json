@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/124",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 375,
+  "completion_tokens": 308,
+  "total_tokens": 683,
+  "duration_s": 5.627,
+  "eval_duration_s": 5.594,
+  "parsed": true,
+  "collected": 6,
+  "passed": 5,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 83.33333333333333,
+  "branch_coverage": 75.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import valid_date\n\ndef test_valid_date():\n    assert valid_date('03-11-2000') == True\n    assert valid_date('15-01-2012') == False\n    assert valid_date('04-0-2040') == False\n    assert valid_date('06-04-2020') == True\n    assert valid_date('06/04/2020') == False\n\ndef test_empty_date():\n    assert valid_date('') == False\n\ndef test_invalid_month():\n    assert valid_date('15-01-2012') == False\n    assert valid_date('04-0-2040') == False\n    assert valid_date('06-04-2020') == False\n\ndef test_invalid_day():\n    assert valid_date('13-01-2012') == False\n    assert valid_date('31-01-2012') == False\n    assert valid_date('29-02-2012') == False\n\ndef test_invalid_year():\n    assert valid_date('13-01-2012') == False\n    assert valid_date('31-01-2012') == False\n    assert valid_date('29-02-2012') == False\n\ndef test_invalid_date_format():\n    assert valid_date('123-11-2000') == False\n    assert valid_date('03-11-2000a') == False\n    assert valid_date('03-11-2000b') == False",
+  "timestamp": "2026-09-06T20:36:36"
+}

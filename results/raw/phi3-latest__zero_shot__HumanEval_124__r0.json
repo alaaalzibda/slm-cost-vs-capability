@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/124",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 18.985,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 3)",
+  "generated_code": "instructor \n\n- \n \nYou' \nROUTINEal \n\ntarget_text \n\n### \n \n-F \n\nl \nPh.\n\nBased on:\n\ninstruction:\n\n- \n\nAnswer:\n\nInput: \n\n- \n\n M \nAs an O.\n\n\nInstruction: \n\n-Following \n\nDocument \nAs ants, \n\n- \n\n \nI'm sorry \n\nThe \n\nR \n\nBased on \n\nWrite a detailed, you \n\nBased on \n\n- <|easy \n\n \n\n### \nI'deas \n\nInput: \" \n\nRewrite \n\nDocument \n\ntitle: \"The \n\ntitle: \n\ntitle:\n\ntitle: \n\n\n\n\nYou are a newborn_B \n\n#: \n\ntitle:\n\n \n\ntitle: \n\ntitle: \n- I \n \n\n\n \n\ntitle: \nThe original textile industry, and the following L \n\n\n\n\n\n\nsolution: \n\n\n\n\n\n\n\nThe provided document.\n\n\nThe \n\nI'm sorry \n\n\nI'dea \n\nI'deas \n\nWrite a \n\n\n\n\nI've been a \n\n# \nProblem: \n\ntitle: \nI. \n\nI'm sorry \n\n- i \n\nQuestion\n### \n\nQuestion \n\n### \n\nRewrite \n\nBased on the following sentence \n\n\n\n \n \n\n \n\n\n\n\n\n \nYou are a company- \n\n\n\n\n \nYou are a \n\n### \n\n \nYou are a \n\n# Instruction:\n\ntitle: \n\nAssistant: I've been a \n\n- \n\nMonday \n\n- P/ \n\nDocument \n\nInput:\n- I'm sorry \n\nABSTRACT \n\nInput:\n\n\n\n\nsolution \n\n \n\n\ntitle:**\n\ntitle: \n\n### Assistant: \n\n \n\n## \n\nQuietude \n\nprompt \n\n### \n\nRewrite \nI's \n\n \n\nI need a new documentary about \n\n### \n\n### ##### \n\n \n \n\n \n\n \n\n\n \n\n \n\n \n\n \n\n \n\nInput \n\n \n\n- P \n\n### \n\n \n\nGiven the following information from the textbook section \n\n \n\n \n\n- i \n\n \n\n \n\n- Essay\n\nUser: I've been given a \n\n \n \nYou are an AI:\n\n## \n\n \n\n \n\n \n\n \n \n\n\n \n\n \n\n\n \n\n\n### \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n \n\n \nDocument \n \n\n\n \n\n \n\n \nDocument \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\nRewrite \n\n---\n\n#### Q:\n\n How to \n\n \n\n \n\n\nRewrite \n\n\nSolution: \n\n\n\n\n\n\n \n\n\n \n\n \n\n### \n\nI've been a \n\n \n\nInput: \n- Solution \n\nQuestion:\n\n#### \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\ntext= \n \n\nTextbook Section \n\nWrite a comprehensive \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\nWrite a text-based on the other handball, \n\n#### \n\nRewrite \n\n \n\n \n\nDocument \n\n\n \n\nTextbook Section \n\n#:\n\n\n \n### \n\n \n\n \n\n \n\n \n\n\n\n\n### \n\n \n\n\n \n\n \n\nDocument Type",
+  "timestamp": "2026-09-06T19:10:37"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/39",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 256,
+  "completion_tokens": 369,
+  "total_tokens": 625,
+  "duration_s": 6.776,
+  "eval_duration_s": 6.635,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "# Reasoning:\n# The prime_fib function takes an integer n as input and returns the nth Fibonacci number\n# that is also a prime number. We need to test the function for different values of n,\n# including edge cases like n=1, n=2, n=3, etc. We also need to test the function\n# for larger values of n to ensure it returns the correct result. Additionally, we\n# need to test the function for negative values of n and for values of n that are not\n# Fibonacci numbers.\n\nfrom solution import prime_fib\n\n# Test the function for different values of n\ndef test_prime_fib_small_values():\n    assert prime_fib(1) == 2\n    assert prime_fib(2) == 3\n    assert prime_fib(3) == 5\n    assert prime_fib(4) == 13\n    assert prime_fib(5) == 89\n\n# Test the function for larger values of n\ndef test_prime_fib_larger_values():\n    assert prime_fib(10) == 89\n    assert prime_fib(20) == 1597\n    assert prime_fib(30) == 832040\n\n# Test the function for negative values of n\ndef test_prime_fib_negative_values():\n    assert prime_fib(-1) == None\n    assert prime_fib(-2) == None\n    assert prime_fib(-3) == None\n\n# Test the function for non-Fibonacci values of n\ndef test_prime_fib_non_fibonacci():\n    assert prime_fib(4) == 13\n    assert prime_fib(6) == 8\n    assert prime_fib(7) == 13",
+  "timestamp": "2026-09-06T20:40:08"
+}

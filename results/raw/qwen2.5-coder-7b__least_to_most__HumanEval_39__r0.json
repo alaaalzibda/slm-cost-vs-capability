@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/39",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 868,
+  "completion_tokens": 863,
+  "total_tokens": 1731,
+  "duration_s": 35.747,
+  "eval_duration_s": 32.793,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "from solution import prime_fib\n\ndef test_prime_fib_smallest_input():\n    assert prime_fib(1) == 2\n\ndef test_prime_fib_next_smallest_input():\n    assert prime_fib(2) == 3\n\ndef test_prime_fib_next_input():\n    assert prime_fib(3) == 5\n\ndef test_prime_fib_next_input_4():\n    assert prime_fib(4) == 13\n\ndef test_prime_fib_next_input_5():\n    assert prime_fib(5) == 89\n\ndef test_prime_fib_larger_input():\n    assert prime_fib(10) == 144\n\ndef test_prime_fib_very_large_input():\n    assert prime_fib(100) == 354224848179261915075\n\ndef test_prime_fib_input_0():\n    assert prime_fib(0) == 2\n\ndef test_prime_fib_negative_input():\n    assert prime_fib(-1) == 2\n\ndef test_prime_fib_non_integer_input():\n    assert prime_fib(1.5) == 2\n\ndef test_prime_fib_floating_point_input():\n    assert prime_fib(2.0) == 3\n\ndef test_prime_fib_non_prime_fibonacci():\n    assert prime_fib(6) == 144\n\ndef test_prime_fib_prime_not_in_expected_order():\n    assert prime_fib(7) == 233\n\ndef test_prime_fib_prime_simplified_form():\n    assert prime_fib(8) == 1597\n\ndef test_prime_fib_prime_prime_factorized_form():\n    assert prime_fib(9) == 2584",
+  "timestamp": "2026-09-06T18:00:09"
+}

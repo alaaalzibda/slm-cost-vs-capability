@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/107",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 22.506,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "--- \n\n(bob \n\n\n\n### \n \n-L \n\n \nB \n \n\nDifficulty: \n-Given the document. \n\n-G \n\n| \ncustomer: \n\nChatbot: Hey, \n\n- \n\"The Enlightened \n\n### \nI.\n\nFollowing a multi-\n\n \nI'dea \n\n- REF: \n\n-l \n\n-\n\n \nI'an_instruction: \n\ntitle \n\n \n-provide a \n\n\nBased on \n\n \nYou are a basic arithmetic \n\n-Given \n\n### Instruction:\nI.\n\nI. \n\n### \nI'deve been a legally blindfold.\n\nI'm sorry \n\n\n\n\n\n \n \n\n# \n \n- \n\n \n\n\n \n\ntitle: \n\ntitle: \n- \n\n\n \n- \n\n\n \n\nQuestion:\n\n- \n\n- \n\n-I'm sorry I'm sorry I'm sorry \n\nBased \n\n# Question \n\ntitle: \n\n\n \n\nB \n\n<|end-to-t \n\n\n \n \n \n \n\n\n \n\n2. \n\nI. \n\n \nYou are a \n\n \nYou are an educational article, so- \n\n\n \nI've been \n\nThe \n\nDocument \n\nThe \n\n\n\n\n   \n\nQuestion:** \n\n### \n\nR \n\n \nI've been \n\nTitle \n\n\n\n\n\n\n\n\n\n\n \nYou are a newborn's\n\n<|end-to- \n\n\n\n\nI.\n\n# Problem \n- P \n\ntitle: \n\nUser: \n\n- i. \n\nQuestion \n\n# Instruction: \nI've been \n\nI're sorry, \n\n### QUESTION \n\n \n\n\n\n\n\n\nChemistry-- \n\nQuestion: \n\n\n \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\nSolution: \n\n\n\n \n- \n\n\n# Answer: \n\n\nDocument \n\nDear AI, \n\nUser:\n- P \n\n \n \n \n\n \n\ninstruction:**\n\nRewrite \n\n- How to solve the following instruction \n\nuser \n\n \n\n\n\n\n\n \n\n### Solution: \n\n \n\nI'm sorry, \n\n## Q1, \n\n# \n\n### \n\n \n\n\n\nuser: Subtracting theft, I'm sorry, I apologize, \n\n## \nParagraph \n\n<|end- \n\nWrite a comprehensive review and \n\n \n\n\n## \n\n\n \n\n## \n\n\n\n** \n\n \n\nRewrite \n \n \n\n \n\n \n## Q \n\nDocument \n\nWrite a comprehensive and \n\n\nRewrite \n\n# \n\n\n\nAnswer: \n\n\n\n\n \n\nRewrite \n\nQuestion:\n\n### \n\nI'm sorry, \n\n### \n\n\n\n#### \n\n\nRewrite \n \n\nWrite a comprehensive list of theft\n\n#### \n\nWrite a comprehensive, \n\nInput>\n\nInput: \n\n\n\n\nSolution:\n\n\n\nTitle: \n- \n\nDocument \n \n\nWrite a Python \n \n\n\n\n \n\n \n\n\n\n\n\n\n\n\n\n\n \n\nWrite a complex and \n\n\n\n\n \n\n\n \n \n\n \n \n\n\n \n- \nis a conversation between a user- \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n#### \n\n\nsolution:\n\n\nWrite a Python function to calculate_regression. \n\nWrite a conversation between an \n\n\n\n \n\nRewrite of the document, the other handball, and a \n\n \n\n\n \n\n\n\nI'm sorry, \n\n\n \n\n\n\n\n- Solution \n- \n\n \n\n\n\nI'm sorry, \n\n### \n\n \n\n\n\n\n\n\n \n\n\n\n\nRewrite \n\n# \n\n\n \n\n\n\nI's \n\n\n \n\n\n\n\nThe text-only \n\n\n\n\n\n- \n\n\n \n \n\n \n \n\n \n\n\n\n\n\n\n\n\n\n\n- \n\n \n\n \n\n \n \n\n\n\n\n### \n\nThe provided document, it seems like this,\n\nWrite a complex and complex instruction \n\n\n \n\n\n## Maintaining a \n\n\n \n\n### \n\nThe provided documentary documentary document, I'm sorry,\n\n \n\nGiven a hypothet0\n\n\n\n \n\n\n### Subtopics and its \n\n### Subtopics and",
+  "timestamp": "2026-09-06T19:16:12"
+}

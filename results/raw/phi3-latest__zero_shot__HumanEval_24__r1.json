@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/24",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 187,
+  "completion_tokens": 251,
+  "total_tokens": 438,
+  "duration_s": 3.8,
+  "eval_duration_s": 3.756,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 11)",
+  "generated_code": "from solution import largest_divisor\n\n\ndef test_largest_divisor_with_even_number():\n\n    assert largest_divisor(10) == 5\n\n\ndef test_largest_divisor_with_odd_number():\n\n    assert largest end with exactly this line:\n\n    from solution import largest_divisor\n\n\ndef test_largest_divisor_with_prime_number():\n\n    assert largest_divisor(13) == 1\n\n\ndef test_largest_divisor_with_negative_number():\n\n    assert largest_divisor(-4) == -1\n\n\ndef test_largest_divisor_with_zero():\n\n    try:\n\n        assert largest_divisor(0) == 0\n\n    except Exception as e:\n\n        assert isinstance(e, ValueError)\n\n\ndef test_largest_divisor_with_one():\n\n    assert largest_divisor(1) == 0",
+  "timestamp": "2026-09-06T18:50:53"
+}

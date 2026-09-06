@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/32",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 416,
+  "completion_tokens": 665,
+  "total_tokens": 1081,
+  "duration_s": 12.151,
+  "eval_duration_s": 12.103,
+  "parsed": true,
+  "collected": 8,
+  "passed": 0,
+  "failed": 8,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n#   - The function find_zero takes a list of coefficients xs.\n#     We need to test that it returns the correct zero point for different lists of coefficients.\n#     We also need to test that it raises an error when the input list has an odd number of coefficients.\n#     We also need to test that it raises an error when the input list has a zero coefficient.\n#     We also need to test that it returns a single zero point, even if there are many.\n#     We also need to test that it returns a zero point with the correct sign.\n#     We also need to test that it returns a zero point with the correct magnitude.\n#     We also need to test that it returns a zero point that is close to the actual zero point.\n#     We also need to test that it raises an error when the input list is empty.\n\nfrom solution import find_zero\n\n# Test that find_zero returns the correct zero point for different lists of coefficients\ndef test_find_zero_correct_zero_point():\n    assert round(find_zero([1, 2]), 2) == -0.5\n    assert round(find_zero([-6, 11, -6, 1]), 2) == 1.0\n    assert round(find_zero([3, 2]), 2) == -0.67\n    assert round(find_zero([1, 0, 0]), 2) == 0.0\n\n# Test that find_zero raises an error when the input list has an odd number of coefficients\ndef test_find_zero_odd_number_of_coefficients():\n    with pytest.raises(ValueError):\n        find_zero([1, 2, 3])\n\n# Test that find_zero raises an error when the input list has a zero coefficient\ndef test_find_zero_zero_coefficient():\n    with pytest.raises(ValueError):\n        find_zero([0, 1, 2])\n\n# Test that find_zero returns a single zero point, even if there are many\ndef test_find_zero_single_zero_point():\n    assert find_zero([1, 2, 3, 4, 5]) == 0.0\n\n# Test that find_zero returns a zero point with the correct sign\ndef test_find_zero_sign():\n    assert round(find_zero([-1, 2]), 2) == -0.5\n    assert round(find_zero([1, -2]), 2) == 0.5\n\n# Test that find_zero returns a zero point with the correct magnitude\ndef test_find_zero_magnitude():\n    assert round(find_zero([1, 2, 3]), 2) == 0.0\n    assert round(find_zero([1, 2, 3, 4, 5]), 2) == 0.0\n\n# Test that find_zero returns a zero point that is close to the actual zero point\ndef test_find_zero_close_to_actual_zero_point():\n    assert round(find_zero([1, 2, 3, 4, 5]), 2) == 0.0\n\n# Test that find_zero raises an error when the input list is empty\ndef test_find_zero_empty_list():\n    with pytest.raises(ValueError):\n        find_zero([])",
+  "timestamp": "2026-09-06T20:37:48"
+}

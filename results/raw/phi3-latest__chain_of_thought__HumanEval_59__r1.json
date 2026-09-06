@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/59",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 254,
+  "completion_tokens": 216,
+  "total_tokens": 470,
+  "duration_s": 3.264,
+  "eval_duration_s": 3.242,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "I'0 \n\nQ:\n\n\n\n2. QUESTION \n\n\n\" \n\nQ: \n \n\n\" \n\n\n  \n2.\n\n \nI \n\n-Given the given text.\n\nCan youtalk \n\nCraft a \n \nI's theft, you can'dex \n\n\ncanteen \n\n\n\n \nYou \n \n \nYou \n\n\n\n\n2.3Frosted B \n\nSolution \n\n \n\n \nYou'de \n\nDocument:\n\nInput:\n\n-Given the text- \n\nCertainly \n\n \n\nInstruction: \n \nYou \n\n-PAIRED \n\n%%Given \n\n--- \n\n \n\n####",
+  "timestamp": "2026-09-06T19:12:28"
+}

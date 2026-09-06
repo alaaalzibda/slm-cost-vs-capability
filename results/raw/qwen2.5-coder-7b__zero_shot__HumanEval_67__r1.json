@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/67",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 326,
+  "completion_tokens": 132,
+  "total_tokens": 458,
+  "duration_s": 5.032,
+  "eval_duration_s": 4.977,
+  "parsed": true,
+  "collected": 4,
+  "passed": 4,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import fruit_distribution\n\ndef test_fruit_distribution_case_1():\n    assert fruit_distribution(\"5 apples and 6 oranges\", 19) == 8\n\ndef test_fruit_distribution_case_2():\n    assert fruit_distribution(\"0 apples and 1 oranges\", 3) == 2\n\ndef test_fruit_distribution_case_3():\n    assert fruit_distribution(\"2 apples and 3 oranges\", 100) == 95\n\ndef test_fruit_distribution_case_4():\n    assert fruit_distribution(\"100 apples and 1 oranges\", 120) == 19",
+  "timestamp": "2026-09-06T16:37:58"
+}

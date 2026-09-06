@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/73",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 289,
+  "completion_tokens": 178,
+  "total_tokens": 467,
+  "duration_s": 2.706,
+  "eval_duration_s": 2.684,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "-Follow- \n\n- Rewrite the following sentence, you'in \n\n- \nYou \n\n \n-\n-Given \n\n \n--- \n \nH \n\n \n\n\n \nYou'in \n\n\n  \n### Chat \n\nuser: I'de \n\nTitle \n\nSolution: \n-G \n \n \n-Fixing \n \n- [user: \n\nUser: \"\n\n# \nQuestion: The \n \n \nUser: \n\n-Given the document, I need to the \n\nRepeat \n\n### \n \n\n-",
+  "timestamp": "2026-09-06T19:07:50"
+}

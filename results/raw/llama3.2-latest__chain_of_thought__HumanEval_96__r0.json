@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/96",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 304,
+  "completion_tokens": 1385,
+  "total_tokens": 1689,
+  "duration_s": 25.739,
+  "eval_duration_s": 25.547,
+  "parsed": true,
+  "collected": 21,
+  "passed": 2,
+  "failed": 19,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function should return an empty list for n = 0 and n = 1.\n# It should return a list containing the first prime number for n = 2.\n# It should return a list containing the first two prime numbers for n = 3.\n# It should return a list containing the first three prime numbers for n = 4.\n# It should return a list containing the first four prime numbers for n = 5.\n# It should return a list containing the first five prime numbers for n = 6.\n# It should return a list containing the first six prime numbers for n = 7.\n# It should return a list containing the first seven prime numbers for n = 8.\n# It should return a list containing the first eight prime numbers for n = 9.\n# It should return a list containing the first nine prime numbers for n = 10.\n# It should return a list containing the first ten prime numbers for n = 11.\n# It should return a list containing the first eleven prime numbers for n = 12.\n# It should return a list containing the first twelve prime numbers for n = 13.\n# It should return a list containing the first thirteen prime numbers for n = 14.\n# It should return a list containing the first fourteen prime numbers for n = 15.\n# It should return a list containing the first fifteen prime numbers for n = 16.\n# It should return a list containing the first sixteen prime numbers for n = 17.\n# It should return a list containing the first seventeen prime numbers for n = 18.\n# It should return a list containing the first eighteen prime numbers for n = 19.\n# It should return a list containing the first nineteen prime numbers for n = 20.\n# It should return a list containing the first twenty prime numbers for n = 21.\n\nfrom solution import count_up_to\n\n# Test the function with different inputs\ndef test_empty_list_for_zero():\n    assert count_up_to(0) == []\n\ndef test_empty_list_for_one():\n    assert count_up_to(1) == []\n\ndef test_first_prime_for_two():\n    assert count_up_to(2) == [2]\n\ndef test_first_two_primes_for_three():\n    assert count_up_to(3) == [2, 3]\n\ndef test_first_three_primes_for_four():\n    assert count_up_to(4) == [2, 3, 5]\n\ndef test_first_four_primes_for_five():\n    assert count_up_to(5) == [2, 3, 5, 7]\n\ndef test_first_five_primes_for_six():\n    assert count_up_to(6) == [2, 3, 5, 7, 11]\n\ndef test_first_six_primes_for_seven():\n    assert count_up_to(7) == [2, 3, 5, 7, 11, 13]\n\ndef test_first_seven_primes_for_eight():\n    assert count_up_to(8) == [2, 3, 5, 7, 11, 13, 17]\n\ndef test_first_eight_primes_for_nine():\n    assert count_up_to(9) == [2, 3, 5, 7, 11, 13, 17, 19]\n\ndef test_first_nine_primes_for_ten():\n    assert count_up_to(10) == [2, 3, 5, 7, 11, 13, 17, 19, 23]\n\ndef test_first_ten_primes_for_eleven():\n    assert count_up_to(11) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]\n\ndef test_first_eleven_primes_for_twelve():\n    assert count_up_to(12) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]\n\ndef test_first_twelve_primes_for_thirteen():\n    assert count_up_to(13) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]\n\ndef test_first_thirteen_primes_for_fourteen():\n    assert count_up_to(14) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41]\n\ndef test_first_fourteen_primes_for_fifteen():\n    assert count_up_to(15) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43]\n\ndef test_first_fifteen_primes_for_sixteen():\n    assert count_up_to(16) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]\n\ndef test_first_sixteen_primes_for_seventeen():\n    assert count_up_to(17) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53]\n\ndef test_first_seventeen_primes_for_eighteen():\n    assert count_up_to(18) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]\n\ndef test_first_eighteen_primes_for_nineteen():\n    assert count_up_to(19) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61]\n\ndef test_first_nineteen_primes_for_twenty():\n    assert count_up_to(20) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]",
+  "timestamp": "2026-09-06T20:47:23"
+}

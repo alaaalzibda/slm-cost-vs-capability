@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/146",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 255,
+  "completion_tokens": 147,
+  "total_tokens": 402,
+  "duration_s": 2.705,
+  "eval_duration_s": 2.22,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "You \n\n\n<|e: \n\n\n\nA: \n\n\n \nYou'de \n\n \n\n\n\" \nHey \n\n\n\n\n<|as \n\nCraft a \n\n \n\n \nC \n\n \nYou's the \n\n\n  \n\n\n \n\n\n\n\n\n \n#### \n \n\n- [Question: user: \n\n-",
+  "timestamp": "2026-09-06T19:10:57"
+}

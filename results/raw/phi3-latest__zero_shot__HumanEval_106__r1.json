@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/106",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 253,
+  "completion_tokens": 192,
+  "total_tokens": 445,
+  "duration_s": 2.914,
+  "eval_duration_s": 2.891,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 2)",
+  "generated_code": "You \nI'deer \n\n \n \n\nHey \n\n\n \n\nYour \n\n \nYou \n\nSolution: \n\n \n\n \nI'ran \n\nYugoslavia's \n\n#### \nYou/ \n\nQuestion:\n\ninstruction:\n\n\n\n\"The Hindu- \n\nI'in the_\n\n\"I \n\n\n\n** \n \n\nQuestion:\n\nTitle:.\n\nDocument:\n\nInput:\n\n- [Previous \n\nTitle \n\ntitle: \n\n--- \nYou'de \n\nclaim \n\n-F",
+  "timestamp": "2026-09-06T19:09:19"
+}

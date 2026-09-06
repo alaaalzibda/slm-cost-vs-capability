@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/24",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 187,
+  "completion_tokens": 346,
+  "total_tokens": 533,
+  "duration_s": 5.539,
+  "eval_duration_s": 5.214,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 8)",
+  "generated_code": "from solution import largest_divisor\n\n\ndef test_largest_divisor():\n\n    assert largest_divisor(15) == 5\n\n    assert largest extraneous_code_here  # This line is intentionally left empty as per the instruction.\n\n\ndef test_largest_divisor_zero():\n\n    try:\n\n        largest_divisor(0)\n\n    except ValueError:\n\n        assert True\n\n    else:\n\n        assert False, \"Expected ValueError for input 0\"\n\n\ndef test_largest_divisor_negative():\n\n    try:\n\n        largest_divisor(-10)\n\n    except ValueError:\n\n        assert True\n\n    else:\n\n        assert False, \"Expected ValueError for negative input\"\n\n\ndef test_largest_divisor_one():\n\n    try:\n\n        largest_divisor(1)\n\n    except ValueError:\n\n        assert False, \"Expected no ValueError for input 1\"\n\n\ndef test_largest_divisor_even():\n\n    assert largest_divisor(8) == 4\n\n\ndef test_largest_divisor_prime():\n\n    assert largest_divisor(17) == 1\n\n\ndef test_largest_divisor_composite():\n\n    assert largest_divisor(14) == 7",
+  "timestamp": "2026-09-06T18:50:49"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/24",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 167,
+  "completion_tokens": 102,
+  "total_tokens": 269,
+  "duration_s": 2.139,
+  "eval_duration_s": 1.895,
+  "parsed": true,
+  "collected": 4,
+  "passed": 2,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 87.5,
+  "branch_coverage": 75.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_divisor\n\ndef test_largest_divisor_even_number():\n    assert largest_divisor(10) == 5\n\ndef test_largest_divisor_odd_number():\n    assert largest_divisor(17) == 1\n\ndef test_largest_divisor_edge_case_zero():\n    with pytest.raises(ZeroDivisionError):\n        largest_divisor(0)\n\ndef test_largest_divisor_edge_case_one():\n    assert largest_divisor(1) == 1",
+  "timestamp": "2026-09-06T16:30:11"
+}

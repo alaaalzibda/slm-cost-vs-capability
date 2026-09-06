@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/35",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 2206,
+  "completion_tokens": 12754,
+  "total_tokens": 14960,
+  "duration_s": 274.296,
+  "eval_duration_s": 266.007,
+  "parsed": true,
+  "collected": 2,
+  "passed": 0,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 0.0,
+  "branch_coverage": 0.0,
+  "no_module_import": true,
+  "error": null,
+  "generated_code": "import unittest\n\n\nclass TestFindMaxMinAndAverage(unittest.TestCase):\n\n\n    def test_empty_list(self):\n\n        self.assertEqual(find_max_min_and_average([]), (None, None, None))\n\n\n    def test_single_element_list(self):\n\n        selfeneral_test_cases = [\n\n            # Test with the largest possible negative integer\n\n            ([-2147483647], (None, None, None)),\n\n            # Test with the smallest possible negative integer\n\n            ([-9223372036854775808], (None, None, None)),\n\n            # Test with the largest possible floating-point number\n\n            ([1.797693134862247E+308], (None, None, None)),\n\n            # Test with the smallest possible floating-point number\n\n            ([-1.40129846e-45], (None, None, None)),\n\n            # Test with a mix of integers, floating-point numbers, and negative numbers\n\n            ([-2, 3.14, -100, 0.001], (3.14, -100, 0.002)),\n\n        ]\n\n\n        for input_list, expected in general_test_cases:\n\n            with self.subTest(input_list=input_list):\n\n                self.assertEqual(find_max_min_and_average(input_list), expected)\n\n\nif __name__ == '__main__':\n\n    unittest.main()",
+  "timestamp": "2026-09-06T19:51:27"
+}

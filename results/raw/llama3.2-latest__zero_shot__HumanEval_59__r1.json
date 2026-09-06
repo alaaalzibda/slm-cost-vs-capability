@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/59",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 178,
+  "completion_tokens": 151,
+  "total_tokens": 329,
+  "duration_s": 2.739,
+  "eval_duration_s": 2.704,
+  "parsed": true,
+  "collected": 6,
+  "passed": 3,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 91.30434782608695,
+  "branch_coverage": 90.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_prime_factor\n\ndef test_largest_prime_factor_found():\n    assert largest_prime_factor(13195) == 29\n\ndef test_largest_prime_factor_found_with_2():\n    assert largest_prime_factor(2048) == 2\n\ndef test_largest_prime_factor_found_with_multiple_factors():\n    assert largest_prime_factor(210) == 7\n\ndef test_largest_prime_factor_found_with_prime_number():\n    with pytest.raises(ValueError):\n        largest_prime_factor(13)\n\ndef test_largest_prime_factor_found_with_negative_number():\n    with pytest.raises(ValueError):\n        largest_prime_factor(-1)\n\ndef test_largest_prime_factor_found_with_zero():\n    with pytest.raises(ValueError):\n        largest_prime_factor(0)",
+  "timestamp": "2026-09-06T20:34:19"
+}

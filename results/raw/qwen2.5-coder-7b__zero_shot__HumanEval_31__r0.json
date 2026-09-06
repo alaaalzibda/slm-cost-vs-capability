@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/31",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 206,
+  "completion_tokens": 148,
+  "total_tokens": 354,
+  "duration_s": 6.198,
+  "eval_duration_s": 5.576,
+  "parsed": true,
+  "collected": 3,
+  "passed": 3,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\ndef test_is_prime_true():\n    assert is_prime(101) == True\n    assert is_prime(11) == True\n    assert is_prime(13441) == True\n    assert is_prime(61) == True\n\ndef test_is_prime_false():\n    assert is_prime(6) == False\n    assert is_prime(4) == False\n    assert is_prime(1) == False\n\ndef test_is_prime_edge_cases():\n    assert is_prime(2) == True\n    assert is_prime(3) == True\n    assert is_prime(0) == False\n    assert is_prime(-5) == False",
+  "timestamp": "2026-09-06T16:34:34"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/31",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 686,
+  "completion_tokens": 629,
+  "total_tokens": 1315,
+  "duration_s": 12.194,
+  "eval_duration_s": 11.329,
+  "parsed": true,
+  "collected": 13,
+  "passed": 12,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\ndef test_prime_number():\n    assert is_prime(2)\n    assert is_prime(3)\n    assert is_prime(5)\n    assert is_prime(7)\n    assert is_prime(11)\n\ndef test_non_prime_number():\n    assert not is_prime(4)\n    assert not is_prime(6)\n    assert not is_prime(8)\n    assert not is_prime(9)\n    assert not is_prime(10)\n\ndef test_one():\n    assert not is_prime(1)\n\ndef test_zero():\n    assert not is_prime(0)\n\ndef test_negative_number():\n    assert not is_prime(-1)\n    assert not is_prime(-2)\n    assert not is_prime(-3)\n\ndef test_non_integer_input():\n    with pytest.raises(TypeError):\n        is_prime(3.14)\n    with pytest.raises(TypeError):\n        is_prime(\"3.14\")\n\ndef test_large_prime_number():\n    assert is_prime(13441)\n\ndef test_large_non_prime_number():\n    assert not is_prime(1000000)\n\ndef test_power_of_two():\n    assert is_prime(2)\n    assert not is_prime(4)\n    assert not is_prime(8)\n    assert not is_prime(16)\n\ndef test_power_of_three():\n    assert is_prime(3)\n    assert not is_prime(9)\n    assert not is_prime(27)\n\ndef test_product_of_two_primes():\n    assert not is_prime(6)\n\ndef test_product_of_three_primes():\n    assert not is_prime(30)\n\ndef test_product_of_more_than_three_primes():\n    assert not is_prime(210)",
+  "timestamp": "2026-09-06T16:33:17"
+}

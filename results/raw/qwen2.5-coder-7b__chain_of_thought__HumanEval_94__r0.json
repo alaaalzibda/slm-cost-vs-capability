@@ -1,0 +1,8 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/94",
+  "rep": 0,
+  "error": "timeout: timed out",
+  "parsed": false
+}

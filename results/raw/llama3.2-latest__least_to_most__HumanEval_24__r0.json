@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/24",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 589,
+  "completion_tokens": 636,
+  "total_tokens": 1225,
+  "duration_s": 12.28,
+  "eval_duration_s": 11.445,
+  "parsed": true,
+  "collected": 10,
+  "passed": 0,
+  "failed": 10,
+  "errors": 0,
+  "line_coverage": 87.5,
+  "branch_coverage": 75.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_divisor\n\ndef test_largest_divisor_small_number():\n    assert largest_divisor(1) == 1\n    assert largest_divisor(2) == 1\n    assert largest_divisor(3) == 1\n\ndef test_largest_divisor_prime_number():\n    assert largest_divisor(5) == 5\n    assert largest_divisor(7) == 7\n    assert largest_divisor(11) == 11\n\ndef test_largest_divisor_one_divisor():\n    assert largest_divisor(2) == 2\n    assert largest_divisor(4) == 2\n    assert largest_divisor(6) == 2\n\ndef test_largest_divisor_multiple_divisors():\n    assert largest_divisor(4) == 2\n    assert largest_divisor(6) == 2\n    assert largest_divisor(8) == 4\n\ndef test_largest_divisor_negative_number():\n    with pytest.raises(ValueError):\n        largest_divisor(-1)\n\ndef test_largest_divisor_zero():\n    with pytest.raises(ValueError):\n        largest_divisor(0)\n\ndef test_largest_divisor_non_integer_number():\n    with pytest.raises(TypeError):\n        largest_divisor(2.5)\n\ndef test_largest_divisor_non_integer_input():\n    with pytest.raises(TypeError):\n        largest_divisor(-5)\n\ndef test_largest_divisor_large_number():\n    assert largest_divisor(1000000) == 1000000\n\ndef test_largest_divisor_close_divisor():\n    assert largest_divisor(1000) == 1\n    assert largest_divisor(10000) == 1",
+  "timestamp": "2026-09-06T16:33:05"
+}

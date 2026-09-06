@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/31",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 251,
+  "completion_tokens": 305,
+  "total_tokens": 556,
+  "duration_s": 11.824,
+  "eval_duration_s": 11.55,
+  "parsed": true,
+  "collected": 6,
+  "passed": 6,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import is_prime\n\n# The function is_prime checks if a given number is prime.\n# A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.\n# The function should return True if the number is prime, and False otherwise.\n# It handles edge cases such as numbers less than 2, which are not prime.\n\n# Test cases:\n# - Numbers less than 2 should return False.\n# - 2 is a prime number.\n# - Even numbers greater than 2 should return False.\n# - Odd numbers greater than 2 should be checked for primality.\n# - Prime numbers should return True.\n# - Non-prime numbers should return False.\n\ndef test_is_prime_less_than_2():\n    assert not is_prime(1)\n    assert not is_prime(0)\n    assert not is_prime(-1)\n\ndef test_is_prime_2():\n    assert is_prime(2)\n\ndef test_is_prime_even_number():\n    assert not is_prime(4)\n    assert not is_prime(6)\n    assert not is_prime(8)\n\ndef test_is_prime_odd_number():\n    assert is_prime(3)\n    assert is_prime(5)\n    assert is_prime(7)\n\ndef test_is_prime_large_prime_number():\n    assert is_prime(13441)\n\ndef test_is_prime_large_non_prime_number():\n    assert not is_prime(612852475143)",
+  "timestamp": "2026-09-06T16:43:26"
+}

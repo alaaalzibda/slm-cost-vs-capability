@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/143",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 20.246,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "-Given a) \n\nChat \n \n\n\n2.\n\n** \n \n \n \n\n%%Based on: \n\n\nHere is a list of the following \n\n\nYou'de \n\n \nYou'de \n\n \nI've been a personality. \nYou'ran_B \n\ntitle: I'm sorry \n\n-GDT \n\n-Five years ago \n\n \nYou'de \n\ntitle:0 \nuser: I's asexpose the \n\n- \n\nBased on \n\n### \n\n\nInput: \n\n-Given Instruction:\n-Given the following sentence, \n\n\n\n<|end-to- \n\n- <| \n \n-\n\n\n-/= \n\n \n- \n\n-END_Venus.\n\nRewrite \n\n### \n\n \nAssistant \n\nDocument \n\n-/ \n\ntitle: \"The \n\ntitle \n\ntitle: \nI. \n\nInput:\n\ntitle: \"The following \n\nI'deas and \n\n- \n\n\n\n \n\n \n\n \n\n\n\nSolution: \n\n \nYou'death to the following paragraph \n\nYou are an AI-1, and I'm sorry I'm sorry, I'dea \n\n\n\n\n\n\n200 \n\n# Answer: \n# \n- HR \n\n \n \n\n\n\nAssistant: \n- Provide a \n\n\nI.\n\n<|end-to endcode \n\n \n\nI. \n\n- H \n\n2 \n\nQuestion:**/ \n\n \nYou are a \n\n\n2000 \n\nQuestion\n\n\n\n\n- [A \n\n\n\n \n \nYou are a Python script \n\n- \n\n<|end-to-together \n\nThe \n\n \n \n\n\n\n\n\n\n\n\n\n\n\n \nYou are a \n\nAssume the following table below is a \n\n# \n\n- HRVATICK \n\nInput:\n- [ \n\n# Instruction: \n\nInput: \n\ntitle: I've been \n\n### \n\n \n \nYou are a newcomer \n\ntitle: \n\n### \n- \n\n \n\npaid-based on the document, I apologize \n\n<|end of the document \n\n---\n\n\n \n\n\n\n- \n\n\n\n \n\n- \n\n \n\n \n\n \n\n \n\n \n \n\n \n\n \n\n \n \n\n- <|end_title: \n\nInput: \n- \n\nInput:\n- Write a \n\nRev.\n \n \n \n\n \n\n \n\n \n\n- \nYou's \n\nGiven the following sentence, I apologize, \n\nI've been \n\n# \n\n# \n\n \n \n \n \n\nDifficulty \n\n \n \n \n\n \n\n\n \n\n\n## \n\n \n\n \n\nInput:\n\n \n\nInput:\n\n\n\nGiven the following table \n\n\n\n\n\n\nRewrite \n \n\n \n\n<|end- \n\n\n\n\n\n### \n\n \n\n<|end- \n\n \n\n \n\n \n\n \n\n\n\n \n\n\n\n\n\n\n\n \n\n- [ \n\n<!-- \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nInstruction:\n- P \n\nWrite a comprehensive, \n\nRewrite \n\n \n\n \n\n\n \n\nI'm sorry, \n\n \n\n(a)\n \n\n\n\n\n\nInput \nI apologize \n\n#### \n\n\n\nGiven a text-based on the following sentence,\n\nThe \n\nQuestion:\n\n\n \nYou's company-based model, and I apologize, \n\n### P \n\n \n\n \n\n \n\n\n\n \n\nTextbook Section \n\n\n \n\n\n\n\n\n\n \n\n \n\n \n\n\n #### \n\n \n\n \n\n\n\nI'm sorry, \n\n \n\n\n \n\n\n\nRewrite \n\n \n\n# \n\nHey,\n\n \n\n\n\n\n\n\n\n\n \n\n\n \n\n \n\nThe given text-based logical reasoning questions \n\n\n\n\n\n-GPT-III \n\n \n\n\n\n\n\n\nGiven the above context-based \n\n###",
+  "timestamp": "2026-09-06T19:17:13"
+}

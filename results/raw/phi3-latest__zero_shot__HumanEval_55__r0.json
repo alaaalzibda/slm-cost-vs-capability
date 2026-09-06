@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/55",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 180,
+  "completion_tokens": 2496,
+  "total_tokens": 2676,
+  "duration_s": 47.959,
+  "eval_duration_s": 46.997,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "Your task: Develop a Python function `fib` that calculates the nth Fibonacci number using recursion, and write a comprehensive suite of pytest unit tests that validate the function's correctness for various edge cases, including negative inputs, non-integer inputs, and large inputs. Ensure that the tests cover the following:\n\n\n1. The function should raise a `TypeError` for non-integer inputs.\n\n2. The function should raise a `ValueError` for negative inputs.\n\n3. The function should handle the first two Fibonacci numbers correctly (0 and 1).\n\n4. The function should return the correct Fibonacci number for the first 10 Fibonacci numbers.\n\n5. The function should handle large inputs up to the 20th Fibonacci number without timing out.\n\n6. The function should handle the 100th Fibonacci number correctly.\n\n7. The function should handle the 1000th Fibonacci number correctly.\n\n8. The function should handle inputs that are floating-point numbers by raising a `TypeError`.\n\n9. The function should handle the 10000th Fibonacci number correctly.\n\n10. The function should handle the 100000th Fibonacci number correctly.\n\n\nInclude a test for a non-positive integer input that should raise a `ValueError`.\n\n\n#### Answer:",
+  "timestamp": "2026-09-06T18:58:48"
+}

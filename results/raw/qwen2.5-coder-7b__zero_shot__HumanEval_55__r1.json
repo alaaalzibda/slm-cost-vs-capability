@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/55",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 153,
+  "completion_tokens": 60,
+  "total_tokens": 213,
+  "duration_s": 2.504,
+  "eval_duration_s": 2.449,
+  "parsed": true,
+  "collected": 3,
+  "passed": 3,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import fib\n\ndef test_fib_10():\n    assert fib(10) == 55\n\ndef test_fib_1():\n    assert fib(1) == 1\n\ndef test_fib_8():\n    assert fib(8) == 21",
+  "timestamp": "2026-09-06T16:35:21"
+}

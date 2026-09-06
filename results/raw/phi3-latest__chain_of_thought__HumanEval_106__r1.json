@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/106",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 13.813,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "I' \n\n\n\n\n\"The \n\n\"The \n\n<|n \n \n- Instruction:\n\n\n\n \nYou'ran \n\n\n\n   \nYou're \n\n\"You'de \n\n \n \n\n \n\ntitle:\n\nQuestion:\n\n\ntitle:\n\n### Chat \n\n### \n\nQuestion:**/ \n\nInstruction:\n\nIn a short story:\n\ninstruction: \n B \n \n \n\n-Given the assistant. \n\n \nYou'de \n\n### \nrobotics, I/she \n\n\nInput: \n\n \nYou \n\nDocument text-A \n\n### \n05:0. \n\nc) \n\nq= \n\n- \n\n\n#### \nI'in \n\nDocument \n\nSolution:\n\n<|end-to-like a \n\n- \n\n\n\n \n\n\n\n\n\n \nI'deve been a conversation.\n\nI'in \n\nDocument \n\n- \n\nChatbot \n\n### \n\nTitle \n\n \nYou are a basic.\n\n### \nI'de \n\nYou are a high school level.\n\n \n \n\nInput: \n\ntitle: \n\nI'deas \n\ntitle: \n\n \n\n\n#### \n\n \n\n \n\n- \n\nQuestion:\n\n- Your task: \n\n\nAnswer: \n\n\n- \n\n \nYou are a draft of the following \n\n\n\n\n\n\n\n\n\n\nassistant: \n\n\n\n\n\ufeff \nYou are a \n\n\nI need to \n\n\n \nI's \n\nuser: \n\n# \nProblem: \n\n \nI apologize, \n\n \n\n \nYou are a high school student, \n\nI.\n\n\n \n\n \nHey \n\nQuestion \n\nI. \n\n### Solution: \n\n \nYou are a high school English textbook-like, \n\ntitle: \n\n# Instruction:\nI'm sorry \n\n#### \n\nI's \n\n# \n\nAssistant: \n\n### \nYou are a table of \n\nRewrite \n\nRewrite \n\nQuestion:\n\n### \n\nR.T. \n\n# \nInstruction:\n\n\nassistant: \"The \n\nText-O'jamie's \n\n# \n\nInput \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\ntitle: \n\n- \n\n### pH \n\nQuestion\n\n# \n\n(no HRV.\n\n### Instance \n\n \n\n### \n\n \n\n \nYou are a \n\n \n \n \nYou are a \n\n- Essentially Similar \n\n- HRV.\n\n<|enday \n\n\nRanking \n- RESOLVE \n\n \n \n\n \n\n---\nSubtracting the following textbook section \n\n \n\n\n- Rewrite \n\n<|end- \n\n# \n\n \n \n \n \n\n- Restaurant",
+  "timestamp": "2026-09-06T19:15:27"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/64",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 7.949,
+  "eval_duration_s": 0.0,
+  "parsed": true,
+  "collected": 7,
+  "passed": 0,
+  "failed": 7,
+  "errors": 0,
+  "line_coverage": 0.0,
+  "branch_coverage": 0.0,
+  "no_module_import": true,
+  "error": null,
+  "generated_code": "import pytest\n\ndef test_vowels_count_with_no_vowels():\n\n    assert vowels_count(\"bcdfgh\") == 0\n\n\ndef test_vowels_count_with_only_vowels():\n\n    assert vowels_count(\"aeiou\") == 5\n\n\ndef test_vowels_count_with_mixed_case():\n\n    assert vowels_count(\"Abcde\") == 2\n\n\ndef test_vowels_count_with_y_as_vowel():\n\n    assert vowels_count(\"Yodel\") == 2\n\n\ndef test_vowels_count_with_empty_string():\n\n    assert vowels_count(\"\") == 0\n\n\ndef test_vowels_count_with_no_vowels_at_end():\n\n    assert vowels_count(\"bcdfgh\") == 0\n\n\ndef test_vowels_count_with_only_vowels_at_end():\n end_of_test_code",
+  "timestamp": "2026-09-06T19:01:05"
+}

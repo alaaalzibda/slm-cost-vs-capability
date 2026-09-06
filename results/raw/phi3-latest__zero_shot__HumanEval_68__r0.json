@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/68",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 480,
+  "completion_tokens": 352,
+  "total_tokens": 832,
+  "duration_s": 6.87,
+  "eval_duration_s": 5.548,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "You are \n\nSubtract \n\nC \n\n### \nYou are \n\n### \nOkay \n\n \n0\n\n \n\n\n\n\n\n \n\nBased on \n\n### \n### \n\n \n \n\n \nI'an \n\nThe \n\n- \n\n\nDocument \n \nI'deve_You \n\nDocument \n\n \n\nI'de \n\n### \nI'deve_instructions: Understanding \n\n- \n\n \nI'an_user \n\n\nI'deve been a piece of code-based \n\n\nI'deve been a patiently.\n\n### Solution \n \n \n\n \n\n \n\n \n\n \nBased on \n\n\n### \n\nRewrite \n\n- \n\nAnswer: \n\n\nRewrite \n\n\nI'm sorry I's \n \n \n \n \n\n \n\n\n\n#: \n\nQuestion \n\ntitle: \n\n \n\nB \n\n \nYou are a \n\nQuestion: \n\nuser: \n\n \nI's \n\n- Essay \n\n- RFIDGEONS \n\nQuestion\n- \n- Provide a \n\n \n\n\n\n \nYou are a newborn child's weighted_data[e",
+  "timestamp": "2026-09-06T19:07:23"
+}

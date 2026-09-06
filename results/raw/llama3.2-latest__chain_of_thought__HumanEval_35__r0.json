@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/35",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 239,
+  "completion_tokens": 393,
+  "total_tokens": 632,
+  "duration_s": 7.23,
+  "eval_duration_s": 7.073,
+  "parsed": true,
+  "collected": 8,
+  "passed": 7,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The max_element function takes a list as input and returns the maximum element.\n# It does not handle empty lists, as the problem statement does not specify what to do in this case.\n# It should return the maximum element in the list, or raise an error if the list is empty.\n# The function should be able to handle lists with a single element, as well as lists with multiple elements.\n# It should be able to handle lists with negative numbers, as well as lists with positive numbers.\n# It should be able to handle lists with zero, as well as lists without zero.\n\nfrom solution import max_element\n\n# Test the function with a list of single elements\ndef test_max_element_single_element():\n    assert max_element([1]) == 1\n\n# Test the function with a list of multiple elements\ndef test_max_element_multiple_elements():\n    assert max_element([1, 2, 3]) == 3\n\n# Test the function with a list of negative numbers\ndef test_max_element_negative_numbers():\n    assert max_element([-1, -2, -3]) == -1\n\n# Test the function with a list of positive numbers\ndef test_max_element_positive_numbers():\n    assert max_element([1, 2, 3]) == 3\n\n# Test the function with a list containing zero\ndef test_max_element_zero():\n    assert max_element([0, 1, 2]) == 2\n\n# Test the function with an empty list\ndef test_max_element_empty_list():\n    with pytest.raises(ValueError):\n        max_element([])\n\n# Test the function with a list containing a single zero\ndef test_max_element_single_zero():\n    assert max_element([0]) == 0\n\n# Test the function with a list containing multiple zeros\ndef test_max_element_multiple_zeros():\n    assert max_element([0, 0, 0]) == 0",
+  "timestamp": "2026-09-06T20:37:56"
+}

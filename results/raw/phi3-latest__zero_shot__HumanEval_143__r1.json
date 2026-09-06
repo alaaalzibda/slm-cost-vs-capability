@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/143",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 302,
+  "completion_tokens": 100,
+  "total_tokens": 402,
+  "duration_s": 1.532,
+  "eval_duration_s": 1.503,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "User:\n\n\n\n\n \n-Following \n\nInput: \n- \nI \n \nHey \n\nI'de \n\n\n\n\"The following conversation between theft, a) to theft.\n\nDocument: \n\n2.\n\n** \n \nHistorical/n \n\nDocument:\n\nInput:\n\n \nYou",
+  "timestamp": "2026-09-06T19:10:54"
+}

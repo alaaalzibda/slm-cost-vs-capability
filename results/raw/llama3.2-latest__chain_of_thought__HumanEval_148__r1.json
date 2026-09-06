@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/148",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 366,
+  "completion_tokens": 386,
+  "total_tokens": 752,
+  "duration_s": 7.005,
+  "eval_duration_s": 6.971,
+  "parsed": true,
+  "collected": 7,
+  "passed": 7,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Function bf is expected to return a tuple of planets in order of their distance from the Sun\n# The function should return an empty tuple if planet1 or planet2 are not correct planet names\n# The function should return all planets in between the orbit of planet1 and planet2, sorted by proximity to the Sun\n\nfrom solution import bf\n\ndef test_bf_with_valid_input():\n    # Test with valid input\n    assert bf(\"Jupiter\", \"Neptune\") == (\"Saturn\", \"Uranus\"), \"Test with valid input failed\"\n\ndef test_bf_with_invalid_input():\n    # Test with invalid input\n    assert bf(\"Jupiter\", \"Invalid\") == (), \"Test with invalid input failed\"\n\ndef test_bf_with_invalid_input_2():\n    # Test with invalid input\n    assert bf(\"Invalid\", \"Neptune\") == (), \"Test with invalid input failed\"\n\ndef test_bf_with_equal_input():\n    # Test with equal input\n    assert bf(\"Jupiter\", \"Jupiter\") == (), \"Test with equal input failed\"\n\ndef test_bf_with_input_order_reversed():\n    # Test with input order reversed\n    assert bf(\"Neptune\", \"Jupiter\") == (\"Saturn\", \"Uranus\"), \"Test with input order reversed failed\"\n\ndef test_bf_with_input_order_ascending():\n    # Test with input order ascending\n    assert bf(\"Mercury\", \"Uranus\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\"), \"Test with input order ascending failed\"\n\ndef test_bf_with_input_order_descending():\n    # Test with input order descending\n    assert bf(\"Uranus\", \"Mercury\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\"), \"Test with input order descending failed\"",
+  "timestamp": "2026-09-06T20:49:12"
+}

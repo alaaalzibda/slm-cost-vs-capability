@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/73",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 315,
+  "completion_tokens": 570,
+  "total_tokens": 885,
+  "duration_s": 10.522,
+  "eval_duration_s": 10.324,
+  "parsed": true,
+  "collected": 8,
+  "passed": 5,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function should return 0 if the array is already palindromic.\n# It should return 1 if the array has an odd length and the middle element is not the same as the first element.\n# It should return the minimum between the number of elements that need to be changed to make the first half of the array palindromic and the number of elements that need to be changed to make the second half of the array palindromic.\n# The function should handle edge cases such as an empty array and an array with a single element.\n\nfrom solution import smallest_change\n\n# Test cases\ndef test_smallest_change_empty_array():\n    # Test that the function returns 0 for an empty array\n    assert smallest_change([]) == 0\n\ndef test_smallest_change_single_element_array():\n    # Test that the function returns 0 for an array with a single element\n    assert smallest_change([1]) == 0\n\ndef test_smallest_change_palindromic_array():\n    # Test that the function returns 0 for a palindromic array\n    assert smallest_change([1, 2, 3, 2, 1]) == 0\n\ndef test_smallest_change_odd_length_array():\n    # Test that the function returns 1 for an array with an odd length and the middle element is not the same as the first element\n    assert smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1\n\ndef test_smallest_change_even_length_array():\n    # Test that the function returns the minimum between the number of elements that need to be changed to make the first half of the array palindromic and the number of elements that need to be changed to make the second half of the array palindromic\n    assert smallest_change([1, 2, 3, 4, 3, 2, 1]) == 2\n\ndef test_smallest_change_array_with_duplicates():\n    # Test that the function handles arrays with duplicates\n    assert smallest_change([1, 2, 2, 3, 3, 3, 2, 1]) == 2\n\ndef test_smallest_change_array_with_negative_numbers():\n    # Test that the function handles arrays with negative numbers\n    assert smallest_change([1, -2, 3, -4, 5, -6, 7, -8]) == 4\n\ndef test_smallest_change_array_with_zero():\n    # Test that the function handles arrays with zero\n    assert smallest_change([0, 1, 2, 3, 4, 3, 2, 1]) == 2",
+  "timestamp": "2026-09-06T20:45:39"
+}

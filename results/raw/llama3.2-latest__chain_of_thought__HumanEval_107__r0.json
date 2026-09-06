@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/107",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 372,
+  "completion_tokens": 325,
+  "total_tokens": 697,
+  "duration_s": 6.077,
+  "eval_duration_s": 5.901,
+  "parsed": true,
+  "collected": 7,
+  "passed": 3,
+  "failed": 4,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function even_odd_palindrome takes a positive integer n as input and returns a tuple.\n# The tuple contains the number of even and odd integer palindromes that fall within the range (1, n), inclusive.\n# We need to test the function for different values of n, including boundary values and failure cases.\n# We also need to test the function's behavior for different types of inputs, such as negative numbers and non-integer inputs.\n\nfrom solution import even_odd_palindrome\n\n# Test the function for different values of n\ndef test_even_odd_palindrome_for_n_3():\n    assert even_odd_palindrome(3) == (1, 2)\n\ndef test_even_odd_palindrome_for_n_12():\n    assert even_odd_palindrome(12) == (4, 6)\n\ndef test_even_odd_palindrome_for_n_1():\n    assert even_odd_palindrome(1) == (0, 1)\n\ndef test_even_odd_palindrome_for_n_10():\n    assert even_odd_palindrome(10) == (4, 6)\n\ndef test_even_odd_palindrome_for_n_1000():\n    assert even_odd_palindrome(1000) == (499, 500)\n\n# Test the function for negative inputs\ndef test_even_odd_palindrome_for_negative_n():\n    with pytest.raises(ValueError):\n        even_odd_palindrome(-1)\n\n# Test the function for non-integer inputs\ndef test_even_odd_palindrome_for_non_integer_n():\n    with pytest.raises(TypeError):\n        even_odd_palindrome(1.5)",
+  "timestamp": "2026-09-06T20:47:50"
+}

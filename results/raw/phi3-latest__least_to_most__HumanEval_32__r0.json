@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/32",
+  "rep": 0,
+  "n_calls": 2,
+  "prompt_tokens": 2407,
+  "completion_tokens": 4037,
+  "total_tokens": 6444,
+  "duration_s": 84.695,
+  "eval_duration_s": 78.755,
+  "parsed": true,
+  "collected": 2,
+  "passed": 0,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 0.0,
+  "branch_coverage": 0.0,
+  "no_module_import": true,
+  "error": null,
+  "generated_code": "import unittest\n\n\nclass TestFindZeroPoint(unittest.TestCase):\n\n\n    def test_five_coefficients(self):\n\n        coefficients = [1, -2, 3, -4, 5]\n\n        zero_point = find_zero_point(coefficients)\n\n        self.assertEqual(zero_point, 2)\n\n\n    # Repeat the above block for each test case, changing the coefficients and expected zero point\n\n    # ...\n\n\n    def test_one_hundred_coefficients(self):\n\n        coefficients = [1] + [0]*99 + [1]\n\n        zero_point = find_zero_point(coefficients)\n\n        self.assertEqual(zeroin(zero_point, 1))\n\n\n    # Additional tests for edge cases and other scenarios\n\n    # ...\n\n\nif __name__ == '__main__':\n\n    unittest.main()",
+  "timestamp": "2026-09-06T19:37:56"
+}

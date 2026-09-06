@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/80",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 261,
+  "completion_tokens": 182,
+  "total_tokens": 443,
+  "duration_s": 2.758,
+  "eval_duration_s": 2.736,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "- [ \n\n\nA: \n\n(Blog \n\n\nYour answer:\n\n-Given a)\n\n<|endcode:\n\n\n\nAnswer:\n- C++\n\n<|endowed \n\n\n-Given \n\nCraft a \n\n\n\n \n-Given a \n\nSolution \n\n\nInput:\n\nQuestion:\nAssistant: \n----\n\n \n\n \nYou \n\n<|noun_edit: \n\n-/in-depth>\n-Given \n\n \n- [Input: \n\nInput:**/; \n\nInput: \n\n-Given a personality_Based on \n\nI. \n-Further",
+  "timestamp": "2026-09-06T19:07:59"
+}

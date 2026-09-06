@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/39",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 211,
+  "completion_tokens": 176,
+  "total_tokens": 387,
+  "duration_s": 3.986,
+  "eval_duration_s": 3.683,
+  "parsed": true,
+  "collected": 8,
+  "passed": 5,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import prime_fib\n\ndef test_prime_fib_1():\n    assert prime_fib(1) == 2\n\ndef test_prime_fib_2():\n    assert prime_fib(2) == 3\n\ndef test_prime_fib_3():\n    assert prime_fib(3) == 5\n\ndef test_prime_fib_4():\n    assert prime_fib(4) == 13\n\ndef test_prime_fib_5():\n    assert prime_fib(5) == 89\n\ndef test_prime_fib_negative():\n    with pytest.raises(ValueError):\n        prime_fib(-1)\n\ndef test_prime_fib_non_integer():\n    with pytest.raises(TypeError):\n        prime_fib(3.5)\n\ndef test_prime_fib_non_positive():\n    with pytest.raises(ValueError):\n        prime_fib(0)",
+  "timestamp": "2026-09-06T20:34:02"
+}

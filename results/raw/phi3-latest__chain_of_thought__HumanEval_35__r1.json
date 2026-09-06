@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/35",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 264,
+  "completion_tokens": 130,
+  "total_tokens": 394,
+  "duration_s": 1.997,
+  "eval_duration_s": 1.95,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "Q: \n\n\n \n** \n\n\nQ.\n\n\n \nYou'de \n\n \n\n\n<|endcode: \n\n-Four \n\nCraft a patiently- \n\n \n-/nouns \n\n \n\n\n \nYou'de: \n\n\n\n\n\"I \n\n \n\n \n \nYou \n\n\n\n \nYou'de: Chat \n\n-G \n\n<|/",
+  "timestamp": "2026-09-06T19:11:49"
+}

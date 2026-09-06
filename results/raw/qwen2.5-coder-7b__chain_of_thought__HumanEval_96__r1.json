@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/96",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 302,
+  "completion_tokens": 261,
+  "total_tokens": 563,
+  "duration_s": 9.942,
+  "eval_duration_s": 9.882,
+  "parsed": true,
+  "collected": 5,
+  "passed": 4,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import count_up_to\n\n# Test cases to validate the functionality of the count_up_to function\n# 1. Test with a positive integer greater than 2\n# 2. Test with a positive integer equal to 2\n# 3. Test with a positive integer equal to 1\n# 4. Test with a positive integer equal to 0\n# 5. Test with a positive integer greater than 20\n\ndef test_count_up_to_positive_integer_greater_than_2():\n    assert count_up_to(5) == [2, 3]\n    assert count_up_to(11) == [2, 3, 5, 7]\n\ndef test_count_up_to_positive_integer_equal_to_2():\n    assert count_up_to(2) == [2]\n\ndef test_count_up_to_positive_integer_equal_to_1():\n    assert count_up_to(1) == []\n\ndef test_count_up_to_positive_integer_equal_to_0():\n    assert count_up_to(0) == []\n\ndef test_count_up_to_positive_integer_greater_than_20():\n    assert count_up_to(20) == [2, 3, 5, 7, 11, 13, 17, 19]",
+  "timestamp": "2026-09-06T17:15:48"
+}

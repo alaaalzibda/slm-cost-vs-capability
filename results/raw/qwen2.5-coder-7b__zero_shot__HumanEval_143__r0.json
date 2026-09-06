@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/143",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 251,
+  "completion_tokens": 214,
+  "total_tokens": 465,
+  "duration_s": 9.922,
+  "eval_duration_s": 9.047,
+  "parsed": true,
+  "collected": 8,
+  "passed": 6,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import words_in_sentence\n\ndef test_words_in_sentence_with_prime_length_words():\n    assert words_in_sentence(\"This is a test\") == \"is\"\n\ndef test_words_in_sentence_with_non_prime_length_words():\n    assert words_in_sentence(\"lets go for swimming\") == \"go for\"\n\ndef test_words_in_sentence_with_single_prime_length_word():\n    assert words_in_sentence(\"I am\") == \"am\"\n\ndef test_words_in_sentence_with_single_non_prime_length_word():\n    assert words_in_sentence(\"Python\") == \"\"\n\ndef test_words_in_sentence_with_empty_string():\n    assert words_in_sentence(\"\") == \"\"\n\ndef test_words_in_sentence_with_all_prime_length_words():\n    assert words_in_sentence(\"I am a test\") == \"I am a test\"\n\ndef test_words_in_sentence_with_all_non_prime_length_words():\n    assert words_in_sentence(\"Python is fun\") == \"is fun\"\n\ndef test_words_in_sentence_with_mixed_prime_and_non_prime_length_words():\n    assert words_in_sentence(\"I am learning Python\") == \"am learning\"",
+  "timestamp": "2026-09-06T16:41:36"
+}

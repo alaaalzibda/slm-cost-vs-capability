@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/68",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 480,
+  "completion_tokens": 1224,
+  "total_tokens": 1704,
+  "duration_s": 20.479,
+  "eval_duration_s": 20.453,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "I. \n\nChatbot: Hey, \n\n\n**/n \n\n[P \n\n### \nOkay, and \n\nSolution: \n\n- G \n\nDocument: \n \nI'de- \n\n\nCraft a comprehensive list of \n\n### \nI'anovelty: \n\nInput:\n\nR \n \nI've been a \n\nTitle \n\nInput:**/n \n \nI'de \n\n\n** \nHey \n\n** \n\n \n \n2\n\n\n### \n\n\n#### \nI'anovelty_B \n\nI'deve been a random sample of \n\n### \n\n \nTheory, \n\n# Answer:\n- \n\n \n\ntitle: \nI apologize, \n\n\n\nImagine a \n\n\n\n\n- \nBelow is your question.\n\nI.\n \n \n \nYou've been \n\nQuestion \n\n \n- PREAMT.\n\n\nInput \n\n \nI'm sorry \n\n### \n\ntitle: \n\n \nI'm sorry \n\n \n\n\n \nYou are \n\nQuestion \n \nI'm sorry \n\n- i. \n\nQuestion \n\n- \n\n- Pretend you \n\n- \n\n \n \nYou are a beginner- \n\n\nTopic:** \n\n- P \n\n \nYou are a \n\n \n\n\n \nYou are \n\n# \n\n\nAssistant: \n- PReview the first time.\n\nI've been \n\nUser:\n- \n\n- \n\nYou are a \n\n- Write a \n\nInput:\n\" \n\n### \n\n \n\nRewrite \n\nBased on the document, I apologize \n\n---\n0. \n\n \n\n \n\n- \n\n---\nTitle: \n\n-I \n\nDocument \n\n- \n\nDocument \n\n \n\n- \n\n \n\n- \n\n- \n \n\n### \n\n- [ \n\n \n\n \n \n\n \n\n \n\n \n\n \n\nRewrite \n \n \n \n\n\n\n\n\n\nQuestion: \n-=\n- P \n \n\nAnswer:\n\nI've been given a complex and \n\n# Instruction:\n- P \n\n### \n\n \n \nYou are a \n\n \nYou are a \n\n \n\n( \n## \nPh. \n\n \n\n \n\n \n\n\n\n\n \n\n \nDocument \n\n \n\n \n\n \n\n\n\n\n\n\n\n\n\n**Solution:\n\n \n \n\n \n\n \n\n \nDocument \n\n\n### \n\n \n\n \n\n \n\n \n\n\n \n\nRewrite \n\nChoose the documentary filmography, \n \n\nRewrite \n\n\n\n# \n\nAssistant: \n\n \n\n \n \n \n\n\nRewrite \n\n \n\n \n\n### Solution \n\n \n\n \n\n\n\n\n\nRewrite \n\n \n\nWrite a comprehensive, \n- Chatbot, \n\nRewrite \n\n\n \n\n \n\n \n\n \n\n \n\n \n\n\n \n\nTextbook Example \n \n\n \n\n\n \n\nWrite a complex and \n\nprompt \n \n\n\n\n\n\nRewrite \n\n \n\n \n\n<|end-to- \n\n\n\nAI: \n\n\n\n\n\n## \n\n \n\nDocument \n\n\n\n\n\n\n\nGiven the following sentence \n\n\n \n\n\n \n\nInstruction: \n\nGiven the following sentence:\n\n\n\n\n\n\n \n\nThe given textile industry, as an AI language model, \n\n\n \n\n\n \n\n\n\n\n- \n \n\n \n\n \n\n\n \n\n\n\n\n\n\n\n\n\n\nThe document is a documentary about a \n\n### \n\n \n\n \n\n \n\n \n\n \n\n\n\n\n\n\n\n\n\n\n\n### \n\n \n\n## Solution \n\n# Question\n\n\nWrite a comprehensive,\n\n\n \n\nRewrite \n\n \n\nThe first-personas \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n### \n\n \n\n\n\n\n\n\n\n\n\n\nThe original text from the textbook section \n\n\n\n\n\nRewrite \n\n \n\n\n\n\n R \n\n \n\n## Solution\n\nThe provided document,\n\n\n\n\n\n# Problem:",
+  "timestamp": "2026-09-06T19:07:44"
+}

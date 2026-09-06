@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/24",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 557,
+  "completion_tokens": 518,
+  "total_tokens": 1075,
+  "duration_s": 21.022,
+  "eval_duration_s": 19.619,
+  "parsed": true,
+  "collected": 9,
+  "passed": 3,
+  "failed": 6,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_divisor\n\ndef test_largest_divisor_for_prime_number():\n    assert largest_divisor(7) == 3\n\ndef test_largest_divisor_for_even_number():\n    assert largest_divisor(10) == 5\n\ndef test_largest_divisor_for_divisible_by_3():\n    assert largest_divisor(12) == 6\n\ndef test_largest_divisor_for_divisible_by_5():\n    assert largest_divisor(25) == 5\n\ndef test_largest_divisor_for_large_number():\n    assert largest_divisor(1000000007) == 500000003\n\ndef test_largest_divisor_for_negative_input():\n    assert largest_divisor(-10) == -5\n\ndef test_largest_divisor_for_non_integer_input():\n    assert largest_divisor(3.5) == \"Input must be an integer\"\n\ndef test_largest_divisor_for_zero():\n    assert largest_divisor(0) == \"Input must be greater than 1\"\n\ndef test_largest_divisor_for_one():\n    assert largest_divisor(1) == \"Input must be greater than 1\"",
+  "timestamp": "2026-09-06T17:25:56"
+}

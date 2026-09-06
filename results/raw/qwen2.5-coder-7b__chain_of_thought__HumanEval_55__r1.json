@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/55",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 198,
+  "completion_tokens": 589,
+  "total_tokens": 787,
+  "duration_s": 22.393,
+  "eval_duration_s": 22.287,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 35)",
+  "generated_code": "from solution import fib\n\n# Test the base cases\n# The Fibonacci sequence starts with 0 and 1, so fib(0) should return 0 and fib(1) should return 1\ndef test_fib_base_cases():\n    assert fib(0) == 0\n    assert fib(1) == 1\n\n# Test the first few Fibonacci numbers\n# The first few Fibonacci numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...\ndef test_fib_first_few():\n    assert fib(2) == 1\n    assert fib(3) == 2\n    assert fib(4) == 3\n    assert fib(5) == 5\n    assert fib(6) == 8\n    assert fib(7) == 13\n\n# Test the boundary values\n# The function should handle the boundary value of n = 0 correctly\ndef test_fib_boundary_value():\n    assert fib(0) == 0\n\n# Test the failure cases\n# The function should raise a ValueError for negative inputs\ndef test_fib_negative_input():\n    with pytest.raises(ValueError):\n        fib(-1)\n\n# Test the large input values\n# The function should handle large input values correctly\ndef test_fib_large_input():\n    assert fib(100) == 354224848179261915075\n    assert fib(1000) == 4346655761693745317507601861464229062500151515573513038074225319617639437494707077344773198485987429811606672548088696809277260770762578398718528059664229156626856828462119908615379040374774240576373300805511783497276059733063959669494082624386837205668069376\n```",
+  "timestamp": "2026-09-06T16:49:27"
+}

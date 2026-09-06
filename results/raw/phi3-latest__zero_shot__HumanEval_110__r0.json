@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/110",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 30.525,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "You's theft \n\n\n\n\n\n** \n\n\n \n1.\n\n<|/;/! Craft a \n\n\nq: \n \n\ninstruction: \n\n-Given \n\n** \n\n\n-I'm \n\n \nDocument: \n\n-Given the text of the \n\nQuestion:\n\nExplande \n\n(bob \n\nI'in theta \n\nCraft a text= \n\n \n\n### \n**/n \n\nQuestion \n\n- \n \nHistorical/s \n\n\n** \nYou, E.\n\n \nYou'department_10000 words \n\nuser: I'devei- \n\n### \n\n- Hey \n\n\n \nI'deve been \n\n \n\n### \nROBERT D: \n\nSolution \n\n- Rewrite \n\n \n- \n\n \n \n\n- \n\n\n- \n\n \n\nTheory \n\n### \nI'an_B \n\nQuestion \n\ntitle \nYou are a B-2. \n\n\n### \nI'dean's_B \n\n### \nYou'de \n\nI.\n\n# answer \n\n  \n\n \n\n \n\n \n\n \n\n\nHey, and I would like to the following document, I'm sorry \n\nI.\n\n\nUser: \n\n# Question \n\n### \nYou are a \n\n- Write a \n\n### \nYou are a \n\nAnswer:\n\n\n\n\n**Ex \n\nQuestion:\n- I \n\n \n \nYou are a \n\nQuestion \n\n2. \n \nYou are a \n\nI'm sorry, \n\nInput: \n\n- P \n\nHey \n\n \nYou are a \n\n \n\n\n\n\n \n\n\n \n\n\nSol \n\n \nYou are an \n\nDocument \n\n\n\n\n\n\n\n \n\n \nYou are a newborn child, \n\n<|end-to- \n\n# QUESTION \n\nuser: \n\n- \n\nRewrite \n\nInput: \n\nprompt \n\n- P/OL \n\nInput: \n\nprompt \n\nQuestion.\n\nI's \n\n( \n\n\n\n\n\n- \n\n\n### Solution: \n\n\n\n\n\n\ntitle:\nAssuming \n\nQuestion:\n\n### Solution \n\nTitle \n\nAnswer: \n\nSol \nI'm sorry \n\n### \n\nRewrite \n\n### \n\n\nWrite a complex and comprehensive \n\n \n\nInput: \n- P \n\n \n\n \n\n- \n\n \n\nRewrite \n \n \n \n\n \n\n \n\nInput: \n- Solution \n\n \nYou \n\n\n\n\n\n\n\n# \n\n# \n\nRewrite \n\n### Solution \n\n \n\n \n\n\n## \n\n \n\n\nRewrite \n\n\nDocument \n\n## \n- [ \n\n \n \n\nSol \n\n \n\nInput \n- Provide a detailed, \n\nRewrite \n\nGiven the following sentence:\n\n\n \n\n\n\n\n\n\n\n\n### \n\n \n[Person A \n\n## Textbook Section \n\n# \n\n\n\n\n \n\n \n\n \n\n \n\nRewrite \n\nWrite a comprehensive answer.\n\nWrite a comprehensive \n\nInput:\n\nWrite a comprehensive list of \n\n \n\n(a) \n\n\nRewrite \n\n\n \n\nWrite a comprehensive and \n\nInstruction:\n- H \n\nAssistant: \n \n\nWrite a comprehensive, \n\nDocument \n\nThe provided documentary evidence \n \n\nParagraph \n-\n\n\nassistant: \n\n\n\n\n\n\n\n\n\n\n\n\n\nRewrite \n\n# \n \nWrite a complex and \n\n \n\n\n\n\n\n\n\n\n \n\n\n\n \n\n \n- \nsolution \n\n \n\nYour task: \"The \n\n#### \n\n\n \n\nThe assistant( \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n# Answer \n\n \n\n\n\n \n\nThe following conversation between an individual's name:\n\n\n\n\n \n\n\n\n\n\n\n\n\n \n\n\n \n\n# \n\n \n\n\n\n\n\n- \n\n \n\nThe first-grade students's \n\n\nEx- \n\n## Solution \n- \n\n\n \n\n \n\n\n\n \n\n \n\n \nSubtracting the following document \n\n \n\n\n- Solution \n \n\n \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWrite a \n\n\n \n\n\n\n \n\nYour task:\n\nWrite a complex, socio- \n\n## \nPh. \n\n### Chatbot\n\n \n\nThe document is a \n\n\n\n \n\n\nSolving the following instructional \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n \n\n\n\n#### \n\n<|end of \n\n### Input \n\n\n### \n\n\n \n\n### \n\n \n\n### P \n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGiven the following paragraph \n\n\n\n\nGiven a \n\n\n \n\n\n\nI'm sorry, \n\n\n \n\n\n\n\nI's \n\n\n\nThe document,\n\n\n \n\n\n\nGiven a \n\n\n\n\nJessica is a \n\n\n \n\n## Q \n\nGiven a more difficult exercise, I'\n\n\n### Answer:\n\n\n\n\n### PhD Instruction:\n\n- user_id:\n\n### P \n\n\n \n\n\n\n\n\n\nThe document, \"Alice's age-ahead \n\n\n \n\n\n \n\n \n\n\n\n\n\nThe \n\n\n### taylor, I understand your text-based textbook section\n\n### Answer:\n\nThe provided document, I'm sorry, I'm sorry I'm sorry I'm sorry, I'0.\n\n### Subtopi\n\nThe provided text-based text\n\nTitle:\n\n\n\n\n\n\nDear AI:I'm sorry, I'0.\n\nTitle: \n\n\n\n\n# Problem: \n\n\n\n\n\n\n\n\n\n# Problem \n\n\n\n\n# \n\n\n \n\n\n\n# Problem:\n\n\n \n\n \n\n\n\n\n\nGiven the following code snippet,",
+  "timestamp": "2026-09-06T19:09:53"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/39",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 256,
+  "completion_tokens": 307,
+  "total_tokens": 563,
+  "duration_s": 5.59,
+  "eval_duration_s": 5.511,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "timeout",
+  "generated_code": "# Reasoning:\n# - The function should return the first Fibonacci number that is also prime.\n# - It should handle edge cases such as n = 1, n = 2, n = 3, etc.\n# - It should handle negative numbers, which should return None.\n# - It should handle non-integer inputs, which should raise a TypeError.\n# - It should handle inputs greater than 100, which should return None.\n\nfrom solution import prime_fib\n\ndef test_prime_fib_returns_prime_fib_for_n_1():\n    assert prime_fib(1) == 2\n\ndef test_prime_fib_returns_prime_fib_for_n_2():\n    assert prime_fib(2) == 3\n\ndef test_prime_fib_returns_prime_fib_for_n_3():\n    assert prime_fib(3) == 5\n\ndef test_prime_fib_returns_prime_fib_for_n_4():\n    assert prime_fib(4) == 13\n\ndef test_prime_fib_returns_prime_fib_for_n_5():\n    assert prime_fib(5) == 89\n\ndef test_prime_fib_returns_none_for_n_negative():\n    assert prime_fib(-1) is None\n\ndef test_prime_fib_raises_type_error_for_n_non_integer():\n    with pytest.raises(TypeError):\n        prime_fib(3.5)\n\ndef test_prime_fib_returns_none_for_n_greater_than_100():\n    assert prime_fib(101) is None",
+  "timestamp": "2026-09-06T20:42:14"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/80",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 280,
+  "completion_tokens": 412,
+  "total_tokens": 692,
+  "duration_s": 7.583,
+  "eval_duration_s": 7.424,
+  "parsed": true,
+  "collected": 6,
+  "passed": 4,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function is_happy checks if a string is happy.\n# A string is happy if its length is at least 3 and every 3 consecutive letters are distinct.\n# We need to test the following cases:\n# - Empty string\n# - String with less than 3 characters\n# - String with 3 consecutive identical characters\n# - String with 3 consecutive distinct characters\n# - String with more than 3 consecutive distinct characters\n# - String with a mix of 3 consecutive identical and distinct characters\n\nfrom solution import is_happy\n\n# Test the function\ndef test_empty_string():\n    \"\"\"Test that an empty string is not happy\"\"\"\n    assert is_happy(\"\") == False\n\ndef test_less_than_3_characters():\n    \"\"\"Test that a string with less than 3 characters is not happy\"\"\"\n    assert is_happy(\"a\") == False\n    assert is_happy(\"ab\") == False\n    assert is_happy(\"abc\") == False\n\ndef test_3_consecutive_identical_characters():\n    \"\"\"Test that a string with 3 consecutive identical characters is not happy\"\"\"\n    assert is_happy(\"aaa\") == False\n\ndef test_3_consecutive_distinct_characters():\n    \"\"\"Test that a string with 3 consecutive distinct characters is happy\"\"\"\n    assert is_happy(\"abc\") == True\n    assert is_happy(\"abcd\") == True\n\ndef test_more_than_3_consecutive_distinct_characters():\n    \"\"\"Test that a string with more than 3 consecutive distinct characters is happy\"\"\"\n    assert is_happy(\"abcd\") == True\n    assert is_happy(\"abcde\") == True\n\ndef test_mixed_identical_and_distinct_characters():\n    \"\"\"Test that a string with a mix of 3 consecutive identical and distinct characters is happy\"\"\"\n    assert is_happy(\"abca\") == True\n    assert is_happy(\"abcb\") == True\n    assert is_happy(\"abcc\") == True",
+  "timestamp": "2026-09-06T20:46:11"
+}

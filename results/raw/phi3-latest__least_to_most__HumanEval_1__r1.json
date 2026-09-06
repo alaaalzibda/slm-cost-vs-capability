@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "least_to_most",
+  "task_id": "HumanEval/1",
+  "rep": 1,
+  "n_calls": 2,
+  "prompt_tokens": 2256,
+  "completion_tokens": 20420,
+  "total_tokens": 22676,
+  "duration_s": 430.964,
+  "eval_duration_s": 424.993,
+  "parsed": true,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "\nWARNING: Failed to generate report: No data to report.\n\n\nno tests ran in 0.02s\n",
+  "generated_code": "## Solution:\n\n\n## Solution:\n\n### Solution:\n\n### Solution:\n\n# \n\n## Solution:\n\n# \n\n## Solution:",
+  "timestamp": "2026-09-06T19:27:32"
+}

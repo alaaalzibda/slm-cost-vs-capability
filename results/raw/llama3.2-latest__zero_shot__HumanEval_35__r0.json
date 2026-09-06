@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/35",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 194,
+  "completion_tokens": 218,
+  "total_tokens": 412,
+  "duration_s": 4.352,
+  "eval_duration_s": 4.047,
+  "parsed": true,
+  "collected": 8,
+  "passed": 7,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import max_element\n\ndef test_max_element_empty_list():\n    assert max_element([]) == None\n\ndef test_max_element_single_element_list():\n    assert max_element([1]) == 1\n\ndef test_max_element_multiple_elements_list():\n    assert max_element([1, 2, 3]) == 3\n\ndef test_max_element_negative_numbers_list():\n    assert max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]) == 123\n\ndef test_max_element_zero_list():\n    assert max_element([0]) == 0\n\ndef test_max_element_duplicate_elements_list():\n    assert max_element([3, 3, 3]) == 3\n\ndef test_max_element_negative_max_element_list():\n    assert max_element([-5, -3, -1]) == -1\n\ndef test_max_element_large_numbers_list():\n    assert max_element([1000, 2000, 3000]) == 3000",
+  "timestamp": "2026-09-06T20:33:53"
+}

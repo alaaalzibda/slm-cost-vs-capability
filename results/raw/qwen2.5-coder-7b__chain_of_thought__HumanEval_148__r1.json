@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/148",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 354,
+  "completion_tokens": 262,
+  "total_tokens": 616,
+  "duration_s": 10.181,
+  "eval_duration_s": 10.114,
+  "parsed": true,
+  "collected": 5,
+  "passed": 0,
+  "failed": 5,
+  "errors": 0,
+  "line_coverage": 0.0,
+  "branch_coverage": 0.0,
+  "no_module_import": true,
+  "error": null,
+  "generated_code": "def test_bf_valid_planets():\n    assert bf(\"Jupiter\", \"Neptune\") == (\"Saturn\", \"Uranus\")\n    assert bf(\"Earth\", \"Mercury\") == (\"Venus\")\n    assert bf(\"Mercury\", \"Uranus\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")\n\ndef test_bf_planet1_not_in_solar_system():\n    assert bf(\"Pluto\", \"Neptune\") == ()\n\ndef test_bf_planet2_not_in_solar_system():\n    assert bf(\"Jupiter\", \"Pluto\") == ()\n\ndef test_bf_same_planets():\n    assert bf(\"Earth\", \"Earth\") == ()\n\ndef test_bf_planet1_further_than_planet2():\n    assert bf(\"Mercury\", \"Venus\") == ()",
+  "timestamp": "2026-09-06T17:20:04"
+}

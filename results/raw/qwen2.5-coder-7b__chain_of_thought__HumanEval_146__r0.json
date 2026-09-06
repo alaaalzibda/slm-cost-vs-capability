@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/146",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 274,
+  "completion_tokens": 517,
+  "total_tokens": 791,
+  "duration_s": 20.41,
+  "eval_duration_s": 19.922,
+  "parsed": true,
+  "collected": 8,
+  "passed": 6,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import specialFilter\n\n# Test cases to validate the behavior of the specialFilter function\n\n# Test case 1: Empty list\n# The function should return 0 for an empty list\ndef test_specialFilter_empty_list():\n    assert specialFilter([]) == 0\n\n# Test case 2: List with no numbers greater than 10\n# The function should return 0 if there are no numbers greater than 10\ndef test_specialFilter_no_numbers_greater_than_10():\n    assert specialFilter([2, 4, 6, 8]) == 0\n\n# Test case 3: List with numbers not meeting the criteria\n# The function should return 0 if all numbers do not meet the criteria\ndef test_specialFilter_numbers_not_meeting_criteria():\n    assert specialFilter([12, 14, 16, 18]) == 0\n\n# Test case 4: List with one number meeting the criteria\n# The function should return 1 if there is one number meeting the criteria\ndef test_specialFilter_one_number_meeting_criteria():\n    assert specialFilter([15, -73, 14, -15]) == 1\n\n# Test case 5: List with multiple numbers meeting the criteria\n# The function should return the count of numbers meeting the criteria\ndef test_specialFilter_multiple_numbers_meeting_criteria():\n    assert specialFilter([33, -2, -3, 45, 21, 109]) == 2\n\n# Test case 6: List with negative numbers\n# The function should correctly handle negative numbers\ndef test_specialFilter_negative_numbers():\n    assert specialFilter([-11, -13, -15, -17]) == 4\n\n# Test case 7: List with numbers with even first or last digits\n# The function should correctly filter out numbers with even first or last digits\ndef test_specialFilter_even_first_or_last_digits():\n    assert specialFilter([12, 14, 16, 18, 19, 21]) == 2\n\n# Test case 8: List with numbers with odd first and last digits\n# The function should correctly filter out numbers with odd first and last digits\ndef test_specialFilter_odd_first_and_last_digits():\n    assert specialFilter([11, 33, 55, 77, 99]) == 5",
+  "timestamp": "2026-09-06T17:19:28"
+}

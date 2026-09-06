@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/35",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 2.321,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "\" \n \nYou \n\nQ: \n\n\n \nYou \n\n\n \n\n\n<|context: \n\nQuestion: \n\nI.\n\nCraft a personality, I'de \n\n-Given: \n\nUser:\n% \nYou-Hey \n\nCraft a \n\n\n\n\nDr.",
+  "timestamp": "2026-09-06T19:11:47"
+}

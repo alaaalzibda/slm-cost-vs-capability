@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/74",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 345,
+  "completion_tokens": 100,
+  "total_tokens": 445,
+  "duration_s": 1.525,
+  "eval_duration_s": 1.503,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: EOL while scanning string literal (test_generated.py, line 1)",
+  "generated_code": "You's theft \n\n \n\n### \n \nYou \n \nI'de \n\nLaw \n\n\nYour \n \n\n-favorite \n\n \nChat \n\n-fine \n\n\n\"The \n\nYou'in \n\nQuestion:** \n\nuser: \n\n \nYou \n\n-F",
+  "timestamp": "2026-09-06T19:07:52"
+}

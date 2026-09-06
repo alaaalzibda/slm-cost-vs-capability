@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/31",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 256,
+  "completion_tokens": 334,
+  "total_tokens": 590,
+  "duration_s": 6.139,
+  "eval_duration_s": 6.002,
+  "parsed": true,
+  "collected": 5,
+  "passed": 3,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The is_prime function checks if a given number is prime.\n# A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.\n# The function should return True for prime numbers and False for non-prime numbers.\n# We need to test the function for prime numbers, non-prime numbers, and boundary values (1 and 0).\n# We also need to test the function for negative numbers, as prime numbers are not defined for negative numbers.\n\nfrom solution import is_prime\n\n# Test cases for is_prime function\ndef test_is_prime_prime_number():\n    \"\"\"Test if is_prime returns True for prime numbers.\"\"\"\n    assert is_prime(101) == True\n    assert is_prime(13441) == True\n    assert is_prime(61) == True\n\ndef test_is_prime_non_prime_number():\n    \"\"\"Test if is_prime returns False for non-prime numbers.\"\"\"\n    assert is_prime(6) == False\n    assert is_prime(4) == False\n    assert is_prime(1) == False\n\ndef test_is_prime_boundary_value():\n    \"\"\"Test if is_prime returns False for boundary values (0 and 1).\"\"\"\n    assert is_prime(0) == False\n    assert is_prime(1) == False\n\ndef test_is_prime_negative_number():\n    \"\"\"Test if is_prime raises an error for negative numbers.\"\"\"\n    with pytest.raises(ValueError):\n        is_prime(-1)\n\ndef test_is_prime_zero():\n    \"\"\"Test if is_prime raises an error for zero.\"\"\"\n    with pytest.raises(ValueError):\n        is_prime(0)",
+  "timestamp": "2026-09-06T20:37:28"
+}

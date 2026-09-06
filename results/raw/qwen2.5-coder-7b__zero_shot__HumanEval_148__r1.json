@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/148",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 309,
+  "completion_tokens": 173,
+  "total_tokens": 482,
+  "duration_s": 7.112,
+  "eval_duration_s": 7.05,
+  "parsed": true,
+  "collected": 5,
+  "passed": 4,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import bf\n\ndef test_bf_jupiter_neptune():\n    assert bf(\"Jupiter\", \"Neptune\") == (\"Saturn\", \"Uranus\")\n\ndef test_bf_earth_mercury():\n    assert bf(\"Earth\", \"Mercury\") == (\"Venus\")\n\ndef test_bf_mercury_uranus():\n    assert bf(\"Mercury\", \"Uranus\") == (\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")\n\ndef test_bf_invalid_planet():\n    assert bf(\"Pluto\", \"Mars\") == ()\n    assert bf(\"Earth\", \"Pluto\") == ()\n    assert bf(\"Pluto\", \"Pluto\") == ()\n\ndef test_bf_same_planet():\n    assert bf(\"Earth\", \"Earth\") == ()",
+  "timestamp": "2026-09-06T16:42:18"
+}

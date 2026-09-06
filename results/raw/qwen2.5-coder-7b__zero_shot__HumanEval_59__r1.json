@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/59",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 172,
+  "completion_tokens": 64,
+  "total_tokens": 236,
+  "duration_s": 2.505,
+  "eval_duration_s": 2.389,
+  "parsed": true,
+  "collected": 2,
+  "passed": 2,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": 91.30434782608695,
+  "branch_coverage": 90.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_prime_factor\n\ndef test_largest_prime_factor_13195():\n    assert largest_prime_factor(13195) == 29\n\ndef test_largest_prime_factor_2048():\n    assert largest_prime_factor(2048) == 2",
+  "timestamp": "2026-09-06T16:37:30"
+}

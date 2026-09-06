@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/96",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 305,
+  "completion_tokens": 81,
+  "total_tokens": 386,
+  "duration_s": 1.229,
+  "eval_duration_s": 1.206,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 4)",
+  "generated_code": "You \nYou \n\ninstruction:\n\n\n\n\n\n \n \n \n\n\n\n\n\n \nYou'de: ## Instruction: \n \nAs an \n\nInstruction: \n \n\ndoubtful \n\n-Given \n\nUser: I'deven",
+  "timestamp": "2026-09-06T19:09:13"
+}

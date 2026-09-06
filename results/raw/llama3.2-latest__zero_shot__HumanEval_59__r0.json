@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/59",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 178,
+  "completion_tokens": 173,
+  "total_tokens": 351,
+  "duration_s": 3.344,
+  "eval_duration_s": 3.105,
+  "parsed": true,
+  "collected": 5,
+  "passed": 3,
+  "failed": 2,
+  "errors": 0,
+  "line_coverage": 91.30434782608695,
+  "branch_coverage": 90.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import largest_prime_factor\n\ndef test_largest_prime_factor_empty_input():\n    assert largest_prime_factor(0) == None\n\ndef test_largest_prime_factor_single_prime():\n    assert largest_prime_factor(2) == 2\n    assert largest_prime_factor(3) == 3\n\ndef test_largest_prime_factor_multiple_primes():\n    assert largest_prime_factor(6) == 3\n    assert largest_prime_factor(10) == 5\n\ndef test_largest_prime_factor_large_number():\n    assert largest_prime_factor(13195) == 29\n    assert largest_prime_factor(2048) == 2\n\ndef test_largest_prime_factor_invalid_input():\n    with pytest.raises(TypeError):\n        largest_prime_factor(\"not an integer\")\n    with pytest.raises(TypeError):\n        largest_prime_factor(1.5)",
+  "timestamp": "2026-09-06T20:34:16"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/80",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "total_tokens": 0,
+  "duration_s": 11.634,
+  "eval_duration_s": 0.0,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "-Given a) \n\n\n#### QUESTION \n\n-\n\nuser: \n\n\n\n\n\n  \n2. \n\n \n\n\n[Q: \n \n\n \n\n- \n\n---\nInput: \n-Fix \n\nChapter \n\nuser:**/noun \n\n\n \n\n\nI apologize \n\n-Craft a_instruction: \n\n\nDr. \n- Knowledge \n \nYou \n- [Question \n\nTitle:**/n \n\n-Given the A \n\n \nYou'de \n\n \n\n-I \n\n-f \n\nThe following year \n\n\n\n\n2 \n\n\nChatbot \n\n### \n\n### \nprompt \n\n-Given the following sentence, \n\n- No, and you are \n\n- <|endowment_instruction: \n\n- Provide a detailed, \n\nC \n \nI'deve been a solution, let'invest \n\n-Give a \n\n- You'devel \n\nTitle \n\nI'deve been a \n\nI'deve been a fantastic \n\n### \nI'in \n\ntitle: Chatbot \n\n\nI'deve been \n\n\n\n   \n\n\n \n\n \n\n \n\n \n\nChoose the given text.\n\n \nInput:\nQuestion:\n\n- i)\n\nInput:\n- I.\n\n \nQuestion \n\ntitle:\n- How to A, L. \n \n\n\n\n\n- I need to create a \n\n\nThe \n\n# QUERY \n\n\n2. \n\nWrite a list of theft\n\n2. \n\n### \nI.\n\nAnswer: \n\n \nYou are a newborn \n\nYour task:\n\n- H \n\n \n\n \n \nbird \n\n \n\nAnswer:\n\nRewrite \n\n\nI's \n\n\n\n\n\n\n- P \n\n\n\n\n\n\n\n\n\n\n\n \n \nYou are a \n\nDocument \n\n# Instruction:\nYou are a newcomer, \n\n### \nYou are a conversation \n\n### \n \nYou are a high school psychology \n\n- \n\n \n \n \nYou are a \n\nDescription \n\n### \n\n \n\nQuestion \n\n \n\nInput: \n\nDocument \n\nI'm sorry, \n\nChoose the documentary hypothesis that theorems \n\n### \n\nRewrite \n\n- P \n\nQuestion\n\n## Instruction \n\n- \n\n### \n\n \n\nI apologize,",
+  "timestamp": "2026-09-06T19:14:10"
+}

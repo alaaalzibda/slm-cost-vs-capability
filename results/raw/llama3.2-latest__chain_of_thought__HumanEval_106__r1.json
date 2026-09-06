@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/106",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 279,
+  "completion_tokens": 313,
+  "total_tokens": 592,
+  "duration_s": 5.705,
+  "eval_duration_s": 5.661,
+  "parsed": true,
+  "collected": 8,
+  "passed": 3,
+  "failed": 5,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function f takes an integer n as input and returns a list of size n.\n# The value of the element at index i in the list is the factorial of i if i is even,\n# or the sum of numbers from 1 to i otherwise.\n# We need to test the function's behavior for different values of n,\n# including edge cases like n = 0 and n = 1.\n# We also need to test the function's behavior for different values of i,\n# including edge cases like i = 0 and i = 1.\n\nfrom solution import f\n\n# Test the function's behavior for different values of n\ndef test_f_n_even():\n    assert f(4) == [1, 2, 6, 24]\n\ndef test_f_n_odd():\n    assert f(3) == [1, 2, 3]\n\ndef test_f_n_zero():\n    assert f(0) == []\n\ndef test_f_n_negative():\n    with pytest.raises(ValueError):\n        f(-1)\n\n# Test the function's behavior for different values of i\ndef test_f_i_even():\n    assert f(5) == [1, 2, 6, 24, 120]\n\ndef test_f_i_odd():\n    assert f(3) == [1, 2, 3]\n\ndef test_f_i_zero():\n    assert f(1) == [1]\n\ndef test_f_i_negative():\n    with pytest.raises(ValueError):\n        f(-1)",
+  "timestamp": "2026-09-06T20:47:44"
+}

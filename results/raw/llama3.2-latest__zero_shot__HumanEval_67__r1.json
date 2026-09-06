@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/67",
+  "rep": 1,
+  "n_calls": 1,
+  "prompt_tokens": 322,
+  "completion_tokens": 187,
+  "total_tokens": 509,
+  "duration_s": 3.41,
+  "eval_duration_s": 3.375,
+  "parsed": true,
+  "collected": 4,
+  "passed": 3,
+  "failed": 1,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "from solution import fruit_distribution\n\ndef test_fruit_distribution():\n    assert fruit_distribution(\"5 apples and 6 oranges\", 19) == 8\n    assert fruit_distribution(\"0 apples and 1 oranges\", 3) == 2\n    assert fruit_distribution(\"2 apples and 3 oranges\", 100) == 95\n    assert fruit_distribution(\"100 apples and 1 oranges\", 120) == 19\n\ndef test_fruit_distribution_empty_string():\n    assert fruit_distribution(\"\", 10) == 10\n\ndef test_fruit_distribution_no_fruit():\n    assert fruit_distribution(\"no fruit\", 10) == 10\n\ndef test_fruit_distribution_invalid_input():\n    with pytest.raises(TypeError):\n        fruit_distribution(\"5 apples and 6 oranges\", \"19\")\n    with pytest.raises(TypeError):\n        fruit_distribution(\"5 apples and 6 oranges\", 19.0)",
+  "timestamp": "2026-09-06T20:34:39"
+}

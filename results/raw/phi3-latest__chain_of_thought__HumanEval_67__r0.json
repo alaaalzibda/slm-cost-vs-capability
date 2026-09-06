@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/67",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 431,
+  "completion_tokens": 1166,
+  "total_tokens": 1597,
+  "duration_s": 20.567,
+  "eval_duration_s": 19.262,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "- \n\n-: \n--- \nI'm \n\ntitle: Chat \n\nChatGPT- \n\nAssistant<|starting_question \n\nInstruction: \n\ninstead \n\n### \nI' endiannesses, you are \n\nInput: \n\nDocument a.\n\n### \n\nHey \n\n- \n\n\n#### \n \nI'deve been_API \n\n- \n\n \nI've been a \n\n \n\n\n\nI needlng \n\n### Chat \n\n- \n\nRewrite \n\ntitle \n\n### \nI'an_instruction:Paris, I'dea \n\n--- \nI'deve_customer_B\n\nTitle: \n\n- \n\nThe \n\nI'dea \n\nI'deve been_income_text \n\nUser: \n\nQuestion \n- [ \n\n### \n\n\n\ntitle:\n\nQuestion: \n\n- Essentially Similar to the following paragraph.\n\n### \n\nRewrite \n\n- HR \n\nuser: \n\nI'm sorry I'an \n\nuser: I'an \n\n# QUELK \n\n\n \n \n \n \n \nI's \n\nQuestion \n\n-3, \n \nYou are a \n\n \nYou are an individual's name: \n\n[q \n\n\n\nYou are a \n\n# Instruction \n\nQuestion \n- \n\nDocument \n\n- HRV.\n\n \n \nYou are a high school/st \n\n---\n\n \n \n \nYou are a \n\n \n\n\n\n\n\n\n \nYou are \n\n# \n\n-RAISED \n\n### QUESTION \n\nRewrite \n\ntitle: I'm sorry \n\n- I's \n\nYou are a \n\nInput: \n\n- I've been a) I's \n- \n- \n-I'm sorry, I'm sorry \n\n- \n- P \n\n-I apologize \n \n \n \n\n- \nI'm sorry, \n\nuser: I'm sorry \n\nInput:\nWrite a \n\n\n \n\n \n\n \n\n \n\n- Solution: \n\n\n \n- Solution:\n- P \n\nQuestion.is \n\n- \nI've been given a \n\n- \n- \n\nDocument \n\n#### QUELK\n\n- Rewrite \n \n\n \n\nRewrite \n\n \n \n\nGiven the following sentence, I apologize, \n\n \n\n\n### Answer: \n- user_user:user \n\nGiven the following text-based text from a \n\n\n\n\n\n\n# \n\n \n\n\n## Q: \n\n\n \n\nQuestion:\n\nWrite \n\n \n\nInput \n\n \n\nWrite a comprehensive and \n\n\n\n\n\n\n\n \n\n \n\n \n\n \n\n \n\n \nDocument \n\n### \n\n \n\n \n\nRewrite \n \nYou's \n\nRewrite \n\nDocument\n- \n\n<|end of the given text.\n\nThe \n\n \n\n \n\n\n \n\n\nChallenge \n\n \n\n\n\nRewrite \n\n\nPairing the user-specifically, I'm sorry, \n \n\n\n \n\n \n\n\n\n\n\n\n \n\n- \n\n \n\n \n\nchatbot \n \n- Solution \n \n\nI apologize \n\n \n\nWrite a comprehensive, \n\n2 \n- \n- Write a \n\n \nWrite a comprehensive, \n\n\n\nPara que \n\n\n\n\nGiven the original text-based decision-making \n\n\n \n\n\n\n \n\nTextbook Section \n\n### \n\n \n\n \n\n \n\n \n\nTextbook Section \n\n\n \n\n\n #### \n\n \n\n \n\n\n \n\n\n #### \n\n \n\n\n\n\n \n\n### \n\n \n\n \n\n \n\n \n\n\n\n\n\n\n \n\n\n \n\n\n\n\nRewrite \n\n# \n\n \n\nI'm sorry, \n\n \n\nGiven the following sentence \n\n\n\n \n\n\nCraft a comprehensive, \n\n\n \n\n\n\n \n\n\n\n\n\n\n\nI'm working on a new-age-free",
+  "timestamp": "2026-09-06T19:12:53"
+}

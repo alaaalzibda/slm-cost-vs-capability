@@ -1,0 +1,23 @@
+{
+  "model": "phi3:latest",
+  "strategy": "zero_shot",
+  "task_id": "HumanEval/143",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 302,
+  "completion_tokens": 132,
+  "total_tokens": 434,
+  "duration_s": 3.751,
+  "eval_duration_s": 1.986,
+  "parsed": false,
+  "collected": 0,
+  "passed": 0,
+  "failed": 0,
+  "errors": 0,
+  "line_coverage": null,
+  "branch_coverage": null,
+  "no_module_import": false,
+  "error": "SyntaxError: invalid syntax (test_generated.py, line 1)",
+  "generated_code": "Assistant: \n\n\nYour task:\n\n-Given \n\n<|endent \n \nI's a \n\n \nI'm sorry \n\n\n \nHistorical context:\n\n\nChatbot: A \n\n\n### \n \n---\n\nuser:\n-G \n\n\n\n\n**Human- \n\nInstantiating the following sentence, and the \n\nQuestion:\n\n-Given the following sentence, I'in \n\n1:10uide:",
+  "timestamp": "2026-09-06T19:10:53"
+}

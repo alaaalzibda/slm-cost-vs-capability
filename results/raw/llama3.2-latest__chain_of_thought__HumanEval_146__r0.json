@@ -1,0 +1,23 @@
+{
+  "model": "llama3.2:latest",
+  "strategy": "chain_of_thought",
+  "task_id": "HumanEval/146",
+  "rep": 0,
+  "n_calls": 1,
+  "prompt_tokens": 276,
+  "completion_tokens": 297,
+  "total_tokens": 573,
+  "duration_s": 5.5,
+  "eval_duration_s": 5.334,
+  "parsed": true,
+  "collected": 8,
+  "passed": 5,
+  "failed": 3,
+  "errors": 0,
+  "line_coverage": 100.0,
+  "branch_coverage": 100.0,
+  "no_module_import": false,
+  "error": null,
+  "generated_code": "# Reasoning:\n# The function filters numbers based on two conditions:\n# 1. The number is greater than 10.\n# 2. The first and last digits of the number are both odd.\n# We need to test the function's behavior for different edge cases:\n# - Empty list\n# - List with only one element\n# - List with two elements\n# - List with multiple elements\n# - List with negative numbers\n# - List with numbers with even last digit\n# - List with numbers with even first digit\n\nfrom solution import specialFilter\n\ndef test_empty_list():\n    assert specialFilter([]) == 0\n\ndef test_single_element():\n    assert specialFilter([15]) == 1\n\ndef test_two_elements():\n    assert specialFilter([15, 14]) == 1\n\ndef test_multiple_elements():\n    assert specialFilter([15, 14, 33, -73, 21]) == 2\n\ndef test_negative_numbers():\n    assert specialFilter([-73, -15]) == 0\n\ndef test_even_last_digit():\n    assert specialFilter([15, 14, 33, -73, 22]) == 1\n\ndef test_even_first_digit():\n    assert specialFilter([15, 14, 33, -73, 21, 109]) == 2\n\ndef test_invalid_input():\n    with pytest.raises(TypeError):\n        specialFilter('1234')",
+  "timestamp": "2026-09-06T20:48:49"
+}
