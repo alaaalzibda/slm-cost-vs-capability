@@ -103,7 +103,7 @@ ran.
 See [NOTES.md](NOTES.md) on why phi3 is reported as an anomaly rather than a
 result.
 
-![coverage against tokens](results/coverage_vs_tokens.png)
+![cost against capability](results/cost_vs_capability.png)
 
 ## What I found
 
